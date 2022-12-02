@@ -13,6 +13,11 @@
 		265993FB2939127F005149BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265993F92939127F005149BF /* Main.storyboard */; };
 		265993FD29391281005149BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265993FC29391281005149BF /* Assets.xcassets */; };
 		2659940029391281005149BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265993FE29391281005149BF /* LaunchScreen.storyboard */; };
+		2659940C2939345B005149BF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2659940B2939345B005149BF /* AppCoordinator.swift */; };
+		2659940E29393633005149BF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2659940D29393633005149BF /* Coordinator.swift */; };
+		2659941029394478005149BF /* MoviesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2659940F29394478005149BF /* MoviesCoordinator.swift */; };
+		26599412293944A2005149BF /* ShowsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26599411293944A2005149BF /* ShowsCoordinator.swift */; };
+		2659941429394BA7005149BF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2659941329394BA7005149BF /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		265993FC29391281005149BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		265993FF29391281005149BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2659940129391281005149BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2659940B2939345B005149BF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		2659940D29393633005149BF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2659940F29394478005149BF /* MoviesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCoordinator.swift; sourceTree = "<group>"; };
+		26599411293944A2005149BF /* ShowsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsCoordinator.swift; sourceTree = "<group>"; };
+		2659941329394BA7005149BF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +66,8 @@
 		265993F22939127F005149BF /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				265994082939147B005149BF /* SupportFiles */,
+				265994082939147B005149BF /* SupportingFiles */,
+				2659940A293933B6005149BF /* Coordinators */,
 				2659940729391418005149BF /* ViewControllers */,
 			);
 			path = Movies;
@@ -66,11 +77,12 @@
 			isa = PBXGroup;
 			children = (
 				265993F72939127F005149BF /* ViewController.swift */,
+				2659941329394BA7005149BF /* TabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		265994082939147B005149BF /* SupportFiles */ = {
+		265994082939147B005149BF /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				2659940929391488005149BF /* Storyboards */,
@@ -79,7 +91,7 @@
 				265993FC29391281005149BF /* Assets.xcassets */,
 				2659940129391281005149BF /* Info.plist */,
 			);
-			path = SupportFiles;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		2659940929391488005149BF /* Storyboards */ = {
@@ -89,6 +101,17 @@
 				265993FE29391281005149BF /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2659940A293933B6005149BF /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				2659940D29393633005149BF /* Coordinator.swift */,
+				2659940B2939345B005149BF /* AppCoordinator.swift */,
+				2659940F29394478005149BF /* MoviesCoordinator.swift */,
+				26599411293944A2005149BF /* ShowsCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2659940C2939345B005149BF /* AppCoordinator.swift in Sources */,
+				2659941429394BA7005149BF /* TabBarController.swift in Sources */,
 				265993F82939127F005149BF /* ViewController.swift in Sources */,
+				2659940E29393633005149BF /* Coordinator.swift in Sources */,
+				2659941029394478005149BF /* MoviesCoordinator.swift in Sources */,
 				265993F42939127F005149BF /* AppDelegate.swift in Sources */,
+				26599412293944A2005149BF /* ShowsCoordinator.swift in Sources */,
 				265993F62939127F005149BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5KXS5M32KB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Movies/Info.plist;
+				INFOPLIST_FILE = Movies/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -344,7 +372,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5KXS5M32KB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Movies/Info.plist;
+				INFOPLIST_FILE = Movies/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
