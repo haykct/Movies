@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		264CECDE293B754A0095EA32 /* SwiftHEXColors in Frameworks */ = {isa = PBXBuildFile; productRef = 264CECDD293B754A0095EA32 /* SwiftHEXColors */; };
 		265993F42939127F005149BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265993F32939127F005149BF /* AppDelegate.swift */; };
 		265993F62939127F005149BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265993F52939127F005149BF /* SceneDelegate.swift */; };
 		265993F82939127F005149BF /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265993F72939127F005149BF /* MoviesViewController.swift */; };
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				264CECDE293B754A0095EA32 /* SwiftHEXColors in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +146,9 @@
 			dependencies = (
 			);
 			name = Movies;
+			packageProductDependencies = (
+				264CECDD293B754A0095EA32 /* SwiftHEXColors */,
+			);
 			productName = Movies;
 			productReference = 265993F02939127F005149BF /* Movies.app */;
 			productType = "com.apple.product-type.application";
@@ -172,6 +177,9 @@
 				Base,
 			);
 			mainGroup = 265993E72939127F005149BF;
+			packageReferences = (
+				264CECDC293B75490095EA32 /* XCRemoteSwiftPackageReference "SwiftHEXColors" */,
+			);
 			productRefGroup = 265993F12939127F005149BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -432,6 +440,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		264CECDC293B75490095EA32 /* XCRemoteSwiftPackageReference "SwiftHEXColors" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thii/SwiftHEXColors.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		264CECDD293B754A0095EA32 /* SwiftHEXColors */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 264CECDC293B75490095EA32 /* XCRemoteSwiftPackageReference "SwiftHEXColors" */;
+			productName = SwiftHEXColors;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 265993E82939127F005149BF /* Project object */;
 }

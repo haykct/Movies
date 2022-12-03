@@ -6,11 +6,17 @@
 //
 
 import UIKit
+import SwiftHEXColors
 
 class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        setupTabBar()
     }
+    
+    private func setupTabBar() {
+        tabBar.tintColor = UIColor(hexString: "#6ECCAD")
+    }
+   
 }
