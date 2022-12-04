@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		264CECDE293B754A0095EA32 /* SwiftHEXColors in Frameworks */ = {isa = PBXBuildFile; productRef = 264CECDD293B754A0095EA32 /* SwiftHEXColors */; };
+		264CECE1293CF1780095EA32 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264CECE0293CF1780095EA32 /* NetworkService.swift */; };
+		264CECE4293D05800095EA32 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 264CECE3293D05800095EA32 /* Alamofire */; };
+		264CECE6293D06710095EA32 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264CECE5293D06710095EA32 /* DataRequest.swift */; };
 		265993F42939127F005149BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265993F32939127F005149BF /* AppDelegate.swift */; };
 		265993F62939127F005149BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265993F52939127F005149BF /* SceneDelegate.swift */; };
 		265993F82939127F005149BF /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265993F72939127F005149BF /* MoviesViewController.swift */; };
@@ -24,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		264CECE0293CF1780095EA32 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		264CECE5293D06710095EA32 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		265993F02939127F005149BF /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		265993F32939127F005149BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		265993F52939127F005149BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,12 +52,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				264CECDE293B754A0095EA32 /* SwiftHEXColors in Frameworks */,
+				264CECE4293D05800095EA32 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		264CECDF293CF1520095EA32 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				264CECE0293CF1780095EA32 /* NetworkService.swift */,
+				264CECE5293D06710095EA32 /* DataRequest.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 		265993E72939127F005149BF = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +90,7 @@
 				265994082939147B005149BF /* SupportingFiles */,
 				2659940A293933B6005149BF /* Coordinators */,
 				2659940729391418005149BF /* ViewControllers */,
+				264CECDF293CF1520095EA32 /* NetworkService */,
 				26599415293A8693005149BF /* Extensions */,
 			);
 			path = Movies;
@@ -148,6 +164,7 @@
 			name = Movies;
 			packageProductDependencies = (
 				264CECDD293B754A0095EA32 /* SwiftHEXColors */,
+				264CECE3293D05800095EA32 /* Alamofire */,
 			);
 			productName = Movies;
 			productReference = 265993F02939127F005149BF /* Movies.app */;
@@ -179,6 +196,7 @@
 			mainGroup = 265993E72939127F005149BF;
 			packageReferences = (
 				264CECDC293B75490095EA32 /* XCRemoteSwiftPackageReference "SwiftHEXColors" */,
+				264CECE2293D05800095EA32 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 265993F12939127F005149BF /* Products */;
 			projectDirPath = "";
@@ -207,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				264CECE1293CF1780095EA32 /* NetworkService.swift in Sources */,
 				2659940C2939345B005149BF /* AppCoordinator.swift in Sources */,
 				26599419293A87AB005149BF /* ShowsViewController.swift in Sources */,
+				264CECE6293D06710095EA32 /* DataRequest.swift in Sources */,
 				2659941429394BA7005149BF /* TabBarController.swift in Sources */,
 				26599417293A86AA005149BF /* UIViewController.swift in Sources */,
 				265993F82939127F005149BF /* MoviesViewController.swift in Sources */,
@@ -450,6 +470,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		264CECE2293D05800095EA32 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -457,6 +485,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 264CECDC293B75490095EA32 /* XCRemoteSwiftPackageReference "SwiftHEXColors" */;
 			productName = SwiftHEXColors;
+		};
+		264CECE3293D05800095EA32 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 264CECE2293D05800095EA32 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
