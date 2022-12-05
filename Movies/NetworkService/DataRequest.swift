@@ -10,9 +10,10 @@ import Foundation
 struct URLComponents {
     private static let baseURL = "https://imdb-api.com/"
     private static let apiKey = "k_k9pjq5s2/"
+    private static let defaultPath = "en/api/"
     
-    static func buildUrl(with path: String, id: String?) -> String {
-        let url = baseURL + "api/\(path)" + apiKey
+    static func buildUrl(withPath path: String, id: String? = nil) -> String {
+        let url = baseURL + defaultPath + path + apiKey
         guard let id else { return url }
         
         return url + id
