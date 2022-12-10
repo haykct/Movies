@@ -9,21 +9,20 @@ import UIKit
 
 class ShowsViewController: UIViewController {
 
+    //MARK: lifecycle methods
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
+    //MARK: methods
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupTabBarItem() {
+        let tabBarAppearance = UITabBarAppearance()
+        tabBarItem = UITabBarItem(title: "Shows", image: UIImage(systemName: "tv.inset.filled"), tag: 1)
+        tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.font: UIFont.systemFont(ofSize: 13)]
+        tabBarItem.standardAppearance = tabBarAppearance
+        tabBarItem.scrollEdgeAppearance = tabBarAppearance
     }
-    */
-
 }

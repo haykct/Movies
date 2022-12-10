@@ -27,6 +27,7 @@ class ShowsCoordinator: Coordinator {
         let showsVC = ShowsViewController.instantiate(fromStoryboard: .main)
         
         showsVC.tabBarItem = UITabBarItem(title: "Shows", image: UIImage(systemName: "tv.inset.filled"), tag: 1)
+        showsVC.setupTabBarItem()
         navigationController.setViewControllers([showsVC], animated: false)
     }
     
