@@ -24,11 +24,9 @@ class DefaultNetworkService: NetworkService {
                     
                     completion(.success(decodedData))
                 } catch let error {
-                    print(error.localizedDescription as Any)
                     completion(.failure(error))
                 }
             case .failure(let error):
-                print(error.errorDescription as Any)
                 completion(.failure(error))
             }
         }

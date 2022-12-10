@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct InTheatresDataModel: Decodable {
+struct InTheatresMoviesDataModel: Decodable {
     var items: [InTheatresMovie]
     var errorMessage: String
 }

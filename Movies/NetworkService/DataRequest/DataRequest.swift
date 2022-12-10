@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum DataError: Error {
+    case invalidData
+}
+
 struct URLComponents {
     private static let baseURL = "https://imdb-api.com/"
     private static let apiKey = "k_k9pjq5s2/"

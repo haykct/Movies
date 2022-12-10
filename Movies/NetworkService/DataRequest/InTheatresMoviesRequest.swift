@@ -9,7 +9,7 @@ import Foundation
 
 struct InTheatresMoviesRequest: DataRequest {
     
-    typealias ResponseData = InTheatresDataModel
+    typealias ResponseData = InTheatresMoviesDataModel
     
     let url = URLComponents.buildUrl(withPath: "InTheaters") 
 }
