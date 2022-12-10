@@ -66,9 +66,8 @@
 		264CECDF293CF1520095EA32 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				26B9E8E82944B6F800251362 /* DataRequest */,
 				264CECE0293CF1780095EA32 /* NetworkService.swift */,
-				264CECE5293D06710095EA32 /* DataRequest.swift */,
-				264CECE7293D0AE70095EA32 /* InTheatresMoviesRequest.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -158,6 +157,15 @@
 				26599416293A86AA005149BF /* UIViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		26B9E8E82944B6F800251362 /* DataRequest */ = {
+			isa = PBXGroup;
+			children = (
+				264CECE5293D06710095EA32 /* DataRequest.swift */,
+				264CECE7293D0AE70095EA32 /* InTheatresMoviesRequest.swift */,
+			);
+			path = DataRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

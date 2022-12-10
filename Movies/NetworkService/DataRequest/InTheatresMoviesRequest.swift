@@ -7,12 +7,9 @@
 
 import Foundation
 
-struct Model: Decodable {}
-
 struct InTheatresMoviesRequest: DataRequest {
     
-    typealias Response = Model
+    typealias ResponseData = InTheatresDataModel
     
-    let url = URLComponents.buildUrl(withPath: "InTheaters")
-    
+    let url = URLComponents.buildUrl(withPath: "InTheaters") 
 }
