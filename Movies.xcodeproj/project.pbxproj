@@ -30,7 +30,7 @@
 		26B9E8EE2944CC1A00251362 /* InTheatresMoviesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26B9E8EC2944CC1A00251362 /* InTheatresMoviesCollectionViewCell.xib */; };
 		26FF796B2944F9DC00824F85 /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF796A2944F9DC00824F85 /* MoviesViewModel.swift */; };
 		26FF796E2945107D00824F85 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF796D2945107D00824F85 /* Box.swift */; };
-		26FF797129454C3000824F85 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 26FF797029454C3000824F85 /* Nuke */; };
+		26FF797429456F2400824F85 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 26FF797329456F2400824F85 /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26FF797129454C3000824F85 /* Nuke in Frameworks */,
+				26FF797429456F2400824F85 /* AlamofireImage in Frameworks */,
 				264CECDE293B754A0095EA32 /* SwiftHEXColors in Frameworks */,
 				264CECE4293D05800095EA32 /* Alamofire in Frameworks */,
 			);
@@ -233,7 +233,7 @@
 			packageProductDependencies = (
 				264CECDD293B754A0095EA32 /* SwiftHEXColors */,
 				264CECE3293D05800095EA32 /* Alamofire */,
-				26FF797029454C3000824F85 /* Nuke */,
+				26FF797329456F2400824F85 /* AlamofireImage */,
 			);
 			productName = Movies;
 			productReference = 265993F02939127F005149BF /* Movies.app */;
@@ -266,7 +266,7 @@
 			packageReferences = (
 				264CECDC293B75490095EA32 /* XCRemoteSwiftPackageReference "SwiftHEXColors" */,
 				264CECE2293D05800095EA32 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				26FF796F29454C3000824F85 /* XCRemoteSwiftPackageReference "Nuke" */,
+				26FF797229456F2400824F85 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 265993F12939127F005149BF /* Products */;
 			projectDirPath = "";
@@ -554,12 +554,12 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		26FF796F29454C3000824F85 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+		26FF797229456F2400824F85 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kean/Nuke.git";
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 4.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -575,10 +575,10 @@
 			package = 264CECE2293D05800095EA32 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		26FF797029454C3000824F85 /* Nuke */ = {
+		26FF797329456F2400824F85 /* AlamofireImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 26FF796F29454C3000824F85 /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = Nuke;
+			package = 26FF797229456F2400824F85 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Nuke
+import AlamofireImage
 
 //MARK: UICollectionViewCompositionalLayout
 
@@ -41,7 +41,7 @@ extension MoviesViewController {
             switch Section(rawValue: section) {
             case .inTheatres:
                 let insets = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10)
-                let section = self.createSection(groupWidth: 250, groupHeight: 400,
+                let section = self.createSection(groupWidth: 200, groupHeight: 320,
                                                  spacing: 48, insets: insets)
                 
                 return section
@@ -69,7 +69,12 @@ extension MoviesViewController: UICollectionViewDelegate {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InTheatresMoviesCell",
                                                                   for: indexPath) as! InTheatresMoviesCollectionViewCell
                     
-//                    Nuke.loadImage(with: URL(string: (data as! InTheatresMovie).image)!, into: cell.imageView)
+                    
+                    if let urlString = (data as? InTheatresMovie)?.image, let url = URL(string: urlString) {
+                        cell.imageView.af.setImage(withURL: url)
+                    } else {
+
+                    }
                     
                     return cell
 //                case .mostPopular:
