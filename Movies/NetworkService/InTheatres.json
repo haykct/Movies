@@ -1,0 +1,3325 @@
+{
+  "items" : [
+    {
+      "id" : "tt9764362",
+      "metacriticRating" : "71",
+      "imDbRating" : "7.5",
+      "runtimeMins" : "107",
+      "imDbRatingCount" : "34954",
+      "directorList" : [
+        {
+          "id" : "nm0617042",
+          "name" : "Mark Mylod"
+        }
+      ],
+      "runtimeStr" : "107 mins",
+      "directors" : "Mark Mylod",
+      "releaseState" : "18 Nov 2022",
+      "title" : "The Menu",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Horror",
+          "value" : "Horror"
+        },
+        {
+          "key" : "Thriller",
+          "value" : "Thriller"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMzdjNjI5MmYtODhiNS00NTcyLWEzZmUtYzVmODM5YzExNDE3XkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A young couple travels to a remote island to eat at an exclusive restaurant where the chef has prepared a lavish menu, with some shocking surprises.",
+      "stars" : "Ralph Fiennes, Anya Taylor-Joy, Nicholas Hoult, Hong Chau",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Comedy, Horror, Thriller",
+      "starList" : [
+        {
+          "id" : "nm0000146",
+          "name" : "Ralph Fiennes"
+        },
+        {
+          "id" : "nm5896355",
+          "name" : "Anya Taylor-Joy"
+        },
+        {
+          "id" : "nm0396558",
+          "name" : "Nicholas Hoult"
+        },
+        {
+          "id" : "nm2186865",
+          "name" : "Hong Chau"
+        }
+      ],
+      "fullTitle" : "The Menu (2022)"
+    },
+    {
+      "id" : "tt9114286",
+      "metacriticRating" : "67",
+      "imDbRating" : "7.2",
+      "runtimeMins" : "161",
+      "imDbRatingCount" : "113892",
+      "directorList" : [
+        {
+          "id" : "nm3363032",
+          "name" : "Ryan Coogler"
+        }
+      ],
+      "runtimeStr" : "161 mins",
+      "directors" : "Ryan Coogler",
+      "releaseState" : "11 Nov 2022",
+      "title" : "Black Panther: Wakanda Forever",
+      "genreList" : [
+        {
+          "key" : "Action",
+          "value" : "Action"
+        },
+        {
+          "key" : "Adventure",
+          "value" : "Adventure"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BNTM4NjIxNmEtYWE5NS00NDczLTkyNWQtYThhNmQyZGQzMjM0XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "The people of Wakanda fight to protect their home from intervening world powers as they mourn the death of King T'Challa.",
+      "stars" : "Letitia Wright, Lupita Nyong'o, Danai Gurira, Winston Duke",
+      "year" : "2022",
+      "contentRating" : "PG-13",
+      "genres" : "Action, Adventure, Drama",
+      "starList" : [
+        {
+          "id" : "nm4004793",
+          "name" : "Letitia Wright"
+        },
+        {
+          "id" : "nm2143282",
+          "name" : "Lupita Nyong'o"
+        },
+        {
+          "id" : "nm1775091",
+          "name" : "Danai Gurira"
+        },
+        {
+          "id" : "nm6328300",
+          "name" : "Winston Duke"
+        }
+      ],
+      "fullTitle" : "Black Panther: Wakanda Forever (2022)"
+    },
+    {
+      "id" : "tt10999120",
+      "metacriticRating" : "55",
+      "imDbRating" : "6.6",
+      "runtimeMins" : "127",
+      "imDbRatingCount" : "21868",
+      "directorList" : [
+        {
+          "id" : "nm1890845",
+          "name" : "Sean Anders"
+        }
+      ],
+      "runtimeStr" : "127 mins",
+      "directors" : "Sean Anders",
+      "releaseState" : "18 Nov 2022",
+      "title" : "Spirited",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Family",
+          "value" : "Family"
+        },
+        {
+          "key" : "Musical",
+          "value" : "Musical"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BY2RlZGFmYjAtNGZiMi00YjQ5LWE0ZmQtZmIyM2VmMjRhMTJlXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A musical version of Charles Dickens's story of a miserly misanthrope who is taken on a magical journey.",
+      "stars" : "Will Ferrell, Ryan Reynolds, Octavia Spencer, Patrick Page",
+      "year" : "2022",
+      "contentRating" : "PG-13",
+      "genres" : "Comedy, Family, Musical",
+      "starList" : [
+        {
+          "id" : "nm0002071",
+          "name" : "Will Ferrell"
+        },
+        {
+          "id" : "nm0005351",
+          "name" : "Ryan Reynolds"
+        },
+        {
+          "id" : "nm0818055",
+          "name" : "Octavia Spencer"
+        },
+        {
+          "id" : "nm0656300",
+          "name" : "Patrick Page"
+        }
+      ],
+      "fullTitle" : "Spirited (2022)"
+    },
+    {
+      "id" : "tt12003946",
+      "metacriticRating" : "56",
+      "imDbRating" : "7.1",
+      "runtimeMins" : "112",
+      "imDbRatingCount" : "9728",
+      "directorList" : [
+        {
+          "id" : "nm2482088",
+          "name" : "Tommy Wirkola"
+        }
+      ],
+      "runtimeStr" : "112 mins",
+      "directors" : "Tommy Wirkola",
+      "releaseState" : "02 Dec 2022",
+      "title" : "Violent Night",
+      "genreList" : [
+        {
+          "key" : "Action",
+          "value" : "Action"
+        },
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Crime",
+          "value" : "Crime"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BYzg2NWNhOWItYjA3Yi00MzhhLTg4ZmItYzM3ZTIwN2U0ZGQ5XkEyXkFqcGdeQXVyMzEyMDQzNzY@._V1_UY176_CR6,0,128,176_AL_.jpg",
+      "plot" : "When a group of mercenaries attack the estate of a wealthy family, Santa Claus must step in to save the day (and Christmas).",
+      "stars" : "David Harbour, John Leguizamo, Alex Hassell, Alexis Louder",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Action, Comedy, Crime",
+      "starList" : [
+        {
+          "id" : "nm1092086",
+          "name" : "David Harbour"
+        },
+        {
+          "id" : "nm0000491",
+          "name" : "John Leguizamo"
+        },
+        {
+          "id" : "nm1307435",
+          "name" : "Alex Hassell"
+        },
+        {
+          "id" : "nm6951875",
+          "name" : "Alexis Louder"
+        }
+      ],
+      "fullTitle" : "Violent Night (2022)"
+    },
+    {
+      "id" : "tt10298840",
+      "metacriticRating" : "65",
+      "imDbRating" : "4.8",
+      "runtimeMins" : "102",
+      "imDbRatingCount" : "9080",
+      "directorList" : [
+        {
+          "id" : "nm2320658",
+          "name" : "Don Hall"
+        },
+        {
+          "id" : "nm5945690",
+          "name" : "Qui Nguyen"
+        }
+      ],
+      "runtimeStr" : "102 mins",
+      "directors" : "Don Hall, Qui Nguyen",
+      "releaseState" : "23 Nov 2022",
+      "title" : "Strange World",
+      "genreList" : [
+        {
+          "key" : "Animation",
+          "value" : "Animation"
+        },
+        {
+          "key" : "Action",
+          "value" : "Action"
+        },
+        {
+          "key" : "Adventure",
+          "value" : "Adventure"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BZTk1NzQwMWQtNzVmNS00MDc4LWE1MTktMmQyYzExYWMwZDQ4XkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "The legendary Clades are a family of explorers whose differences threaten to topple their latest and most crucial mission.",
+      "stars" : "Jake Gyllenhaal, Jaboukie Young-White, Gabrielle Union, Dennis Quaid",
+      "year" : "2022",
+      "contentRating" : "PG",
+      "genres" : "Animation, Action, Adventure",
+      "starList" : [
+        {
+          "id" : "nm0350453",
+          "name" : "Jake Gyllenhaal"
+        },
+        {
+          "id" : "nm7187850",
+          "name" : "Jaboukie Young-White"
+        },
+        {
+          "id" : "nm0005517",
+          "name" : "Gabrielle Union"
+        },
+        {
+          "id" : "nm0000598",
+          "name" : "Dennis Quaid"
+        }
+      ],
+      "fullTitle" : "Strange World (2022)"
+    },
+    {
+      "id" : "tt10168670",
+      "metacriticRating" : "74",
+      "imDbRating" : "7.3",
+      "runtimeMins" : "131",
+      "imDbRatingCount" : "11650",
+      "directorList" : [
+        {
+          "id" : "nm0345174",
+          "name" : "Luca Guadagnino"
+        }
+      ],
+      "runtimeStr" : "131 mins",
+      "directors" : "Luca Guadagnino",
+      "releaseState" : "23 Nov 2022",
+      "title" : "Bones and All",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "Horror",
+          "value" : "Horror"
+        },
+        {
+          "key" : "Romance",
+          "value" : "Romance"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMDY0ZjUyYTItZmFlYS00MjI5LTljNmItODliMDkwMmY4ZTVkXkEyXkFqcGdeQXVyMTU0ODA5OTE2._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Maren, a young woman, learns how to survive on the margins of society.",
+      "stars" : "Timothée Chalamet, Taylor Russell, Mark Rylance, Kendle Coffey",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Drama, Horror, Romance",
+      "starList" : [
+        {
+          "id" : "nm3154303",
+          "name" : "Timothée Chalamet"
+        },
+        {
+          "id" : "nm5347988",
+          "name" : "Taylor Russell"
+        },
+        {
+          "id" : "nm0753314",
+          "name" : "Mark Rylance"
+        },
+        {
+          "id" : "nm12912851",
+          "name" : "Kendle Coffey"
+        }
+      ],
+      "fullTitle" : "Bones and All (2022)"
+    },
+    {
+      "id" : "tt6443346",
+      "metacriticRating" : "41",
+      "imDbRating" : "6.7",
+      "runtimeMins" : "125",
+      "imDbRatingCount" : "157298",
+      "directorList" : [
+        {
+          "id" : "nm1429471",
+          "name" : "Jaume Collet-Serra"
+        }
+      ],
+      "runtimeStr" : "125 mins",
+      "directors" : "Jaume Collet-Serra",
+      "releaseState" : "21 Oct 2022",
+      "title" : "Black Adam",
+      "genreList" : [
+        {
+          "key" : "Action",
+          "value" : "Action"
+        },
+        {
+          "key" : "Adventure",
+          "value" : "Adventure"
+        },
+        {
+          "key" : "Fantasy",
+          "value" : "Fantasy"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BYzZkOGUwMzMtMTgyNS00YjFlLTg5NzYtZTE3Y2E5YTA5NWIyXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods--and imprisoned just as quickly--Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.",
+      "stars" : "Dwayne Johnson, Aldis Hodge, Pierce Brosnan, Noah Centineo",
+      "year" : "2022",
+      "contentRating" : "PG-13",
+      "genres" : "Action, Adventure, Fantasy",
+      "starList" : [
+        {
+          "id" : "nm0425005",
+          "name" : "Dwayne Johnson"
+        },
+        {
+          "id" : "nm0388038",
+          "name" : "Aldis Hodge"
+        },
+        {
+          "id" : "nm0000112",
+          "name" : "Pierce Brosnan"
+        },
+        {
+          "id" : "nm3170207",
+          "name" : "Noah Centineo"
+        }
+      ],
+      "fullTitle" : "Black Adam (2022)"
+    },
+    {
+      "id" : "tt0314331",
+      "metacriticRating" : "55",
+      "imDbRating" : "7.6",
+      "runtimeMins" : "135",
+      "imDbRatingCount" : "483544",
+      "directorList" : [
+        {
+          "id" : "nm0193485",
+          "name" : "Richard Curtis"
+        }
+      ],
+      "runtimeStr" : "135 mins",
+      "directors" : "Richard Curtis",
+      "releaseState" : "14 Nov 2003",
+      "title" : "Love Actually",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "Romance",
+          "value" : "Romance"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMTY4NjQ5NDc0Nl5BMl5BanBnXkFtZTYwNjk5NDM3._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.",
+      "stars" : "Hugh Grant, Martine McCutcheon, Liam Neeson, Laura Linney",
+      "year" : "2003",
+      "contentRating" : "R",
+      "genres" : "Comedy, Drama, Romance",
+      "starList" : [
+        {
+          "id" : "nm0000424",
+          "name" : "Hugh Grant"
+        },
+        {
+          "id" : "nm0567356",
+          "name" : "Martine McCutcheon"
+        },
+        {
+          "id" : "nm0000553",
+          "name" : "Liam Neeson"
+        },
+        {
+          "id" : "nm0001473",
+          "name" : "Laura Linney"
+        }
+      ],
+      "fullTitle" : "Love Actually (2003)"
+    },
+    {
+      "id" : "tt14208870",
+      "metacriticRating" : "84",
+      "imDbRating" : "8.2",
+      "runtimeMins" : "151",
+      "imDbRatingCount" : "6250",
+      "directorList" : [
+        {
+          "id" : "nm0000229",
+          "name" : "Steven Spielberg"
+        }
+      ],
+      "runtimeStr" : "151 mins",
+      "directors" : "Steven Spielberg",
+      "releaseState" : "23 Nov 2022",
+      "title" : "The Fabelmans",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BZGM1MzczNmQtMjBmYS00NTRhLWI0MzctNTFkZDc4OGUyODdjXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Growing up in post-World War II era Arizona, young Sammy Fabelman aspires to become a filmmaker as he reaches adolescence, but soon discovers a shattering family secret and explores how the power of films can help him see the truth.",
+      "stars" : "Michelle Williams, Gabriel LaBelle, Paul Dano, Judd Hirsch",
+      "year" : "2022",
+      "contentRating" : "PG-13",
+      "genres" : "Drama",
+      "starList" : [
+        {
+          "id" : "nm0931329",
+          "name" : "Michelle Williams"
+        },
+        {
+          "id" : "nm5450413",
+          "name" : "Gabriel LaBelle"
+        },
+        {
+          "id" : "nm0200452",
+          "name" : "Paul Dano"
+        },
+        {
+          "id" : "nm0002139",
+          "name" : "Judd Hirsch"
+        }
+      ],
+      "fullTitle" : "The Fabelmans (2022)"
+    },
+    {
+      "id" : "tt0097958",
+      "metacriticRating" : "49",
+      "imDbRating" : "7.5",
+      "runtimeMins" : "97",
+      "imDbRatingCount" : "191420",
+      "directorList" : [
+        {
+          "id" : "nm0154819",
+          "name" : "Jeremiah S. Chechik"
+        }
+      ],
+      "runtimeStr" : "97 mins",
+      "directors" : "Jeremiah S. Chechik",
+      "releaseState" : "01 Dec 1989",
+      "title" : "National Lampoon's Christmas Vacation",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "The Griswold family's plans for a big family Christmas predictably turn into a big disaster.",
+      "stars" : "Chevy Chase, Beverly D'Angelo, Juliette Lewis, Johnny Galecki",
+      "year" : "1989",
+      "contentRating" : "PG-13",
+      "genres" : "Comedy",
+      "starList" : [
+        {
+          "id" : "nm0000331",
+          "name" : "Chevy Chase"
+        },
+        {
+          "id" : "nm0000350",
+          "name" : "Beverly D'Angelo"
+        },
+        {
+          "id" : "nm0000496",
+          "name" : "Juliette Lewis"
+        },
+        {
+          "id" : "nm0301959",
+          "name" : "Johnny Galecki"
+        }
+      ],
+      "fullTitle" : "National Lampoon's Christmas Vacation (1989)"
+    },
+    {
+      "id" : "tt0099785",
+      "metacriticRating" : "63",
+      "imDbRating" : "7.7",
+      "runtimeMins" : "103",
+      "imDbRatingCount" : "571027",
+      "directorList" : [
+        {
+          "id" : "nm0001060",
+          "name" : "Chris Columbus"
+        }
+      ],
+      "runtimeStr" : "103 mins",
+      "directors" : "Chris Columbus",
+      "releaseState" : "16 Nov 1990",
+      "title" : "Home Alone",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Family",
+          "value" : "Family"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "An eight-year-old troublemaker must protect his house from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation.",
+      "stars" : "Macaulay Culkin, Joe Pesci, Daniel Stern, John Heard",
+      "year" : "1990",
+      "contentRating" : "PG",
+      "genres" : "Comedy, Family",
+      "starList" : [
+        {
+          "id" : "nm0000346",
+          "name" : "Macaulay Culkin"
+        },
+        {
+          "id" : "nm0000582",
+          "name" : "Joe Pesci"
+        },
+        {
+          "id" : "nm0827663",
+          "name" : "Daniel Stern"
+        },
+        {
+          "id" : "nm0001334",
+          "name" : "John Heard"
+        }
+      ],
+      "fullTitle" : "Home Alone (1990)"
+    },
+    {
+      "id" : "tt1745960",
+      "metacriticRating" : "78",
+      "imDbRating" : "8.4",
+      "runtimeMins" : "130",
+      "imDbRatingCount" : "442765",
+      "directorList" : [
+        {
+          "id" : "nm2676052",
+          "name" : "Joseph Kosinski"
+        }
+      ],
+      "runtimeStr" : "130 mins",
+      "directors" : "Joseph Kosinski",
+      "releaseState" : "27 May 2022",
+      "title" : "Top Gun: Maverick",
+      "genreList" : [
+        {
+          "key" : "Action",
+          "value" : "Action"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BZWYzOGEwNTgtNWU3NS00ZTQ0LWJkODUtMmVhMjIwMjA1ZmQwXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.",
+      "stars" : "Tom Cruise, Jennifer Connelly, Miles Teller, Val Kilmer",
+      "year" : "2022",
+      "contentRating" : "PG-13",
+      "genres" : "Action, Drama",
+      "starList" : [
+        {
+          "id" : "nm0000129",
+          "name" : "Tom Cruise"
+        },
+        {
+          "id" : "nm0000124",
+          "name" : "Jennifer Connelly"
+        },
+        {
+          "id" : "nm1886602",
+          "name" : "Miles Teller"
+        },
+        {
+          "id" : "nm0000174",
+          "name" : "Val Kilmer"
+        }
+      ],
+      "fullTitle" : "Top Gun: Maverick (2022)"
+    },
+    {
+      "id" : "tt14099334",
+      "metacriticRating" : "",
+      "imDbRating" : "7.7",
+      "runtimeMins" : "156",
+      "imDbRatingCount" : "12616",
+      "directorList" : [
+        {
+          "id" : "nm3603873",
+          "name" : "Amar Kaushik"
+        }
+      ],
+      "runtimeStr" : "156 mins",
+      "directors" : "Amar Kaushik",
+      "releaseState" : "25 Nov 2022",
+      "title" : "Bhediya",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Horror",
+          "value" : "Horror"
+        },
+        {
+          "key" : "Thriller",
+          "value" : "Thriller"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BNDA5OWE3YTUtNjU0Mi00MWI0LTg3ODgtYmUwNzdkNTdiOWQ2XkEyXkFqcGdeQXVyOTI3MzI4MzA@._V1_UY176_CR2,0,128,176_AL_.jpg",
+      "plot" : "Set in the forests of Arunachal, Bhediya is a story of Bhaskar, a man who gets bitten by a wolf, and begins to transform into the creature. As Bhaskar and his buddies try to find answers, a bunch of twists, turns, and laughs ensue.",
+      "stars" : "Varun Dhawan, Kriti Sanon, Abhishek Banerjee, Deepak Dobriyal",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Comedy, Horror, Thriller",
+      "starList" : [
+        {
+          "id" : "nm3315894",
+          "name" : "Varun Dhawan"
+        },
+        {
+          "id" : "nm5305841",
+          "name" : "Kriti Sanon"
+        },
+        {
+          "id" : "nm4045010",
+          "name" : "Abhishek Banerjee"
+        },
+        {
+          "id" : "nm1795232",
+          "name" : "Deepak Dobriyal"
+        }
+      ],
+      "fullTitle" : "Bhediya (2022)"
+    },
+    {
+      "id" : "tt7693316",
+      "metacriticRating" : "66",
+      "imDbRating" : "7",
+      "runtimeMins" : "139",
+      "imDbRatingCount" : "2810",
+      "directorList" : [
+        {
+          "id" : "nm2300570",
+          "name" : "J.D. Dillard"
+        }
+      ],
+      "runtimeStr" : "139 mins",
+      "directors" : "J.D. Dillard",
+      "releaseState" : "23 Nov 2022",
+      "title" : "Devotion (II)",
+      "genreList" : [
+        {
+          "key" : "Action",
+          "value" : "Action"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "War",
+          "value" : "War"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMjI5NGJjMmEtODk4Yy00ZDRjLWE5ZGItMjJiNGM4NTI0NmZkXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_UY176_CR6,0,128,176_AL_.jpg",
+      "plot" : "A pair of U.S. Navy fighter pilots risk their lives during the Korean War and become some of the Navy's most celebrated wingmen.",
+      "stars" : "Jonathan Majors, Glen Powell, Christina Jackson, Thomas Sadoski",
+      "year" : "2022",
+      "contentRating" : "PG-13",
+      "genres" : "Action, Drama, War",
+      "starList" : [
+        {
+          "id" : "nm3718007",
+          "name" : "Jonathan Majors"
+        },
+        {
+          "id" : "nm1412974",
+          "name" : "Glen Powell"
+        },
+        {
+          "id" : "nm2325956",
+          "name" : "Christina Jackson"
+        },
+        {
+          "id" : "nm0755603",
+          "name" : "Thomas Sadoski"
+        }
+      ],
+      "fullTitle" : "Devotion (II) (2022)"
+    },
+    {
+      "id" : "tt0319343",
+      "metacriticRating" : "64",
+      "imDbRating" : "7",
+      "runtimeMins" : "97",
+      "imDbRatingCount" : "271333",
+      "directorList" : [
+        {
+          "id" : "nm0269463",
+          "name" : "Jon Favreau"
+        }
+      ],
+      "runtimeStr" : "97 mins",
+      "directors" : "Jon Favreau",
+      "releaseState" : "07 Nov 2003",
+      "title" : "Elf",
+      "genreList" : [
+        {
+          "key" : "Adventure",
+          "value" : "Adventure"
+        },
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Family",
+          "value" : "Family"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMzUxNzkzMzQtYjIxZC00NzU0LThkYTQtZjNhNTljMTA1MDA1L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Raised as an oversized elf, Buddy travels from the North Pole to New York City to meet his biological father, Walter Hobbs, who doesn't know he exists and is in desperate need of some Christmas spirit.",
+      "stars" : "Will Ferrell, James Caan, Bob Newhart, Zooey Deschanel",
+      "year" : "2003",
+      "contentRating" : "PG",
+      "genres" : "Adventure, Comedy, Family",
+      "starList" : [
+        {
+          "id" : "nm0002071",
+          "name" : "Will Ferrell"
+        },
+        {
+          "id" : "nm0001001",
+          "name" : "James Caan"
+        },
+        {
+          "id" : "nm0627878",
+          "name" : "Bob Newhart"
+        },
+        {
+          "id" : "nm0221046",
+          "name" : "Zooey Deschanel"
+        }
+      ],
+      "fullTitle" : "Elf (2003)"
+    },
+    {
+      "id" : "tt14807308",
+      "metacriticRating" : "74",
+      "imDbRating" : "7.3",
+      "runtimeMins" : "129",
+      "imDbRatingCount" : "7492",
+      "directorList" : [
+        {
+          "id" : "nm0775056",
+          "name" : "Maria Schrader"
+        }
+      ],
+      "runtimeStr" : "129 mins",
+      "directors" : "Maria Schrader",
+      "releaseState" : "18 Nov 2022",
+      "title" : "She Said",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "History",
+          "value" : "History"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMDg3OTA2NDQtZWUyZS00MjMyLThkMzktYWIyMzBkZWJhOWVmXkEyXkFqcGdeQXVyMTAxNzQ1NzI@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "New York Times reporters Megan Twohey and Jodi Kantor break one of the most important stories in a generation - a story that helped ignite a movement and shattered decades of silence around the subject of sexual assault in Hollywood.",
+      "stars" : "Carey Mulligan, Zoe Kazan, Patricia Clarkson, Andre Braugher",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Drama, History",
+      "starList" : [
+        {
+          "id" : "nm1659547",
+          "name" : "Carey Mulligan"
+        },
+        {
+          "id" : "nm1443740",
+          "name" : "Zoe Kazan"
+        },
+        {
+          "id" : "nm0165101",
+          "name" : "Patricia Clarkson"
+        },
+        {
+          "id" : "nm0105672",
+          "name" : "Andre Braugher"
+        }
+      ],
+      "fullTitle" : "She Said (2022)"
+    },
+    {
+      "id" : "tt20853816",
+      "metacriticRating" : "32",
+      "imDbRating" : "6.4",
+      "runtimeMins" : "93",
+      "imDbRatingCount" : "68",
+      "directorList" : [
+        {
+          "id" : "nm0483747",
+          "name" : "Steven LaMorte"
+        }
+      ],
+      "runtimeStr" : "93 mins",
+      "directors" : "Steven LaMorte",
+      "releaseState" : "15 Dec 2022",
+      "title" : "The Mean One",
+      "genreList" : [
+        {
+          "key" : "Horror",
+          "value" : "Horror"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMmQ5ZDY3ODQtOGMyMS00ZjljLTkzOTEtYWIwMWJmOGVlYTU2XkEyXkFqcGdeQXVyNTM0MTcwOTg@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "The Mean One is a Christmas horror parody. In a sleepy mountain town, Cindy has her parents murdered and her Christmas stolen by a blood thirsty green figure in a red Santa suit - The Mean ... See full summary",
+      "stars" : "Josh Arnold, Erik Baker, Stephanie Bates, John Bigham",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Horror",
+      "starList" : [
+        {
+          "id" : "nm14060020",
+          "name" : "Josh Arnold"
+        },
+        {
+          "id" : "nm0962026",
+          "name" : "Erik Baker"
+        },
+        {
+          "id" : "nm6486680",
+          "name" : "Stephanie Bates"
+        },
+        {
+          "id" : "nm0081879",
+          "name" : "John Bigham"
+        }
+      ],
+      "fullTitle" : "The Mean One (2022)"
+    },
+    {
+      "id" : "tt12530246",
+      "metacriticRating" : "55",
+      "imDbRating" : "5.3",
+      "runtimeMins" : "132",
+      "imDbRatingCount" : "3976",
+      "directorList" : [
+        {
+          "id" : "nm0298807",
+          "name" : "Antoine Fuqua"
+        }
+      ],
+      "runtimeStr" : "132 mins",
+      "directors" : "Antoine Fuqua",
+      "releaseState" : "09 Dec 2022",
+      "title" : "Emancipation",
+      "genreList" : [
+        {
+          "key" : "Action",
+          "value" : "Action"
+        },
+        {
+          "key" : "Thriller",
+          "value" : "Thriller"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BN2RiY2RmMjItMDc1My00ZmViLWJkM2YtZjExNDI5MGM2ZWNiXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A runaway slave forges through the swamps of Louisiana on a tortuous journey to escape plantation owners that nearly killed him.",
+      "stars" : "Will Smith, Ben Foster, Charmaine Bingwa, Gilbert Owuor",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Action, Thriller",
+      "starList" : [
+        {
+          "id" : "nm0000226",
+          "name" : "Will Smith"
+        },
+        {
+          "id" : "nm0004936",
+          "name" : "Ben Foster"
+        },
+        {
+          "id" : "nm6192439",
+          "name" : "Charmaine Bingwa"
+        },
+        {
+          "id" : "nm4114489",
+          "name" : "Gilbert Owuor"
+        }
+      ],
+      "fullTitle" : "Emancipation (2022)"
+    },
+    {
+      "id" : "tt15501640",
+      "metacriticRating" : "",
+      "imDbRating" : "8.7",
+      "runtimeMins" : "140",
+      "imDbRatingCount" : "18498",
+      "directorList" : [
+        {
+          "id" : "nm2391751",
+          "name" : "Abhishek Pathak"
+        }
+      ],
+      "runtimeStr" : "140 mins",
+      "directors" : "Abhishek Pathak",
+      "releaseState" : "18 Nov 2022",
+      "title" : "Drishyam 2",
+      "genreList" : [
+        {
+          "key" : "Crime",
+          "value" : "Crime"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "Mystery",
+          "value" : "Mystery"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BYmY2ZDUxNzUtYWZlYy00MThhLWI5NjktZDhjZTU3MDY5YTM3XkEyXkFqcGdeQXVyNTYxMDgzODI@._V1_UY176_CR6,0,128,176_AL_.jpg",
+      "plot" : "A gripping tale of an investigation and a family which is threatened by it. Will Vijay Salgaonkar be able to protect his family this time?",
+      "stars" : "Ajay Devgn, Tabu, Akshaye Khanna, Shriya Saran",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Crime, Drama, Mystery",
+      "starList" : [
+        {
+          "id" : "nm0222426",
+          "name" : "Ajay Devgn"
+        },
+        {
+          "id" : "nm0007102",
+          "name" : "Tabu"
+        },
+        {
+          "id" : "nm0451379",
+          "name" : "Akshaye Khanna"
+        },
+        {
+          "id" : "nm1328152",
+          "name" : "Shriya Saran"
+        }
+      ],
+      "fullTitle" : "Drishyam 2 (2022)"
+    },
+    {
+      "id" : "tt1488589",
+      "metacriticRating" : "80",
+      "imDbRating" : "8",
+      "runtimeMins" : "117",
+      "imDbRatingCount" : "8619",
+      "directorList" : [
+        {
+          "id" : "nm0868219",
+          "name" : "Guillermo del Toro"
+        },
+        {
+          "id" : "nm0348993",
+          "name" : "Mark Gustafson"
+        }
+      ],
+      "runtimeStr" : "117 mins",
+      "directors" : "Guillermo del Toro, Mark Gustafson",
+      "releaseState" : "09 Dec 2022",
+      "title" : "Guillermo del Toro's Pinocchio",
+      "genreList" : [
+        {
+          "key" : "Animation",
+          "value" : "Animation"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "Family",
+          "value" : "Family"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BNjBhZjNkNDItODcxMS00ZGNmLTk3ODUtOGU1NWI3N2Q3YmM1XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A father's wish magically brings a wooden boy to life in Italy, giving him a chance to care for the child.",
+      "stars" : "Ewan McGregor, David Bradley, Gregory Mann, Burn Gorman",
+      "year" : "2022",
+      "contentRating" : "PG",
+      "genres" : "Animation, Drama, Family",
+      "starList" : [
+        {
+          "id" : "nm0000191",
+          "name" : "Ewan McGregor"
+        },
+        {
+          "id" : "nm0103195",
+          "name" : "David Bradley"
+        },
+        {
+          "id" : "nm9640481",
+          "name" : "Gregory Mann"
+        },
+        {
+          "id" : "nm1218607",
+          "name" : "Burn Gorman"
+        }
+      ],
+      "fullTitle" : "Guillermo del Toro's Pinocchio (2022)"
+    },
+    {
+      "id" : "tt11813216",
+      "metacriticRating" : "87",
+      "imDbRating" : "8.2",
+      "runtimeMins" : "114",
+      "imDbRatingCount" : "16337",
+      "directorList" : [
+        {
+          "id" : "nm1732981",
+          "name" : "Martin McDonagh"
+        }
+      ],
+      "runtimeStr" : "114 mins",
+      "directors" : "Martin McDonagh",
+      "releaseState" : "04 Nov 2022",
+      "title" : "The Banshees of Inisherin",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BM2NlZDI0ZDktNTg5OS00ZjQ1LWI4MDEtN2I0MDE5NWRiNzA4XkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Two lifelong friends find themselves at an impasse when one abruptly ends their relationship, with alarming consequences for both of them.",
+      "stars" : "Colin Farrell, Brendan Gleeson, Kerry Condon, Barry Keoghan",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Comedy, Drama",
+      "starList" : [
+        {
+          "id" : "nm0268199",
+          "name" : "Colin Farrell"
+        },
+        {
+          "id" : "nm0322407",
+          "name" : "Brendan Gleeson"
+        },
+        {
+          "id" : "nm0174403",
+          "name" : "Kerry Condon"
+        },
+        {
+          "id" : "nm4422686",
+          "name" : "Barry Keoghan"
+        }
+      ],
+      "fullTitle" : "The Banshees of Inisherin (2022)"
+    },
+    {
+      "id" : "tt14444726",
+      "metacriticRating" : "91",
+      "imDbRating" : "7.8",
+      "runtimeMins" : "158",
+      "imDbRatingCount" : "10510",
+      "directorList" : [
+        {
+          "id" : "nm0276062",
+          "name" : "Todd Field"
+        }
+      ],
+      "runtimeStr" : "158 mins",
+      "directors" : "Todd Field",
+      "releaseState" : "28 Oct 2022",
+      "title" : "Tár",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "Music",
+          "value" : "Music"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BM2I0ZDcyYzItMGEyNi00YWVhLTlmNTQtOWVlYjE1ZGVhNWM0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Set in the international world of Western classical music, the film centers on Lydia Tár, widely considered one of the greatest living composer-conductors and first-ever female music director of a major German orchestra.",
+      "stars" : "Cate Blanchett, Noémie Merlant, Nina Hoss, Sophie Kauer",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Drama, Music",
+      "starList" : [
+        {
+          "id" : "nm0000949",
+          "name" : "Cate Blanchett"
+        },
+        {
+          "id" : "nm4374524",
+          "name" : "Noémie Merlant"
+        },
+        {
+          "id" : "nm0396125",
+          "name" : "Nina Hoss"
+        },
+        {
+          "id" : "nm13154325",
+          "name" : "Sophie Kauer"
+        }
+      ],
+      "fullTitle" : "Tár (2022)"
+    },
+    {
+      "id" : "tt8093700",
+      "metacriticRating" : "77",
+      "imDbRating" : "6.7",
+      "runtimeMins" : "135",
+      "imDbRatingCount" : "37510",
+      "directorList" : [
+        {
+          "id" : "nm0697656",
+          "name" : "Gina Prince-Bythewood"
+        }
+      ],
+      "runtimeStr" : "135 mins",
+      "directors" : "Gina Prince-Bythewood",
+      "releaseState" : "16 Sep 2022",
+      "title" : "The Woman King",
+      "genreList" : [
+        {
+          "key" : "Action",
+          "value" : "Action"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "History",
+          "value" : "History"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BY2I4MDIwYWUtOWMxNC00ZTIzLWE3OGYtOWUyMmIwZGE2NjU4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_UY176_CR6,0,128,176_AL_.jpg",
+      "plot" : "A historical epic inspired by true events that took place in The Kingdom of Dahomey, one of the most powerful states of Africa in the 18th and 19th centuries.",
+      "stars" : "Viola Davis, Thuso Mbedu, Lashana Lynch, Sheila Atim",
+      "year" : "2022",
+      "contentRating" : "PG-13",
+      "genres" : "Action, Drama, History",
+      "starList" : [
+        {
+          "id" : "nm0205626",
+          "name" : "Viola Davis"
+        },
+        {
+          "id" : "nm9096847",
+          "name" : "Thuso Mbedu"
+        },
+        {
+          "id" : "nm2736476",
+          "name" : "Lashana Lynch"
+        },
+        {
+          "id" : "nm5956547",
+          "name" : "Sheila Atim"
+        }
+      ],
+      "fullTitle" : "The Woman King (2022)"
+    },
+    {
+      "id" : "tt6160448",
+      "metacriticRating" : "67",
+      "imDbRating" : "6.6",
+      "runtimeMins" : "136",
+      "imDbRatingCount" : "1013",
+      "directorList" : [
+        {
+          "id" : "nm0000876",
+          "name" : "Noah Baumbach"
+        }
+      ],
+      "runtimeStr" : "136 mins",
+      "directors" : "Noah Baumbach",
+      "releaseState" : "30 Dec 2022",
+      "title" : "White Noise (I)",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "Horror",
+          "value" : "Horror"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMDdmYjc3Y2EtM2FjYS00NGI2LTliZjgtYmQxMzJiMmUxNmI4XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Dramatizes a contemporary American family's attempts to deal with the mundane conflicts of everyday life while grappling with the universal mysteries of love, death, and the possibility of happiness in an uncertain world.",
+      "stars" : "Adam Driver, Greta Gerwig, Don Cheadle, Madison Gaughan",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Comedy, Drama, Horror",
+      "starList" : [
+        {
+          "id" : "nm3485845",
+          "name" : "Adam Driver"
+        },
+        {
+          "id" : "nm1950086",
+          "name" : "Greta Gerwig"
+        },
+        {
+          "id" : "nm0000332",
+          "name" : "Don Cheadle"
+        },
+        {
+          "id" : "nm14313990",
+          "name" : "Madison Gaughan"
+        }
+      ],
+      "fullTitle" : "White Noise (I) (2022)"
+    },
+    {
+      "id" : "tt2709692",
+      "metacriticRating" : "51",
+      "imDbRating" : "6.3",
+      "runtimeMins" : "85",
+      "imDbRatingCount" : "72115",
+      "directorList" : [
+        {
+          "id" : "nm0155528",
+          "name" : "Yarrow Cheney"
+        },
+        {
+          "id" : "nm0608714",
+          "name" : "Scott Mosier"
+        }
+      ],
+      "runtimeStr" : "85 mins",
+      "directors" : "Yarrow Cheney, Scott Mosier",
+      "releaseState" : "09 Nov 2018",
+      "title" : "The Grinch",
+      "genreList" : [
+        {
+          "key" : "Animation",
+          "value" : "Animation"
+        },
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Family",
+          "value" : "Family"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BYmE5Yjg0MzktYzgzMi00YTFiLWJjYTItY2M5MmI1ODI4MDY3XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A grumpy Grinch plots to ruin Christmas for the village of Whoville.",
+      "stars" : "Benedict Cumberbatch, Cameron Seely, Rashida Jones, Pharrell Williams",
+      "year" : "2018",
+      "contentRating" : "PG",
+      "genres" : "Animation, Comedy, Family",
+      "starList" : [
+        {
+          "id" : "nm1212722",
+          "name" : "Benedict Cumberbatch"
+        },
+        {
+          "id" : "nm7372981",
+          "name" : "Cameron Seely"
+        },
+        {
+          "id" : "nm0429069",
+          "name" : "Rashida Jones"
+        },
+        {
+          "id" : "nm1214289",
+          "name" : "Pharrell Williams"
+        }
+      ],
+      "fullTitle" : "The Grinch (2018)"
+    },
+    {
+      "id" : "tt14109724",
+      "metacriticRating" : "50",
+      "imDbRating" : "6.2",
+      "runtimeMins" : "104",
+      "imDbRatingCount" : "28069",
+      "directorList" : [
+        {
+          "id" : "nm0662530",
+          "name" : "Ol Parker"
+        }
+      ],
+      "runtimeStr" : "104 mins",
+      "directors" : "Ol Parker",
+      "releaseState" : "21 Oct 2022",
+      "title" : "Ticket to Paradise",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Romance",
+          "value" : "Romance"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMWE0MmEwMWUtZjRjOC00YzE3LWI2MjctNjc3NWQ0YTVmNDQ4XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A divorced couple teams up and travels to Bali to stop their daughter from making the same mistake they think they made 25 years ago.",
+      "stars" : "George Clooney, Sean Lynch, Julia Roberts, Arielle Carver-O'Neill",
+      "year" : "2022",
+      "contentRating" : "PG-13",
+      "genres" : "Comedy, Romance",
+      "starList" : [
+        {
+          "id" : "nm0000123",
+          "name" : "George Clooney"
+        },
+        {
+          "id" : "nm1116918",
+          "name" : "Sean Lynch"
+        },
+        {
+          "id" : "nm0000210",
+          "name" : "Julia Roberts"
+        },
+        {
+          "id" : "nm4687524",
+          "name" : "Arielle Carver-O'Neill"
+        }
+      ],
+      "fullTitle" : "Ticket to Paradise (2022)"
+    },
+    {
+      "id" : "tt10343028",
+      "metacriticRating" : "74",
+      "imDbRating" : "6.7",
+      "runtimeMins" : "114",
+      "imDbRatingCount" : "5539",
+      "directorList" : [
+        {
+          "id" : "nm0336695",
+          "name" : "James Gray"
+        }
+      ],
+      "runtimeStr" : "114 mins",
+      "directors" : "James Gray",
+      "releaseState" : "04 Nov 2022",
+      "title" : "Armageddon Time",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMTNjMTI2YTMtMmM5Yi00MWUyLWI0NWMtN2EyY2FmZjIwMTVmXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A deeply personal coming-of-age story about the strength of family and the generational pursuit of the American Dream.",
+      "stars" : "Anne Hathaway, Jeremy Strong, Banks Repeta, Jaylin Webb",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Drama",
+      "starList" : [
+        {
+          "id" : "nm0004266",
+          "name" : "Anne Hathaway"
+        },
+        {
+          "id" : "nm0834989",
+          "name" : "Jeremy Strong"
+        },
+        {
+          "id" : "nm8928696",
+          "name" : "Banks Repeta"
+        },
+        {
+          "id" : "nm12718872",
+          "name" : "Jaylin Webb"
+        }
+      ],
+      "fullTitle" : "Armageddon Time (2022)"
+    },
+    {
+      "id" : "tt0338348",
+      "metacriticRating" : "61",
+      "imDbRating" : "6.6",
+      "runtimeMins" : "100",
+      "imDbRatingCount" : "210342",
+      "directorList" : [
+        {
+          "id" : "nm0000709",
+          "name" : "Robert Zemeckis"
+        }
+      ],
+      "runtimeStr" : "100 mins",
+      "directors" : "Robert Zemeckis",
+      "releaseState" : "10 Nov 2004",
+      "title" : "The Polar Express",
+      "genreList" : [
+        {
+          "key" : "Animation",
+          "value" : "Animation"
+        },
+        {
+          "key" : "Adventure",
+          "value" : "Adventure"
+        },
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMTM1NTU0NTE4MV5BMl5BanBnXkFtZTcwMTQ0MjEzMw@@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "On Christmas Eve, a young boy embarks on a magical adventure to the North Pole on the Polar Express, while learning about friendship, bravery, and the spirit of Christmas.",
+      "stars" : "Tom Hanks, Chris Coppola, Michael Jeter, Leslie Zemeckis",
+      "year" : "2004",
+      "contentRating" : "G",
+      "genres" : "Animation, Adventure, Comedy",
+      "starList" : [
+        {
+          "id" : "nm0000158",
+          "name" : "Tom Hanks"
+        },
+        {
+          "id" : "nm0178875",
+          "name" : "Chris Coppola"
+        },
+        {
+          "id" : "nm0005052",
+          "name" : "Michael Jeter"
+        },
+        {
+          "id" : "nm0366667",
+          "name" : "Leslie Zemeckis"
+        }
+      ],
+      "fullTitle" : "The Polar Express (2004)"
+    },
+    {
+      "id" : "tt19770238",
+      "metacriticRating" : "95",
+      "imDbRating" : "7.7",
+      "runtimeMins" : "102",
+      "imDbRatingCount" : "6408",
+      "directorList" : [
+        {
+          "id" : "nm3834799",
+          "name" : "Charlotte Wells"
+        }
+      ],
+      "runtimeStr" : "102 mins",
+      "directors" : "Charlotte Wells",
+      "releaseState" : "18 Nov 2022",
+      "title" : "Aftersun (II)",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMTM3OTU0ZGUtNzYwYy00ODU3LWI3YjgtOWZlODliMmRiMWEzXkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Sophie reflects on the shared joy and private melancholy of a holiday she took with her father twenty years earlier. Memories real and imagined fill the gaps between as she tries to reconcile the father she knew with the man she didn't.",
+      "stars" : "Paul Mescal, Frankie Corio, Celia Rowlson-Hall, Sally Messham",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Drama",
+      "starList" : [
+        {
+          "id" : "nm8958770",
+          "name" : "Paul Mescal"
+        },
+        {
+          "id" : "nm13592008",
+          "name" : "Frankie Corio"
+        },
+        {
+          "id" : "nm3278700",
+          "name" : "Celia Rowlson-Hall"
+        },
+        {
+          "id" : "nm7489737",
+          "name" : "Sally Messham"
+        }
+      ],
+      "fullTitle" : "Aftersun (II) (2022)"
+    },
+    {
+      "id" : "tt7775720",
+      "metacriticRating" : "61",
+      "imDbRating" : "6.5",
+      "runtimeMins" : "112",
+      "imDbRatingCount" : "385",
+      "directorList" : [
+        {
+          "id" : "nm0795290",
+          "name" : "Michael Showalter"
+        }
+      ],
+      "runtimeStr" : "112 mins",
+      "directors" : "Michael Showalter",
+      "releaseState" : "09 Dec 2022",
+      "title" : "Spoiler Alert (II)",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMGE4YjBmZTAtNjlhMC00NzRkLThlYzktNjRmNjJiYTU5YWFkXkEyXkFqcGdeQXVyMTQzNTA5MzYz._V1_UY176_CR6,0,128,176_AL_.jpg",
+      "plot" : "The story of Michael Ausiello and Kit Cowan's relationship that takes a tragic turn when Cowan is diagnosed with terminal cancer.",
+      "stars" : "Jim Parsons, Ben Aldridge, Josh Pais, Allegra Heart",
+      "year" : "2022",
+      "contentRating" : "PG-13",
+      "genres" : "Comedy, Drama",
+      "starList" : [
+        {
+          "id" : "nm1433588",
+          "name" : "Jim Parsons"
+        },
+        {
+          "id" : "nm3198781",
+          "name" : "Ben Aldridge"
+        },
+        {
+          "id" : "nm0656929",
+          "name" : "Josh Pais"
+        },
+        {
+          "id" : "nm10149036",
+          "name" : "Allegra Heart"
+        }
+      ],
+      "fullTitle" : "Spoiler Alert (II) (2022)"
+    },
+    {
+      "id" : "tt14668630",
+      "metacriticRating" : "51",
+      "imDbRating" : "6.1",
+      "runtimeMins" : "106",
+      "imDbRatingCount" : "4366",
+      "directorList" : [
+        {
+          "id" : "nm0330347",
+          "name" : "Josh Gordon"
+        },
+        {
+          "id" : "nm0817447",
+          "name" : "Will Speck"
+        }
+      ],
+      "runtimeStr" : "106 mins",
+      "directors" : "Josh Gordon, Will Speck",
+      "releaseState" : "07 Oct 2022",
+      "title" : "Lyle, Lyle, Crocodile",
+      "genreList" : [
+        {
+          "key" : "Animation",
+          "value" : "Animation"
+        },
+        {
+          "key" : "Adventure",
+          "value" : "Adventure"
+        },
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BYjNhZjA3MTctOTFjNi00Mjg5LTk3ODctOGZkNDMyMjY3YWNhXkEyXkFqcGdeQXVyMTI2ODM1ODUw._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Feature film based on the children's book about a crocodile that lives in New York City.",
+      "stars" : "Javier Bardem, Winslow Fegley, Shawn Mendes, Constance Wu",
+      "year" : "2022",
+      "contentRating" : "PG",
+      "genres" : "Animation, Adventure, Comedy",
+      "starList" : [
+        {
+          "id" : "nm0000849",
+          "name" : "Javier Bardem"
+        },
+        {
+          "id" : "nm9121761",
+          "name" : "Winslow Fegley"
+        },
+        {
+          "id" : "nm6658398",
+          "name" : "Shawn Mendes"
+        },
+        {
+          "id" : "nm2090422",
+          "name" : "Constance Wu"
+        }
+      ],
+      "fullTitle" : "Lyle, Lyle, Crocodile (2022)"
+    },
+    {
+      "id" : "tt0038650",
+      "metacriticRating" : "89",
+      "imDbRating" : "8.6",
+      "runtimeMins" : "130",
+      "imDbRatingCount" : "456043",
+      "directorList" : [
+        {
+          "id" : "nm0001008",
+          "name" : "Frank Capra"
+        }
+      ],
+      "runtimeStr" : "130 mins",
+      "directors" : "Frank Capra",
+      "releaseState" : "07 Jan 1947",
+      "title" : "It's a Wonderful Life",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "Family",
+          "value" : "Family"
+        },
+        {
+          "key" : "Fantasy",
+          "value" : "Fantasy"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BZjc4NDZhZWMtNGEzYS00ZWU2LThlM2ItNTA0YzQ0OTExMTE2XkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_UX128_CR0,2,128,176_AL_.jpg",
+      "plot" : "An angel is sent from Heaven to help a desperately frustrated businessman by showing him what life would have been like if he had never existed.",
+      "stars" : "James Stewart, Donna Reed, Lionel Barrymore, Thomas Mitchell",
+      "year" : "1946",
+      "contentRating" : "PG",
+      "genres" : "Drama, Family, Fantasy",
+      "starList" : [
+        {
+          "id" : "nm0000071",
+          "name" : "James Stewart"
+        },
+        {
+          "id" : "nm0001656",
+          "name" : "Donna Reed"
+        },
+        {
+          "id" : "nm0000859",
+          "name" : "Lionel Barrymore"
+        },
+        {
+          "id" : "nm0593775",
+          "name" : "Thomas Mitchell"
+        }
+      ],
+      "fullTitle" : "It's a Wonderful Life (1946)"
+    },
+    {
+      "id" : "tt15600222",
+      "metacriticRating" : "",
+      "imDbRating" : "8.1",
+      "runtimeMins" : "130",
+      "imDbRatingCount" : "15539",
+      "directorList" : [
+        {
+          "id" : "nm5518137",
+          "name" : "Anirudh Iyer"
+        }
+      ],
+      "runtimeStr" : "130 mins",
+      "directors" : "Anirudh Iyer",
+      "releaseState" : "02 Dec 2022",
+      "title" : "An Action Hero",
+      "genreList" : [
+        {
+          "key" : "Action",
+          "value" : "Action"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMDJiOTdmMGItMmM5MC00ZTRiLWIzNjctNDE4ZTZkMWMzZTg0XkEyXkFqcGdeQXVyOTI3MzI4MzA@._V1_UY176_CR6,0,128,176_AL_.jpg",
+      "plot" : "Youth Icon. Superstar. Action Hero. At the age of just 30, Maanav was at the peak of his career when he got caught up in an accident while filming in Haryana. Maanav, who was once a household name, is now living in hiding.",
+      "stars" : "Akshay Kumar, Ayushmann Khurrana, Nora Fatehi, Mirabel Stuart",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Action",
+      "starList" : [
+        {
+          "id" : "nm0474774",
+          "name" : "Akshay Kumar"
+        },
+        {
+          "id" : "nm4731677",
+          "name" : "Ayushmann Khurrana"
+        },
+        {
+          "id" : "nm6598222",
+          "name" : "Nora Fatehi"
+        },
+        {
+          "id" : "nm4328853",
+          "name" : "Mirabel Stuart"
+        }
+      ],
+      "fullTitle" : "An Action Hero (2022)"
+    },
+    {
+      "id" : "tt14402146",
+      "metacriticRating" : "55",
+      "imDbRating" : "6.6",
+      "runtimeMins" : "119",
+      "imDbRatingCount" : "881",
+      "directorList" : [
+        {
+          "id" : "nm0005222",
+          "name" : "Sam Mendes"
+        }
+      ],
+      "runtimeStr" : "119 mins",
+      "directors" : "Sam Mendes",
+      "releaseState" : "09 Dec 2022",
+      "title" : "Empire of Light",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "Romance",
+          "value" : "Romance"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BYjM5NzUxOWMtZjhkNC00M2ZmLTk2NzItOTQ1YWI3MGQ1YjBiXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A drama about the power of human connection during turbulent times, set in an English coastal town in the early 1980s.",
+      "stars" : "Olivia Colman, Micheal Ward, Colin Firth, Toby Jones",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Drama, Romance",
+      "starList" : [
+        {
+          "id" : "nm1469236",
+          "name" : "Olivia Colman"
+        },
+        {
+          "id" : "nm7906702",
+          "name" : "Micheal Ward"
+        },
+        {
+          "id" : "nm0000147",
+          "name" : "Colin Firth"
+        },
+        {
+          "id" : "nm0429363",
+          "name" : "Toby Jones"
+        }
+      ],
+      "fullTitle" : "Empire of Light (2022)"
+    },
+    {
+      "id" : "tt18550140",
+      "metacriticRating" : "68",
+      "imDbRating" : "7.3",
+      "runtimeMins" : "116",
+      "imDbRatingCount" : "7044",
+      "directorList" : [
+        {
+          "id" : "nm4389150",
+          "name" : "Ali Abbasi"
+        }
+      ],
+      "runtimeStr" : "116 mins",
+      "directors" : "Ali Abbasi",
+      "releaseState" : "15 Dec 2022",
+      "title" : "Holy Spider",
+      "genreList" : [
+        {
+          "key" : "Crime",
+          "value" : "Crime"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "Thriller",
+          "value" : "Thriller"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BZWFkMjBmZmYtMzk2MS00NzRlLWI5MzgtNjkwZmQyMGMwOWQxXkEyXkFqcGdeQXVyODA0MjgyNzM@._V1_UX128_CR0,2,128,176_AL_.jpg",
+      "plot" : "A journalist descends into the dark underbelly of the Iranian holy city of Mashhad as she investigates the serial killings of sex workers by the so called \"Spider Killer\", who believes he is cleansing the streets of sinners.",
+      "stars" : "Mehdi Bajestani, Zar Amir-Ebrahimi, Arash Ashtiani, Forouzan Jamshidnejad",
+      "year" : "2022",
+      "contentRating" : "III",
+      "genres" : "Crime, Drama, Thriller",
+      "starList" : [
+        {
+          "id" : "nm8968865",
+          "name" : "Mehdi Bajestani"
+        },
+        {
+          "id" : "nm4399355",
+          "name" : "Zar Amir-Ebrahimi"
+        },
+        {
+          "id" : "nm3316512",
+          "name" : "Arash Ashtiani"
+        },
+        {
+          "id" : "nm13573783",
+          "name" : "Forouzan Jamshidnejad"
+        }
+      ],
+      "fullTitle" : "Holy Spider (2022)"
+    },
+    {
+      "id" : "tt21084334",
+      "metacriticRating" : "",
+      "imDbRating" : "7.6",
+      "runtimeMins" : "110",
+      "imDbRatingCount" : "213",
+      "directorList" : [
+        {
+          "id" : "nm7530291",
+          "name" : "Joshua Enck"
+        }
+      ],
+      "runtimeStr" : "110 mins",
+      "directors" : "Joshua Enck",
+      "releaseState" : "01 Dec 2022",
+      "title" : "I Heard the Bells",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMzFhNDA4YTYtM2IwOC00YTNmLTk2ZTQtYjIzN2IzZDQ0MjRmXkEyXkFqcGdeQXVyMTUzODUzOTAx._V1_UY176_CR2,0,128,176_AL_.jpg",
+      "plot" : "The inspiring story behind the writing of the beloved Christmas carol and its author, Henry Wadsworth Longfellow.",
+      "stars" : "Stephen Atherholt, Jonathan Blair, Rachel Day Hughes, Zach Meeker",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Drama",
+      "starList" : [
+        {
+          "id" : "nm13772942",
+          "name" : "Stephen Atherholt"
+        },
+        {
+          "id" : "nm7085459",
+          "name" : "Jonathan Blair"
+        },
+        {
+          "id" : "nm13772943",
+          "name" : "Rachel Day Hughes"
+        },
+        {
+          "id" : "nm14291659",
+          "name" : "Zach Meeker"
+        }
+      ],
+      "fullTitle" : "I Heard the Bells (2022)"
+    },
+    {
+      "id" : "tt14439896",
+      "metacriticRating" : "40",
+      "imDbRating" : "6.5",
+      "runtimeMins" : "124",
+      "imDbRatingCount" : "19821",
+      "directorList" : [
+        {
+          "id" : "nm6793979",
+          "name" : "Rosalind Ross"
+        }
+      ],
+      "runtimeStr" : "124 mins",
+      "directors" : "Rosalind Ross",
+      "releaseState" : "15 Apr 2022",
+      "title" : "Father Stu",
+      "genreList" : [
+        {
+          "key" : "Biography",
+          "value" : "Biography"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BNGYwOTI1MTUtYmY0Mi00OTAxLTkwNDEtOTI5YTkyZTVhN2JiXkEyXkFqcGdeQXVyMTAxNDE3MTE5._V1_UY176_CR6,0,128,176_AL_.jpg",
+      "plot" : "Follows the life of Father Stuart Long, a boxer-turned-priest who inspired countless people during his journey from self-destruction to redemption.",
+      "stars" : "Mark Wahlberg, Mel Gibson, Jacki Weaver, Teresa Ruiz",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Biography, Drama",
+      "starList" : [
+        {
+          "id" : "nm0000242",
+          "name" : "Mark Wahlberg"
+        },
+        {
+          "id" : "nm0000154",
+          "name" : "Mel Gibson"
+        },
+        {
+          "id" : "nm0915865",
+          "name" : "Jacki Weaver"
+        },
+        {
+          "id" : "nm1840708",
+          "name" : "Teresa Ruiz"
+        }
+      ],
+      "fullTitle" : "Father Stu (2022)"
+    },
+    {
+      "id" : "tt9271672",
+      "metacriticRating" : "38",
+      "imDbRating" : "5.2",
+      "runtimeMins" : "93",
+      "imDbRatingCount" : "4418",
+      "directorList" : [
+        {
+          "id" : "nm0821844",
+          "name" : "Daniel Stamm"
+        }
+      ],
+      "runtimeStr" : "93 mins",
+      "directors" : "Daniel Stamm",
+      "releaseState" : "28 Oct 2022",
+      "title" : "Prey for the Devil",
+      "genreList" : [
+        {
+          "key" : "Horror",
+          "value" : "Horror"
+        },
+        {
+          "key" : "Thriller",
+          "value" : "Thriller"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BNzNjNmE4YTktMTZiNS00YTQ0LWExY2YtZTU2MGNiNzBiMzI5XkEyXkFqcGdeQXVyMTA0OTI1NDM2._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A nun prepares to perform an exorcism and comes face to face with a demonic force with mysterious ties to her past.",
+      "stars" : "Virginia Madsen, Cora Kirk, Jacqueline Byers, Colin Salmon",
+      "year" : "2022",
+      "contentRating" : "PG-13",
+      "genres" : "Horror, Thriller",
+      "starList" : [
+        {
+          "id" : "nm0000515",
+          "name" : "Virginia Madsen"
+        },
+        {
+          "id" : "nm8230647",
+          "name" : "Cora Kirk"
+        },
+        {
+          "id" : "nm1859932",
+          "name" : "Jacqueline Byers"
+        },
+        {
+          "id" : "nm0758760",
+          "name" : "Colin Salmon"
+        }
+      ],
+      "fullTitle" : "Prey for the Devil (2022)"
+    },
+    {
+      "id" : "tt0780536",
+      "metacriticRating" : "67",
+      "imDbRating" : "7.9",
+      "runtimeMins" : "107",
+      "imDbRatingCount" : "427936",
+      "directorList" : [
+        {
+          "id" : "nm1732981",
+          "name" : "Martin McDonagh"
+        }
+      ],
+      "runtimeStr" : "107 mins",
+      "directors" : "Martin McDonagh",
+      "releaseState" : "29 Feb 2008",
+      "title" : "In Bruges",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Crime",
+          "value" : "Crime"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMTUwOGFiM2QtOWMxYS00MjU2LThmZDMtZDM2MWMzNzllNjdhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Guilt-stricken after a job gone wrong, hitman Ray and his partner await orders from their ruthless boss in Bruges, Belgium, the last place in the world Ray wants to be.",
+      "stars" : "Colin Farrell, Brendan Gleeson, Ciarán Hinds, Elizabeth Berrington",
+      "year" : "2008",
+      "contentRating" : "R",
+      "genres" : "Comedy, Crime, Drama",
+      "starList" : [
+        {
+          "id" : "nm0268199",
+          "name" : "Colin Farrell"
+        },
+        {
+          "id" : "nm0322407",
+          "name" : "Brendan Gleeson"
+        },
+        {
+          "id" : "nm0001354",
+          "name" : "Ciarán Hinds"
+        },
+        {
+          "id" : "nm0077397",
+          "name" : "Elizabeth Berrington"
+        }
+      ],
+      "fullTitle" : "In Bruges (2008)"
+    },
+    {
+      "id" : "tt0104940",
+      "metacriticRating" : "64",
+      "imDbRating" : "7.7",
+      "runtimeMins" : "85",
+      "imDbRatingCount" : "59640",
+      "directorList" : [
+        {
+          "id" : "nm0005008",
+          "name" : "Brian Henson"
+        }
+      ],
+      "runtimeStr" : "85 mins",
+      "directors" : "Brian Henson",
+      "releaseState" : "11 Dec 1992",
+      "title" : "The Muppet Christmas Carol",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "Family",
+          "value" : "Family"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BN2Y0NWRkNWItZWEwNi00MDNlLWJmZDYtNTkwYzI5Nzg4MjVjXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "The Muppet characters tell their version of the classic tale of an old and bitter miser's redemption on Christmas Eve.",
+      "stars" : "Michael Caine, Dave Goelz, Steve Whitmire, Jerry Nelson",
+      "year" : "1992",
+      "contentRating" : "G",
+      "genres" : "Comedy, Drama, Family",
+      "starList" : [
+        {
+          "id" : "nm0000323",
+          "name" : "Michael Caine"
+        },
+        {
+          "id" : "nm0324397",
+          "name" : "Dave Goelz"
+        },
+        {
+          "id" : "nm0926209",
+          "name" : "Steve Whitmire"
+        },
+        {
+          "id" : "nm0625456",
+          "name" : "Jerry Nelson"
+        }
+      ],
+      "fullTitle" : "The Muppet Christmas Carol (1992)"
+    },
+    {
+      "id" : "tt13495458",
+      "metacriticRating" : "73",
+      "imDbRating" : "7.2",
+      "runtimeMins" : "95",
+      "imDbRatingCount" : "473",
+      "directorList" : [
+        {
+          "id" : "nm6303173",
+          "name" : "Elegance Bratton"
+        }
+      ],
+      "runtimeStr" : "95 mins",
+      "directors" : "Elegance Bratton",
+      "releaseState" : "14 Oct 2022",
+      "title" : "The Inspection",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BN2ZmMjk1MzEtNzcwNi00YzY0LWJlM2EtMjQ1YWViMTI2YjdhXkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A young, gay Black man, rejected by his mother and with few options for his future, decides to join the Marines, doing whatever it takes to succeed in a system that would cast him aside.",
+      "stars" : "Jeremy Pope, Gabrielle Union, Bokeem Woodbine, Raúl Castillo",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Drama",
+      "starList" : [
+        {
+          "id" : "nm8937111",
+          "name" : "Jeremy Pope"
+        },
+        {
+          "id" : "nm0005517",
+          "name" : "Gabrielle Union"
+        },
+        {
+          "id" : "nm0940158",
+          "name" : "Bokeem Woodbine"
+        },
+        {
+          "id" : "nm1950004",
+          "name" : "Raúl Castillo"
+        }
+      ],
+      "fullTitle" : "The Inspection (2022)"
+    },
+    {
+      "id" : "tt0073629",
+      "metacriticRating" : "65",
+      "imDbRating" : "7.4",
+      "runtimeMins" : "100",
+      "imDbRatingCount" : "154369",
+      "directorList" : [
+        {
+          "id" : "nm0788940",
+          "name" : "Jim Sharman"
+        }
+      ],
+      "runtimeStr" : "100 mins",
+      "directors" : "Jim Sharman",
+      "releaseState" : "31 Aug 1975",
+      "title" : "The Rocky Horror Picture Show",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Horror",
+          "value" : "Horror"
+        },
+        {
+          "key" : "Musical",
+          "value" : "Musical"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BOGIzYjM3YzMtMjk5ZS00NDY2LTllMjEtNjYwZjhmMDNhMDBkXkEyXkFqcGdeQXVyODUzMjQxMTA@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A newly-engaged couple have a breakdown in an isolated area and must seek shelter at the bizarre residence of Dr. Frank-n-Furter.",
+      "stars" : "Tim Curry, Susan Sarandon, Barry Bostwick, Richard O'Brien",
+      "year" : "1975",
+      "contentRating" : "R",
+      "genres" : "Comedy, Horror, Musical",
+      "starList" : [
+        {
+          "id" : "nm0000347",
+          "name" : "Tim Curry"
+        },
+        {
+          "id" : "nm0000215",
+          "name" : "Susan Sarandon"
+        },
+        {
+          "id" : "nm0000960",
+          "name" : "Barry Bostwick"
+        },
+        {
+          "id" : "nm0639782",
+          "name" : "Richard O'Brien"
+        }
+      ],
+      "fullTitle" : "The Rocky Horror Picture Show (1975)"
+    },
+    {
+      "id" : "tt13874422",
+      "metacriticRating" : "79",
+      "imDbRating" : "6.1",
+      "runtimeMins" : "96",
+      "imDbRatingCount" : "1031",
+      "directorList" : [
+        {
+          "id" : "nm0389712",
+          "name" : "Joanna Hogg"
+        }
+      ],
+      "runtimeStr" : "96 mins",
+      "directors" : "Joanna Hogg",
+      "releaseState" : "02 Dec 2022",
+      "title" : "The Eternal Daughter",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "Mystery",
+          "value" : "Mystery"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMDUwMGI1ZTgtZTg5OC00YWIzLThlMjMtYTczYTYyYjA3NmU1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Returning to a hotel now haunted by its mysterious past, an artist and her elderly mother confront long-buried secrets in their former family home.",
+      "stars" : "Tilda Swinton, Carly-Sophia Davies, Zinnia Davies-Cooke, August Joshi",
+      "year" : "2022",
+      "contentRating" : "PG-13",
+      "genres" : "Drama, Mystery",
+      "starList" : [
+        {
+          "id" : "nm0842770",
+          "name" : "Tilda Swinton"
+        },
+        {
+          "id" : "nm12270158",
+          "name" : "Carly-Sophia Davies"
+        },
+        {
+          "id" : "nm12269944",
+          "name" : "Zinnia Davies-Cooke"
+        },
+        {
+          "id" : "nm13040600",
+          "name" : "August Joshi"
+        }
+      ],
+      "fullTitle" : "The Eternal Daughter (2022)"
+    },
+    {
+      "id" : "tt22042742",
+      "metacriticRating" : "50",
+      "imDbRating" : "5.3",
+      "runtimeMins" : "81",
+      "imDbRatingCount" : "809",
+      "directorList" : [
+        {
+          "id" : "nm3976308",
+          "name" : "Joe Begos"
+        }
+      ],
+      "runtimeStr" : "81 mins",
+      "directors" : "Joe Begos",
+      "releaseState" : "09 Dec 2022",
+      "title" : "Christmas Bloody Christmas",
+      "genreList" : [
+        {
+          "key" : "Horror",
+          "value" : "Horror"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BOTRmMDc4ZDAtOTJiNS00YTQ4LWJkM2MtMTQxMDEwNzMyN2MwXkEyXkFqcGdeQXVyMzQwMTY2Nzk@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "It's Christmas Eve and Tori just wants to get drunk and party, but when a robotic Santa Clause at a nearby toy store goes haywire and begins a rampant killing spree through her small town, she's forced into a battle for survival.",
+      "stars" : "Riley Dandy, Sam Delich, Jonah Ray, Dora Madison",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Horror",
+      "starList" : [
+        {
+          "id" : "nm6035288",
+          "name" : "Riley Dandy"
+        },
+        {
+          "id" : "nm6431173",
+          "name" : "Sam Delich"
+        },
+        {
+          "id" : "nm2370462",
+          "name" : "Jonah Ray"
+        },
+        {
+          "id" : "nm2267725",
+          "name" : "Dora Madison"
+        }
+      ],
+      "fullTitle" : "Christmas Bloody Christmas (2022)"
+    },
+    {
+      "id" : "tt14279982",
+      "metacriticRating" : "",
+      "imDbRating" : "7.7",
+      "runtimeMins" : "150",
+      "imDbRatingCount" : "1736",
+      "directorList" : [
+        {
+          "id" : "nm10466813",
+          "name" : "Sailesh Kolanu"
+        }
+      ],
+      "runtimeStr" : "150 mins",
+      "directors" : "Sailesh Kolanu",
+      "releaseState" : "02 Dec 2022",
+      "title" : "HIT: The 2nd Case",
+      "genreList" : [
+        {
+          "key" : "Action",
+          "value" : "Action"
+        },
+        {
+          "key" : "Crime",
+          "value" : "Crime"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BNTM2ZWJlZGMtZjA2Ny00YTI1LWIyNmYtMzVlYzg2NjYyMDY4XkEyXkFqcGdeQXVyMTI1NDAzMzM0._V1_UX128_CR0,1,128,176_AL_.jpg",
+      "plot" : "Krishna Dev aka KD, a laid back cop, works in AP HIT, has to take up a gruesome murder case. As KD unravels the layers of the crime, the stakes rise unbelievably high and the threat comes unusually close.",
+      "stars" : "Adivi Sesh, Vinni Mobstaz, Komalee Prasad, Meenakshii Chaudhary",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Action, Crime, Drama",
+      "starList" : [
+        {
+          "id" : "nm3414188",
+          "name" : "Adivi Sesh"
+        },
+        {
+          "id" : "nm13327429",
+          "name" : "Vinni Mobstaz"
+        },
+        {
+          "id" : "nm11069936",
+          "name" : "Komalee Prasad"
+        },
+        {
+          "id" : "nm11203267",
+          "name" : "Meenakshii Chaudhary"
+        }
+      ],
+      "fullTitle" : "HIT: The 2nd Case (2022)"
+    },
+    {
+      "id" : "tt21374850",
+      "metacriticRating" : "90",
+      "imDbRating" : "7.9",
+      "runtimeMins" : "113",
+      "imDbRatingCount" : "386",
+      "directorList" : [
+        {
+          "id" : "nm0688636",
+          "name" : "Laura Poitras"
+        }
+      ],
+      "runtimeStr" : "113 mins",
+      "directors" : "Laura Poitras",
+      "releaseState" : "13 Jan 2023",
+      "title" : "All the Beauty and the Bloodshed",
+      "genreList" : [
+        {
+          "key" : "Documentary",
+          "value" : "Documentary"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BYzQ5OWRhMjktN2ZhOS00OTMzLWE1ZWItMjMxMGY2MWFiMzBhXkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Following the life of artist Nan Goldin and the downfall of the Sackler family, the pharmaceutical dynasty who was greatly responsible for the opioid epidemic's unfathomable death toll.",
+      "stars" : "Nan Goldin, David Armstrong, Marina Berio, Noemi Bonazzi",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Documentary",
+      "starList" : [
+        {
+          "id" : "nm0325667",
+          "name" : "Nan Goldin"
+        },
+        {
+          "id" : "nm14093790",
+          "name" : "David Armstrong"
+        },
+        {
+          "id" : "nm14034343",
+          "name" : "Marina Berio"
+        },
+        {
+          "id" : "nm14093783",
+          "name" : "Noemi Bonazzi"
+        }
+      ],
+      "fullTitle" : "All the Beauty and the Bloodshed (2022)"
+    },
+    {
+      "id" : "tt2083355",
+      "metacriticRating" : "59",
+      "imDbRating" : "6.6",
+      "runtimeMins" : "123",
+      "imDbRatingCount" : "15998",
+      "directorList" : [
+        {
+          "id" : "nm0002700",
+          "name" : "Malcolm D. Lee"
+        }
+      ],
+      "runtimeStr" : "123 mins",
+      "directors" : "Malcolm D. Lee",
+      "releaseState" : "15 Nov 2013",
+      "title" : "The Best Man Holiday",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMjU0MTI1MDg5Ml5BMl5BanBnXkFtZTgwNzc2MTMzMDE@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "When college friends reunite after 15 years over the Christmas holidays, they discover just how easy it is for long-forgotten rivalries and romances to be reignited.",
+      "stars" : "Monica Calhoun, Morris Chestnut, Melissa De Sousa, Taye Diggs",
+      "year" : "2013",
+      "contentRating" : "R",
+      "genres" : "Comedy, Drama",
+      "starList" : [
+        {
+          "id" : "nm0004793",
+          "name" : "Monica Calhoun"
+        },
+        {
+          "id" : "nm0004820",
+          "name" : "Morris Chestnut"
+        },
+        {
+          "id" : "nm0211726",
+          "name" : "Melissa De Sousa"
+        },
+        {
+          "id" : "nm0004875",
+          "name" : "Taye Diggs"
+        }
+      ],
+      "fullTitle" : "The Best Man Holiday (2013)"
+    },
+    {
+      "id" : "tt15721650",
+      "metacriticRating" : "",
+      "imDbRating" : "7.5",
+      "runtimeMins" : "136",
+      "imDbRatingCount" : "780",
+      "directorList" : [
+        {
+          "id" : "nm3887934",
+          "name" : "Masato Jinbo"
+        }
+      ],
+      "runtimeStr" : "136 mins",
+      "directors" : "Masato Jinbo",
+      "releaseState" : "06 Oct 2022",
+      "title" : "The Quintessential Quintuplets Movie",
+      "genreList" : [
+        {
+          "key" : "Animation",
+          "value" : "Animation"
+        },
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BZGZlOTcxZWItZDA3Yy00ZDNhLTllZjktMTVhZjQzZDkxNTYxXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_UX128_CR0,2,128,176_AL_.jpg",
+      "plot" : "Teenage Tutor Fuutaro Uesugi has to finally choose between the 5 Nakano Sisters, who all have feelings for him, at the School's Upcoming Cultural Festival; the event that will lead to his Wedding to one of them in a Flash-Forward.",
+      "stars" : "Felecia Angelle, Bryn Apprill, Tia Lynn Ballard, Kamen Casey",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Animation, Comedy, Drama",
+      "starList" : [
+        {
+          "id" : "nm5993940",
+          "name" : "Felecia Angelle"
+        },
+        {
+          "id" : "nm6548466",
+          "name" : "Bryn Apprill"
+        },
+        {
+          "id" : "nm3631965",
+          "name" : "Tia Lynn Ballard"
+        },
+        {
+          "id" : "nm4906238",
+          "name" : "Kamen Casey"
+        }
+      ],
+      "fullTitle" : "The Quintessential Quintuplets Movie (2022)"
+    },
+    {
+      "id" : "tt22394694",
+      "metacriticRating" : "",
+      "imDbRating" : "5",
+      "runtimeMins" : "93",
+      "imDbRatingCount" : "197",
+      "directorList" : [
+        {
+          "id" : "nm4864836",
+          "name" : "Edward Drake"
+        }
+      ],
+      "runtimeStr" : "93 mins",
+      "directors" : "Edward Drake",
+      "releaseState" : "09 Dec 2022",
+      "title" : "Detective Knight: Redemption",
+      "genreList" : [
+        {
+          "key" : "Action",
+          "value" : "Action"
+        },
+        {
+          "key" : "Thriller",
+          "value" : "Thriller"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BZDRlMGYzNjQtOWJjYy00NjU4LThlMDMtYmY2ZDg0YTAzOGVhXkEyXkFqcGdeQXVyNzUwMDA5NDE@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "In custody in New York, Detective James Knight finds himself in the middle of a jailbreak led by The Christmas Bomber, a brutal fanatic whose Santa Claus disciples are terrorizing the city.... See full summary",
+      "stars" : "Bruce Willis, Corey Large, John Cassini, Miranda Edwards",
+      "year" : "2022",
+      "contentRating" : "R",
+      "genres" : "Action, Thriller",
+      "starList" : [
+        {
+          "id" : "nm0000246",
+          "name" : "Bruce Willis"
+        },
+        {
+          "id" : "nm1143429",
+          "name" : "Corey Large"
+        },
+        {
+          "id" : "nm0144307",
+          "name" : "John Cassini"
+        },
+        {
+          "id" : "nm1596999",
+          "name" : "Miranda Edwards"
+        }
+      ],
+      "fullTitle" : "Detective Knight: Redemption (2022)"
+    },
+    {
+      "id" : "tt15567704",
+      "metacriticRating" : "",
+      "imDbRating" : "8.7",
+      "runtimeMins" : "137",
+      "imDbRatingCount" : "219",
+      "directorList" : [
+        {
+          "id" : "nm0720763",
+          "name" : "Revathi"
+        }
+      ],
+      "runtimeStr" : "137 mins",
+      "directors" : "Revathi",
+      "releaseState" : "09 Dec 2022",
+      "title" : "Salaam Venky",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMjY2YWIyMDktMDE4MS00NjgwLTg4MDQtNTMwZTNjZmVkNDIyXkEyXkFqcGdeQXVyOTI3MzI4MzA@._V1_UY176_CR6,0,128,176_AL_.jpg",
+      "plot" : "Sujata, an ideal mother, who battled the most challenging situations one can ever face with a smile.",
+      "stars" : "Aamir Khan, Kajol, Prakash Raj, Priyamani",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Drama",
+      "starList" : [
+        {
+          "id" : "nm0451148",
+          "name" : "Aamir Khan"
+        },
+        {
+          "id" : "nm0004418",
+          "name" : "Kajol"
+        },
+        {
+          "id" : "nm0695177",
+          "name" : "Prakash Raj"
+        },
+        {
+          "id" : "nm1421465",
+          "name" : "Priyamani"
+        }
+      ],
+      "fullTitle" : "Salaam Venky (2022)"
+    },
+    {
+      "id" : "tt21867590",
+      "metacriticRating" : "",
+      "imDbRating" : "7.8",
+      "runtimeMins" : "135",
+      "imDbRatingCount" : "318",
+      "directorList" : [
+        {
+          "id" : "nm6090083",
+          "name" : "Cheuk Tin Ho"
+        }
+      ],
+      "runtimeStr" : "135 mins",
+      "directors" : "Cheuk Tin Ho",
+      "releaseState" : "27 Oct 2022",
+      "title" : "The Sparring Partner",
+      "genreList" : [
+        {
+          "key" : "Crime",
+          "value" : "Crime"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BYzE5ZDg5NmItZDg3OC00OTNhLTg2NTEtZWViNjRjNGE0MTEyXkEyXkFqcGdeQXVyODMyOTYyMTM@._V1_UX128_CR0,1,128,176_AL_.jpg",
+      "plot" : "Based on a shocking case in real life, a young man partners with his friend to murder and dismember his parents. Pleading not guilty to the crime, defense attorneys face each other as nine jurors grapple with the truth.",
+      "stars" : "Yeung Wai-lun, Pui Tung Mak, Louisa So, Jan Lamb",
+      "year" : "2022",
+      "contentRating" : "III",
+      "genres" : "Crime, Drama",
+      "starList" : [
+        {
+          "id" : "nm12780661",
+          "name" : "Yeung Wai-lun"
+        },
+        {
+          "id" : "nm13099965",
+          "name" : "Pui Tung Mak"
+        },
+        {
+          "id" : "nm10521554",
+          "name" : "Louisa So"
+        },
+        {
+          "id" : "nm0482963",
+          "name" : "Jan Lamb"
+        }
+      ],
+      "fullTitle" : "The Sparring Partner (2022)"
+    },
+    {
+      "id" : "tt14176480",
+      "metacriticRating" : "",
+      "imDbRating" : "5.1",
+      "runtimeMins" : "79",
+      "imDbRatingCount" : "102",
+      "directorList" : [
+        {
+          "id" : "nm5000286",
+          "name" : "Aman Khatkar"
+        }
+      ],
+      "runtimeStr" : "79 mins",
+      "directors" : "Aman Khatkar",
+      "releaseState" : "02 Dec 2022",
+      "title" : "Snowman",
+      "genreList" : [
+        {
+          "key" : "Action",
+          "value" : "Action"
+        },
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BZjZjNmI2NGItZTExNy00NjNiLWIyZGYtN2RmY2U0M2JmN2IxXkEyXkFqcGdeQXVyMTU3OTc0NTI2._V1_UY176_CR6,0,128,176_AL_.jpg",
+      "plot" : "After Canadian police apprehend a man they believe to be a notorious serial killer, the wife of one of his victims plots her revenge.",
+      "stars" : "Neeru Bajwa, Arshi Khatkar, Jazzy B., Rana Ranbir",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Action, Drama",
+      "starList" : [
+        {
+          "id" : "nm1263093",
+          "name" : "Neeru Bajwa"
+        },
+        {
+          "id" : "nm12375198",
+          "name" : "Arshi Khatkar"
+        },
+        {
+          "id" : "nm2263493",
+          "name" : "Jazzy B."
+        },
+        {
+          "id" : "nm2378766",
+          "name" : "Rana Ranbir"
+        }
+      ],
+      "fullTitle" : "Snowman (2022)"
+    },
+    {
+      "id" : "tt0275277",
+      "metacriticRating" : "61",
+      "imDbRating" : "7.8",
+      "runtimeMins" : "115",
+      "imDbRatingCount" : "49405",
+      "directorList" : [
+        {
+          "id" : "nm0913860",
+          "name" : "Shin'ichirô Watanabe"
+        },
+        {
+          "id" : "nm0645513",
+          "name" : "Tensai Okamura"
+        },
+        {
+          "id" : "nm0645657",
+          "name" : "Hiroyuki Okiura"
+        },
+        {
+          "id" : "nm1988172",
+          "name" : "Yoshiyuki Takei"
+        }
+      ],
+      "runtimeStr" : "115 mins",
+      "directors" : "Shin'ichirô Watanabe, Tensai Okamura, Hiroyuki Okiura, Yoshiyuki Takei",
+      "releaseState" : "16 May 2003",
+      "title" : "Cowboy Bebop: The Movie",
+      "genreList" : [
+        {
+          "key" : "Animation",
+          "value" : "Animation"
+        },
+        {
+          "key" : "Action",
+          "value" : "Action"
+        },
+        {
+          "key" : "Crime",
+          "value" : "Crime"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BNDUxNDM4ODAtNmFkMC00NTg3LTkwNTItYTVkOWFjYmExOGVjXkEyXkFqcGdeQXVyODY5Njk4Njc@._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A terrorist explosion releases a deadly virus on the masses, and it's up to the bounty-hunting Bebop crew to catch the cold-blooded culprit.",
+      "stars" : "Beau Billingslea, Melissa Fahn, Nicholas Guest, Kôichi Yamadera",
+      "year" : "2001",
+      "contentRating" : "TV-14",
+      "genres" : "Animation, Action, Crime",
+      "starList" : [
+        {
+          "id" : "nm0082507",
+          "name" : "Beau Billingslea"
+        },
+        {
+          "id" : "nm0153100",
+          "name" : "Melissa Fahn"
+        },
+        {
+          "id" : "nm0346415",
+          "name" : "Nicholas Guest"
+        },
+        {
+          "id" : "nm0945290",
+          "name" : "Kôichi Yamadera"
+        }
+      ],
+      "fullTitle" : "Cowboy Bebop: The Movie (2001)"
+    },
+    {
+      "id" : "tt16282914",
+      "metacriticRating" : "74",
+      "imDbRating" : "7.4",
+      "runtimeMins" : "89",
+      "imDbRatingCount" : "89",
+      "directorList" : [
+        {
+          "id" : "nm1023919",
+          "name" : "Ramin Bahrani"
+        }
+      ],
+      "runtimeStr" : "89 mins",
+      "directors" : "Ramin Bahrani",
+      "releaseState" : "22 Jan 2022",
+      "title" : "2nd Chance",
+      "genreList" : [
+        {
+          "key" : "Documentary",
+          "value" : "Documentary"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BN2YyOWNmNzMtZDBlZS00Y2I3LTgzZWMtODViNWExMTQ0ZjU2XkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A documentary chronicling the life of Richard Davis, the man who invented the concealable bulletproof vest - shooting himself 196 times in the course of his career to prove the effectiveness of his vests.",
+      "stars" : "Richard Davis",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Documentary",
+      "starList" : [
+        {
+          "id" : "nm5395322",
+          "name" : "Richard Davis"
+        }
+      ],
+      "fullTitle" : "2nd Chance (2022)"
+    },
+    {
+      "id" : "tt9467994",
+      "metacriticRating" : "67",
+      "imDbRating" : "6.5",
+      "runtimeMins" : "120",
+      "imDbRatingCount" : "134",
+      "directorList" : [
+        {
+          "id" : "nm0345174",
+          "name" : "Luca Guadagnino"
+        }
+      ],
+      "runtimeStr" : "120 mins",
+      "directors" : "Luca Guadagnino",
+      "releaseState" : "19 Jun 2022",
+      "title" : "Salvatore: Shoemaker of Dreams",
+      "genreList" : [
+        {
+          "key" : "Documentary",
+          "value" : "Documentary"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BOTNjNDAyMDgtYWYwYy00OWIwLWFjMGQtNzJhYWNlYjg4N2QxXkEyXkFqcGdeQXVyMTQyODg5MjQw._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "The life of Italian shoemaker Salvatore Ferragamo, who created shoes for Hollywood stars during the silent film era and for iconic films of the period.",
+      "stars" : "Salvatore Ferragamo, Michael Stuhlbarg, Manolo Blahnik, Grace Coddington",
+      "year" : "2020",
+      "contentRating" : "PG",
+      "genres" : "Documentary",
+      "starList" : [
+        {
+          "id" : "nm1900025",
+          "name" : "Salvatore Ferragamo"
+        },
+        {
+          "id" : "nm0836121",
+          "name" : "Michael Stuhlbarg"
+        },
+        {
+          "id" : "nm1333251",
+          "name" : "Manolo Blahnik"
+        },
+        {
+          "id" : "nm1655628",
+          "name" : "Grace Coddington"
+        }
+      ],
+      "fullTitle" : "Salvatore: Shoemaker of Dreams (2020)"
+    },
+    {
+      "id" : "tt19357208",
+      "metacriticRating" : "",
+      "imDbRating" : "7.1",
+      "runtimeMins" : "100",
+      "imDbRatingCount" : "22",
+      "directorList" : [
+        {
+          "id" : "nm12434776",
+          "name" : "T.J. Regan"
+        }
+      ],
+      "runtimeStr" : "100 mins",
+      "directors" : "T.J. Regan",
+      "releaseState" : "09 Dec 2022",
+      "title" : "I Am DB Cooper",
+      "genreList" : [
+        {
+          "key" : "Crime",
+          "value" : "Crime"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMWYwNmQyMzMtMjJkNi00ODQwLTkxNzItOGNmNjliYTQyOTlkXkEyXkFqcGdeQXVyNjUyODA1Mzc@._V1_UX128_CR0,3,128,176_AL_.jpg",
+      "plot" : "Tells the story of hijacker DB Cooper, who remains one of the great PNW mysteries.",
+      "stars" : "Rainee Blake, Chris Bruno, Trevor Butcher, Joshua Chessin-Yudin",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Crime",
+      "starList" : [
+        {
+          "id" : "nm3119195",
+          "name" : "Rainee Blake"
+        },
+        {
+          "id" : "nm0116456",
+          "name" : "Chris Bruno"
+        },
+        {
+          "id" : "nm3136385",
+          "name" : "Trevor Butcher"
+        },
+        {
+          "id" : "nm8105936",
+          "name" : "Joshua Chessin-Yudin"
+        }
+      ],
+      "fullTitle" : "I Am DB Cooper (2022)"
+    },
+    {
+      "id" : "tt10233718",
+      "metacriticRating" : "",
+      "imDbRating" : "9.1",
+      "runtimeMins" : "110",
+      "imDbRatingCount" : "123",
+      "directorList" : [
+        {
+          "id" : "nm8012613",
+          "name" : "Jaspal Singh Sandhu"
+        },
+        {
+          "id" : "nm2426355",
+          "name" : "Rajeev Barnwal"
+        }
+      ],
+      "runtimeStr" : "110 mins",
+      "directors" : "Jaspal Singh Sandhu, Rajeev Barnwal",
+      "releaseState" : "09 Dec 2022",
+      "title" : "Vadh",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "Thriller",
+          "value" : "Thriller"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BMTBlMDI1MWUtYTAyNC00NTczLWE3MWYtYzE3YWNmYWQwZmM3XkEyXkFqcGdeQXVyOTI3MzI4MzA@._V1_UX128_CR0,2,128,176_AL_.jpg",
+      "plot" : "Story of an old married couple who were satisfied with their mundane middle class life, till their son decides to go for higher studies to USA.",
+      "stars" : "Neena Gupta, Umesh Kaushik, Diwakar Kumar, Tanya Lal",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Drama, Thriller",
+      "starList" : [
+        {
+          "id" : "nm0348481",
+          "name" : "Neena Gupta"
+        },
+        {
+          "id" : "nm12032048",
+          "name" : "Umesh Kaushik"
+        },
+        {
+          "id" : "nm6845056",
+          "name" : "Diwakar Kumar"
+        },
+        {
+          "id" : "nm13763737",
+          "name" : "Tanya Lal"
+        }
+      ],
+      "fullTitle" : "Vadh (2022)"
+    },
+    {
+      "id" : "tt13659434",
+      "metacriticRating" : "",
+      "imDbRating" : "8.2",
+      "runtimeMins" : "93",
+      "imDbRatingCount" : "13",
+      "directorList" : [
+        {
+          "id" : "nm1187019",
+          "name" : "Patrick Perez Vidauri"
+        }
+      ],
+      "runtimeStr" : "93 mins",
+      "directors" : "Patrick Perez Vidauri",
+      "releaseState" : "09 Dec 2022",
+      "title" : "Divorce Bait",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BNzkxMjc0ZmItMjQyYy00MmJlLWJjNzgtZjcwNzE3MzRlOTEyXkEyXkFqcGdeQXVyMjE4NzUxNDA@._V1_UX128_CR0,2,128,176_AL_.jpg",
+      "plot" : "Alexis Laguna is a happily re-married, suburban housewife. One day she announces that she is getting divorced just to see which of her friends will try to steal her husband. Meanwhile, an old flame comes back into her life.",
+      "stars" : "Vannessa Vasquez, Justin Berti, Erik Fellows, Jennifer Daley",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Comedy",
+      "starList" : [
+        {
+          "id" : "nm3970838",
+          "name" : "Vannessa Vasquez"
+        },
+        {
+          "id" : "nm2618325",
+          "name" : "Justin Berti"
+        },
+        {
+          "id" : "nm1795464",
+          "name" : "Erik Fellows"
+        },
+        {
+          "id" : "nm3373863",
+          "name" : "Jennifer Daley"
+        }
+      ],
+      "fullTitle" : "Divorce Bait (2022)"
+    },
+    {
+      "id" : "tt19799186",
+      "metacriticRating" : "",
+      "imDbRating" : "8.4",
+      "runtimeMins" : "180",
+      "imDbRatingCount" : "56",
+      "directorList" : [
+        {
+          "id" : "nm1719484",
+          "name" : "Max Webster"
+        }
+      ],
+      "runtimeStr" : "180 mins",
+      "directors" : "Max Webster",
+      "releaseState" : "02 Sep 2022",
+      "title" : "National Theatre Live: Henry V",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BZDBhZjY5MWQtMWRmNC00YmJkLTk0NjQtOWNhMTZiMjYzMGU1XkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Fresh to the throne, King Henry V launches England into a bloody war with France. When his campaign encounters resistance, this inexperienced new ruler must prove he is fit to guide a country into war.",
+      "stars" : "Kit Harington, Olivier Huband, Danny Kirrane",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Drama",
+      "starList" : [
+        {
+          "id" : "nm3229685",
+          "name" : "Kit Harington"
+        },
+        {
+          "id" : "nm7050750",
+          "name" : "Olivier Huband"
+        },
+        {
+          "id" : "nm2588194",
+          "name" : "Danny Kirrane"
+        }
+      ],
+      "fullTitle" : "National Theatre Live: Henry V (2022)"
+    },
+    {
+      "id" : "tt23856292",
+      "metacriticRating" : "",
+      "imDbRating" : "0",
+      "runtimeMins" : "140",
+      "imDbRatingCount" : "0",
+      "directorList" : [
+        {
+          "id" : "nm13436016",
+          "name" : "Rohan Sen"
+        }
+      ],
+      "runtimeStr" : "140 mins",
+      "directors" : "Rohan Sen",
+      "releaseState" : "02 Dec 2022",
+      "title" : "Subho Bijoya",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BNzg3YTU5OWMtNDA3OC00ZmYxLWE1OTUtNTliZWIwY2VmOTI5XkEyXkFqcGdeQXVyMTExMTg3OTU2._V1_UX128_CR0,1,128,176_AL_.jpg",
+      "plot" : "Subho Bijoya revolves around a Bonedi family situated in North Calcutta. An incident is forced to bring back the estranged family members back to the house. Relationships start to entwine.",
+      "stars" : "Anindya Chatterjee, Amrita De, Devtanu, Churni Ganguly",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Drama",
+      "starList" : [
+        {
+          "id" : "nm3532874",
+          "name" : "Anindya Chatterjee"
+        },
+        {
+          "id" : "nm12040961",
+          "name" : "Amrita De"
+        },
+        {
+          "id" : "nm12776390",
+          "name" : "Devtanu"
+        },
+        {
+          "id" : "nm1902543",
+          "name" : "Churni Ganguly"
+        }
+      ],
+      "fullTitle" : "Subho Bijoya (2022)"
+    },
+    {
+      "id" : "tt15326968",
+      "metacriticRating" : "",
+      "imDbRating" : "7.3",
+      "runtimeMins" : "140",
+      "imDbRatingCount" : "164",
+      "directorList" : [
+        {
+          "id" : "nm4410767",
+          "name" : "Suraj"
+        }
+      ],
+      "runtimeStr" : "140 mins",
+      "directors" : "Suraj",
+      "releaseState" : "09 Dec 2022",
+      "title" : "Naai Sekar Returns",
+      "genreList" : [
+        {
+          "key" : "Comedy",
+          "value" : "Comedy"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BYWNmYzM4YWEtOWJmZi00OGNlLThhZjEtM2I4MjFlMWU4ZDljXkEyXkFqcGdeQXVyMTU3NDgzNzM4._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "Petty criminal Naai Sekar kidnaps dogs belonging to the rich in order to collect a ransom, but makes a critical mistake when he abducts the dog of a ruthless gangster.",
+      "stars" : "Aarthi, Anandraj, Redin Kingsley, Sivaangi Krishnakumar",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Comedy",
+      "starList" : [
+        {
+          "id" : "nm4742592",
+          "name" : "Aarthi"
+        },
+        {
+          "id" : "nm1686962",
+          "name" : "Anandraj"
+        },
+        {
+          "id" : "nm10154968",
+          "name" : "Redin Kingsley"
+        },
+        {
+          "id" : "nm12065961",
+          "name" : "Sivaangi Krishnakumar"
+        }
+      ],
+      "fullTitle" : "Naai Sekar Returns (2022)"
+    },
+    {
+      "id" : "tt7477788",
+      "metacriticRating" : "",
+      "imDbRating" : "6.1",
+      "runtimeMins" : "92",
+      "imDbRatingCount" : "132",
+      "directorList" : [
+        {
+          "id" : "nm3234333",
+          "name" : "Jessica Oreck"
+        }
+      ],
+      "runtimeStr" : "92 mins",
+      "directors" : "Jessica Oreck",
+      "releaseState" : "09 Mar 2019",
+      "title" : "One Man Dies a Million Times",
+      "genreList" : [
+        {
+          "key" : "Drama",
+          "value" : "Drama"
+        },
+        {
+          "key" : "History",
+          "value" : "History"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BZDRhMGE5YTQtZGU0ZS00NWZiLWI5ZDYtMzFlYWMwYzg5MWJlXkEyXkFqcGdeQXVyMjAyNTg0MzE@._V1_UX128_CR0,0,128,176_AL_.jpg",
+      "plot" : "A true story, set in the future. About seeds and genetic diversity, about growth and decay, about love and war, about hunger of all kinds. About what it means to be human, even when all your humanity is stripped away.",
+      "stars" : "Alyssa Lozovskaya, Maksim Blinov, Vladimir Koshevoy, Alena Artemova",
+      "year" : "2019",
+      "contentRating" : "",
+      "genres" : "Drama, History",
+      "starList" : [
+        {
+          "id" : "nm2712956",
+          "name" : "Alyssa Lozovskaya"
+        },
+        {
+          "id" : "nm3964435",
+          "name" : "Maksim Blinov"
+        },
+        {
+          "id" : "nm2334739",
+          "name" : "Vladimir Koshevoy"
+        },
+        {
+          "id" : "nm10426218",
+          "name" : "Alena Artemova"
+        }
+      ],
+      "fullTitle" : "One Man Dies a Million Times (2019)"
+    },
+    {
+      "id" : "tt23875342",
+      "metacriticRating" : "",
+      "imDbRating" : "8.1",
+      "runtimeMins" : "126",
+      "imDbRatingCount" : "28",
+      "directorList" : [
+        {
+          "id" : "nm2538945",
+          "name" : "Gangadhar"
+        }
+      ],
+      "runtimeStr" : "126 mins",
+      "directors" : "Gangadhar",
+      "releaseState" : "09 Dec 2022",
+      "title" : "Mukhachitram",
+      "genreList" : [
+        {
+          "key" : "Thriller",
+          "value" : "Thriller"
+        }
+      ],
+      "image" : "https:\/\/m.media-amazon.com\/images\/M\/MV5BNGMyNTBlZjMtNjE3NS00NmU2LThmZGItZWMxMWExYWE1ZDQwXkEyXkFqcGdeQXVyMTU2NDkwOTAw._V1_UX128_CR0,4,128,176_AL_.jpg",
+      "plot" : "A plastic surgeon's life turns upside down after he replaces his wife's face to his ex-girlfriend. Things blow out unusually leading to a big issue ending in courtroom drama.",
+      "stars" : "Ayesha Khan, Chaitanya Rao, Ravishankar, Vishwak Sen",
+      "year" : "2022",
+      "contentRating" : "",
+      "genres" : "Thriller",
+      "starList" : [
+        {
+          "id" : "nm1481506",
+          "name" : "Ayesha Khan"
+        },
+        {
+          "id" : "nm12564847",
+          "name" : "Chaitanya Rao"
+        },
+        {
+          "id" : "nm10416582",
+          "name" : "Ravishankar"
+        },
+        {
+          "id" : "nm9876442",
+          "name" : "Vishwak Sen"
+        }
+      ],
+      "fullTitle" : "Mukhachitram (2022)"
+    }
+  ],
+  "errorMessage" : ""
+}

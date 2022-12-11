@@ -6,12 +6,11 @@
 //
 
 import UIKit
-import AlamofireImage
 
 //MARK: UICollectionViewCompositionalLayout
 
 extension MoviesViewController {
-    enum Section: Int, CaseIterable {
+    enum Section: Int {
         case inTheatres
         case mostPopular
     }
@@ -63,18 +62,16 @@ extension MoviesViewController: UICollectionViewDelegate {
     private func setupDiffableDataSource() {
         diffableDataSource = DiffableDataSource(
             collectionView: collectionView,
-            cellProvider: { (collectionView, indexPath, data) -> UICollectionViewCell? in
+            cellProvider: { [weak self] (collectionView, indexPath, data) -> UICollectionViewCell? in
                 switch Section(rawValue: indexPath.section) {
                 case .inTheatres:
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InTheatresMoviesCell",
                                                                   for: indexPath) as! InTheatresMoviesCollectionViewCell
+                    let deviceScale = self?.view.window?.windowScene?.screen.scale ?? 1
+                    let imageSize = CGSize(width: cell.frame.width * deviceScale, height: cell.frame.height * deviceScale)
                     
-                    
-                    if let urlString = (data as? InTheatresMovie)?.image, let url = URL(string: urlString) {
-                        cell.imageView.af.setImage(withURL: url)
-                    } else {
-
-                    }
+                    cell.setupCell(withData: data as! InTheatresMovie, imageSize: imageSize)
+                    cell.hasTitle = true
                     
                     return cell
 //                case .mostPopular:
