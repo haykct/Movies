@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Nuke
 
 //MARK: UICollectionViewCompositionalLayout
 
@@ -22,7 +23,7 @@ extension MoviesViewController {
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(groupWidth),
                                                heightDimension: .absolute(groupHeight))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 1)
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item]) // Add UUID in models
         let section = NSCollectionLayoutSection(group: group)
 
         section.interGroupSpacing = spacing
@@ -40,7 +41,7 @@ extension MoviesViewController {
             switch Section(rawValue: section) {
             case .inTheatres:
                 let insets = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10)
-                let section = self.createSection(groupWidth: 180, groupHeight: 180,
+                let section = self.createSection(groupWidth: 250, groupHeight: 400,
                                                  spacing: 48, insets: insets)
                 
                 return section
@@ -58,7 +59,7 @@ extension MoviesViewController {
 
 //MARK: UICollectionViewDiffableDataSource
 
-extension MoviesViewController {
+extension MoviesViewController: UICollectionViewDelegate {
     private func setupDiffableDataSource() {
         diffableDataSource = DiffableDataSource(
             collectionView: collectionView,
@@ -67,6 +68,8 @@ extension MoviesViewController {
                 case .inTheatres:
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InTheatresMoviesCell",
                                                                   for: indexPath) as! InTheatresMoviesCollectionViewCell
+                    
+//                    Nuke.loadImage(with: URL(string: (data as! InTheatresMovie).image)!, into: cell.imageView)
                     
                     return cell
 //                case .mostPopular:
@@ -92,15 +95,20 @@ class MoviesViewController: UIViewController {
     //MARK: private properties
     
     private var diffableDataSource: DiffableDataSource!
+    private var viewModel = MoviesViewModel(withNetworkService: DefaultNetworkService())
     
     //MARK: lifecycle methods
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupCollectionView()
+        setupDiffableDataSource()
+        setupBindings()
+        requestInTheatresMovies()
     }
 
-    //MARK: methods
+    //MARK: public methods
     
     func setupTabBarItem() {
         let tabBarAppearance = UITabBarAppearance()
@@ -111,6 +119,20 @@ class MoviesViewController: UIViewController {
     }
     
     //MARK: private methods
+    
+    private func requestInTheatresMovies() {
+        viewModel.requestInTheatresMovies()
+    }
+    
+    private func setupBindings() {
+        viewModel.movies.bind { [weak self] movies in
+            self?.applySnapshot(forSection: .inTheatres, withData: movies)
+        }
+        
+        viewModel.error.bind { _ in
+            // Show error screen
+        }
+    }
     
     private func setupCollectionView() {
         setupLayout()
