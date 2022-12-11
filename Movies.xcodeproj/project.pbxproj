@@ -33,6 +33,13 @@
 		26FF797B29458C8500824F85 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 26FF797A29458C8500824F85 /* Nuke */; };
 		26FF797D29460F4100824F85 /* ComingSoon.json in Resources */ = {isa = PBXBuildFile; fileRef = 26FF797C29460F4100824F85 /* ComingSoon.json */; };
 		26FF797F2946161B00824F85 /* InTheatres.json in Resources */ = {isa = PBXBuildFile; fileRef = 26FF797E2946161B00824F85 /* InTheatres.json */; };
+		26FF79822946476E00824F85 /* SectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF79812946476E00824F85 /* SectionHeaderReusableView.swift */; };
+		26FF7985294651D200824F85 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF7984294651D200824F85 /* Colors.swift */; };
+		26FF798F2946581E00824F85 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26FF798A2946544100824F85 /* NunitoSans-Regular.ttf */; };
+		26FF79902946581E00824F85 /* NunitoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26FF79882946544100824F85 /* NunitoSans-Light.ttf */; };
+		26FF79912946581E00824F85 /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26FF79872946542400824F85 /* NunitoSans-Bold.ttf */; };
+		26FF79922946581E00824F85 /* NunitoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26FF79892946544100824F85 /* NunitoSans-SemiBold.ttf */; };
+		26FF7994294658B500824F85 /* NunitoSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26FF7993294658B500824F85 /* NunitoSans-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +69,13 @@
 		26FF7975294580E900824F85 /* Movies.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Movies.entitlements; sourceTree = "<group>"; };
 		26FF797C29460F4100824F85 /* ComingSoon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ComingSoon.json; sourceTree = "<group>"; };
 		26FF797E2946161B00824F85 /* InTheatres.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InTheatres.json; sourceTree = "<group>"; };
+		26FF79812946476E00824F85 /* SectionHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SectionHeaderReusableView.swift; path = Movies/Movies/SectionHeaderReusableView.swift; sourceTree = SOURCE_ROOT; };
+		26FF7984294651D200824F85 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		26FF79872946542400824F85 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
+		26FF79882946544100824F85 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Light.ttf"; sourceTree = "<group>"; };
+		26FF79892946544100824F85 /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		26FF798A2946544100824F85 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
+		26FF7993294658B500824F85 /* NunitoSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +136,8 @@
 				26B9E8E92944CB8500251362 /* Movies */,
 				26FF796C2945104B00824F85 /* Binding */,
 				264CECDF293CF1520095EA32 /* NetworkService */,
+				26FF7983294651B600824F85 /* Colors */,
+				26FF79862946540400824F85 /* Fonts */,
 				26599415293A8693005149BF /* Extensions */,
 			);
 			path = Movies;
@@ -191,6 +207,7 @@
 			children = (
 				2659940729391418005149BF /* ViewControllers */,
 				26B9E8EA2944CB9C00251362 /* UICollectionViewCells */,
+				26FF79802946471A00824F85 /* UICollectionReusableViews */,
 				26FF79692944F94700824F85 /* ViewModels */,
 				264CECE9293D37890095EA32 /* Models */,
 			);
@@ -220,6 +237,34 @@
 				26FF796D2945107D00824F85 /* Box.swift */,
 			);
 			path = Binding;
+			sourceTree = "<group>";
+		};
+		26FF79802946471A00824F85 /* UICollectionReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				26FF79812946476E00824F85 /* SectionHeaderReusableView.swift */,
+			);
+			path = UICollectionReusableViews;
+			sourceTree = "<group>";
+		};
+		26FF7983294651B600824F85 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				26FF7984294651D200824F85 /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		26FF79862946540400824F85 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				26FF79872946542400824F85 /* NunitoSans-Bold.ttf */,
+				26FF79882946544100824F85 /* NunitoSans-Light.ttf */,
+				26FF7993294658B500824F85 /* NunitoSans-Black.ttf */,
+				26FF798A2946544100824F85 /* NunitoSans-Regular.ttf */,
+				26FF79892946544100824F85 /* NunitoSans-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,9 +338,14 @@
 				26FF797F2946161B00824F85 /* InTheatres.json in Resources */,
 				26B9E8EE2944CC1A00251362 /* InTheatresMoviesCollectionViewCell.xib in Resources */,
 				2659940029391281005149BF /* LaunchScreen.storyboard in Resources */,
+				26FF798F2946581E00824F85 /* NunitoSans-Regular.ttf in Resources */,
+				26FF7994294658B500824F85 /* NunitoSans-Black.ttf in Resources */,
 				265993FD29391281005149BF /* Assets.xcassets in Resources */,
+				26FF79922946581E00824F85 /* NunitoSans-SemiBold.ttf in Resources */,
 				26FF797D29460F4100824F85 /* ComingSoon.json in Resources */,
+				26FF79912946581E00824F85 /* NunitoSans-Bold.ttf in Resources */,
 				265993FB2939127F005149BF /* Main.storyboard in Resources */,
+				26FF79902946581E00824F85 /* NunitoSans-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +366,9 @@
 				26599417293A86AA005149BF /* UIViewController.swift in Sources */,
 				265993F82939127F005149BF /* MoviesViewController.swift in Sources */,
 				2659940E29393633005149BF /* Coordinator.swift in Sources */,
+				26FF79822946476E00824F85 /* SectionHeaderReusableView.swift in Sources */,
 				2659941029394478005149BF /* MoviesCoordinator.swift in Sources */,
+				26FF7985294651D200824F85 /* Colors.swift in Sources */,
 				265993F42939127F005149BF /* AppDelegate.swift in Sources */,
 				264CECEB293D3C530095EA32 /* InTheatresMoviesDataModel.swift in Sources */,
 				26FF796E2945107D00824F85 /* Box.swift in Sources */,

@@ -32,6 +32,17 @@ extension MoviesViewController {
         return section
     }
     
+    private func createSectionHeader(withHeight height: CGFloat) -> NSCollectionLayoutBoundarySupplementaryItem {
+        let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
+                                                             heightDimension: .absolute(height))
+        let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: layoutSectionHeaderSize,
+                                                                              elementKind: UICollectionView.elementKindSectionHeader,
+                                                                              alignment: .top,
+                                                                              absoluteOffset: CGPoint.zero)
+        
+        return layoutSectionHeader
+    }
+    
     private func setupLayout() {
         collectionView.collectionViewLayout = UICollectionViewCompositionalLayout { [weak self] section, _ in
             guard let self else { return nil }
@@ -41,6 +52,8 @@ extension MoviesViewController {
                 let insets = NSDirectionalEdgeInsets(top: 0, leading: 25, bottom: 0, trailing: 25)
                 let section = self.createSection(groupWidth: 290, groupHeight: 400,
                                                  spacing: 25, insets: insets)
+                
+                section.boundarySupplementaryItems = [self.createSectionHeader(withHeight: 40)]
                 
                 return section
             case .mostPopular:
@@ -81,6 +94,22 @@ extension MoviesViewController: UICollectionViewDelegate {
                     return nil
                 }
             })
+        
+        diffableDataSource.supplementaryViewProvider = { (collectionView, kind, indexPath) -> UICollectionReusableView? in
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                             withReuseIdentifier: "header",
+                                                                             for: indexPath) as! SectionHeaderReusableView
+            switch Section(rawValue: indexPath.section) {
+            case .inTheatres:
+                headerView.setTitle(text: "In The Theatres")
+//            case .mostPopular:
+//                headerView.setTitle(text: "Recommended")
+            default:
+                break
+            }
+
+            return headerView
+        }
     }
 }
 
@@ -126,8 +155,10 @@ class MoviesViewController: UIViewController {
         
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Movies"
-        appearance.titleTextAttributes = [.foregroundColor: UIColor(hexString: "#525151") as Any]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor(hexString: "#525151") as Any]
+        appearance.titleTextAttributes = [.foregroundColor: Colors.title as Any,
+                                          .font: UIFont(name: "NunitoSans-Black", size: 20) as Any]
+        appearance.largeTitleTextAttributes = [.foregroundColor: Colors.title as Any,
+                                               .font: UIFont(name: "NunitoSans-Black", size: 32) as Any]
         navigationItem.standardAppearance = appearance
     }
     
@@ -153,6 +184,9 @@ class MoviesViewController: UIViewController {
     private func registerReusableElements() {
         collectionView.register(UINib(nibName: "InTheatresMoviesCollectionViewCell", bundle: nil),
                                 forCellWithReuseIdentifier: "InTheatresMoviesCell")
+        collectionView.register(SectionHeaderReusableView.self,
+                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                                withReuseIdentifier: "header")
     }
     
     private func applySnapshot(forSection section: Section, withData data: [AnyHashable]) {
