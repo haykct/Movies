@@ -26,14 +26,20 @@ class InTheatresMoviesCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        imageView.layer.cornerRadius = 12
     }
 
     //MARK: public methods
     
     func setupCell(withData data: InTheatresMovie, imageSize: CGSize) {
-        if let url = URL(string: data.image) {
-            let deviceScale = window?.windowScene?.screen.scale ?? 1
-            let imageSize = CGSize(width: frame.width * deviceScale, height: frame.height * deviceScale)
+        var poster = data.image
+        
+        //As images have low resolution we can uncomment this line for getting the original sized images
+//        if let dotRange = data.image.range(of: "._") {
+//            poster.replaceSubrange(dotRange.lowerBound..<poster.endIndex, with: ".jpg")
+//        }
+        
+        if let url = URL(string: poster) {
             let resizedImageProcessors = [ImageProcessors.Resize(size: imageSize, contentMode: .aspectFill)]
             let options = ImageLoadingOptions(placeholder: UIImage(named: "placeholder"))
             let request = ImageRequest(url: url, processors: resizedImageProcessors)

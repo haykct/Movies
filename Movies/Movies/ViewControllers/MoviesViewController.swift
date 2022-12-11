@@ -26,7 +26,6 @@ extension MoviesViewController {
         let section = NSCollectionLayoutSection(group: group)
 
         section.interGroupSpacing = spacing
-        section.contentInsetsReference = .safeArea
         section.contentInsets = insets
         section.orthogonalScrollingBehavior = .continuous
         
@@ -39,9 +38,9 @@ extension MoviesViewController {
             
             switch Section(rawValue: section) {
             case .inTheatres:
-                let insets = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10)
-                let section = self.createSection(groupWidth: 200, groupHeight: 320,
-                                                 spacing: 48, insets: insets)
+                let insets = NSDirectionalEdgeInsets(top: 0, leading: 25, bottom: 0, trailing: 25)
+                let section = self.createSection(groupWidth: 290, groupHeight: 400,
+                                                 spacing: 25, insets: insets)
                 
                 return section
             case .mostPopular:
@@ -71,7 +70,6 @@ extension MoviesViewController: UICollectionViewDelegate {
                     let imageSize = CGSize(width: cell.frame.width * deviceScale, height: cell.frame.height * deviceScale)
                     
                     cell.setupCell(withData: data as! InTheatresMovie, imageSize: imageSize)
-                    cell.hasTitle = true
                     
                     return cell
 //                case .mostPopular:
@@ -104,6 +102,7 @@ class MoviesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigationBar()
         setupCollectionView()
         setupDiffableDataSource()
         setupBindings()
@@ -121,6 +120,16 @@ class MoviesViewController: UIViewController {
     }
     
     //MARK: private methods
+    
+    private func setupNavigationBar() {
+        let appearance = UINavigationBarAppearance()
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "Movies"
+        appearance.titleTextAttributes = [.foregroundColor: UIColor(hexString: "#525151") as Any]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor(hexString: "#525151") as Any]
+        navigationItem.standardAppearance = appearance
+    }
     
     private func requestInTheatresMovies() {
         viewModel.requestInTheatresMovies()
