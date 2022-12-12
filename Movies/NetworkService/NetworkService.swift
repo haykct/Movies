@@ -19,14 +19,16 @@ extension Data {
     }
 }
 
-
+enum DataError: Error {
+    case invalidData
+}
 
 protocol NetworkService {
     func request<Request: DataRequest>(_ request: Request,
                                        completion: @escaping (Result<Request.ResponseData, Error>) -> Void)
 }
 
-#warning("Fix")
+#warning("Restore request code")
 class DefaultNetworkService: NetworkService {
     func request<Request>(_ request: Request,
                           completion: @escaping (Result<Request.ResponseData, Error>) -> Void) where Request: DataRequest {
@@ -34,10 +36,16 @@ class DefaultNetworkService: NetworkService {
 //            switch response.result {
 //            case .success(let data):
 //                do {
-//                    debugPrint(data.prettyPrintedJSONString)
+////                    debugPrint(data.prettyPrintedJSONString)
 //                    let decodedData = try request.decode(data)
 //
-//                    completion(.success(decodedData))
+//                    if decodedData.errorMessage.isEmpty {
+//                        completion(.success(decodedData))
+//
+//                        return
+//                    }
+//
+//                    completion(.failure(DataError.invalidData))
 //                } catch let error {
 //                    completion(.failure(error))
 //                }

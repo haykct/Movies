@@ -7,10 +7,6 @@
 
 import Foundation
 
-enum DataError: Error {
-    case invalidData
-}
-
 struct URLComponents {
     private static let baseURL = "https://imdb-api.com/"
     private static let apiKey = "k_95zcsbzv/"
@@ -24,8 +20,12 @@ struct URLComponents {
     }
 }
 
+protocol Response {
+    var errorMessage: String { get set }
+}
+
 protocol DataRequest {
-    associatedtype ResponseData
+    associatedtype ResponseData: Response
     
     var url: String { get }
     

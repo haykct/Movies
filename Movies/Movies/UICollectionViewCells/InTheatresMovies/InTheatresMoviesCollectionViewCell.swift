@@ -12,34 +12,31 @@ class InTheatresMoviesCollectionViewCell: UICollectionViewCell {
     
     //MARK: outlets
     
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    
-    //MARK: public properties
-    
-    var hasTitle = false {
-        willSet { titleLabel.isHidden = !newValue }
-    }
 
     //MARK: lifecycle methods
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override func layoutSubviews() {
+        super.layoutSubviews()
         
         imageView.layer.cornerRadius = 12
     }
-
+    
     //MARK: public methods
     
     func setupCell(withData data: InTheatresMovie, imageSize: CGSize) {
-        var poster = data.image
-        
+        loadImage(url: data.image, imageSize: imageSize)
+    }
+    
+    //MARK: private methods
+    
+    private func loadImage(url: String, imageSize: CGSize) {
         //As images have low resolution we can uncomment this line for getting the original sized images
-//        if let dotRange = data.image.range(of: "._") {
-//            poster.replaceSubrange(dotRange.lowerBound..<poster.endIndex, with: ".jpg")
+//        var url = url
+//        if let dotRange = url.range(of: "._") {
+//            url.replaceSubrange(dotRange.lowerBound..<url.endIndex, with: ".jpg")
 //        }
-        
-        if let url = URL(string: poster) {
+        if let url = URL(string: url) {
             let resizedImageProcessors = [ImageProcessors.Resize(size: imageSize, contentMode: .aspectFill)]
             let options = ImageLoadingOptions(placeholder: UIImage(named: "placeholder"))
             let request = ImageRequest(url: url, processors: resizedImageProcessors)

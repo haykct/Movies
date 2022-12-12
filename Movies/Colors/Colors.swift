@@ -9,4 +9,5 @@ import UIKit
 
 struct Colors {
     static let title = UIColor(hexString: "#525151")
+    static let tabItem = UIColor(hexString: "#6ECCAD")
 }

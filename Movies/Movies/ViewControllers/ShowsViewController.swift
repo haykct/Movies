@@ -21,7 +21,8 @@ class ShowsViewController: UIViewController {
     func setupTabBarItem() {
         let tabBarAppearance = UITabBarAppearance()
         tabBarItem = UITabBarItem(title: "Shows", image: UIImage(systemName: "tv.inset.filled"), tag: 1)
-        tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.font: UIFont.systemFont(ofSize: 13)]
+        tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.font: UIFont(name: "NunitoSans-SemiBold",
+                                                                                             size: 14) as Any]
         tabBarItem.standardAppearance = tabBarAppearance
         tabBarItem.scrollEdgeAppearance = tabBarAppearance
     }
