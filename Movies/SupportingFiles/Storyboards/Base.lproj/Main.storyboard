@@ -30,13 +30,38 @@
                     <view key="view" contentMode="scaleToFill" id="nng-IU-3Do">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BbY-vA-D9f">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7J7-0V-wei">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="delegate" destination="Kng-Q6-wh4" id="65U-gl-GHc"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8mF-O3-O8U"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8mF-O3-O8U" firstAttribute="bottom" secondItem="BbY-vA-D9f" secondAttribute="bottom" id="Rup-Fv-gsS"/>
+                            <constraint firstItem="8mF-O3-O8U" firstAttribute="trailing" secondItem="BbY-vA-D9f" secondAttribute="trailing" id="SjC-Om-flz"/>
+                            <constraint firstItem="BbY-vA-D9f" firstAttribute="top" secondItem="8mF-O3-O8U" secondAttribute="top" id="U9c-Xp-VLj"/>
+                            <constraint firstItem="BbY-vA-D9f" firstAttribute="leading" secondItem="8mF-O3-O8U" secondAttribute="leading" id="kcT-HE-K5Q"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="BbY-vA-D9f" id="jg2-o9-WIu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPF-Gt-Jv2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-625" y="-124"/>
+            <point key="canvasLocation" x="-626.15384615384619" y="-124.40758293838861"/>
         </scene>
         <!--Shows View Controller-->
         <scene sceneID="zKu-h6-wKN">

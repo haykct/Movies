@@ -25,8 +25,9 @@ class MoviesCoordinator: Coordinator {
     
     func start() {
         let moviesVC = MoviesViewController.instantiate(fromStoryboard: .main)
-        
+
         moviesVC.tabBarItem = UITabBarItem(title: "Movies", image: UIImage(systemName: "film.fill"), tag: 0)
+        moviesVC.setupTabBarItem()
         navigationController.setViewControllers([moviesVC], animated: false)
     }
     

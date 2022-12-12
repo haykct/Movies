@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct InTheatresDataModel: Decodable {
+struct InTheatresMoviesDataModel: Decodable, Response {
     var items: [InTheatresMovie]
     var errorMessage: String
 }
 
-struct InTheatresMovie: Decodable {
+struct InTheatresMovie: Hashable, Decodable {
     var id: String
     var image: String
 }

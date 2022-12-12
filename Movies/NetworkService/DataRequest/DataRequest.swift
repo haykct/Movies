@@ -9,7 +9,7 @@ import Foundation
 
 struct URLComponents {
     private static let baseURL = "https://imdb-api.com/"
-    private static let apiKey = "k_k9pjq5s2/"
+    private static let apiKey = "k_95zcsbzv/"
     private static let defaultPath = "en/API/"
     
     static func buildUrl(withPath path: String, id: String? = nil) -> String {
@@ -20,8 +20,12 @@ struct URLComponents {
     }
 }
 
+protocol Response {
+    var errorMessage: String { get set }
+}
+
 protocol DataRequest {
-    associatedtype ResponseData
+    associatedtype ResponseData: Response
     
     var url: String { get }
     
