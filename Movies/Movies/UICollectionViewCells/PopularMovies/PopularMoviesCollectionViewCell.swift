@@ -28,6 +28,7 @@ class PopularMoviesCollectionViewCell: UICollectionViewCell {
     //MARK: public methods
     
     func setupCell(withData data: PopularMovie, imageSize: CGSize) {
+        ratingImageView.isHidden = data.rating.isEmpty
         ratingLabel.text = data.rating
         titleLabel.text = data.title
         loadImage(url: data.image, imageSize: imageSize)
