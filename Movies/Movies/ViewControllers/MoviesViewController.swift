@@ -10,11 +10,6 @@ import UIKit
 //MARK: UICollectionViewCompositionalLayout
 
 extension MoviesViewController {
-    enum Section: Int, CaseIterable {
-        case inTheatres
-        case mostPopular
-    }
-    
     private func createSection(itemSize: NSCollectionLayoutSize, groupSize: NSCollectionLayoutSize,
                               spacing: CGFloat) -> NSCollectionLayoutSection {
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
@@ -69,7 +64,7 @@ extension MoviesViewController {
 
 //MARK: UICollectionViewDiffableDataSource
 
-extension MoviesViewController: UICollectionViewDelegate {
+extension MoviesViewController {
     private func setupDiffableDataSource() {
         diffableDataSource = DiffableDataSource(
             collectionView: collectionView,
@@ -116,6 +111,19 @@ extension MoviesViewController: UICollectionViewDelegate {
     }
 }
 
+//MARK: UICollectionViewDelegate
+
+extension MoviesViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel?.openDetail(withIndexPath: indexPath)
+    }
+}
+
+enum Section: Int, CaseIterable {
+    case inTheatres
+    case mostPopular
+}
+
 class MoviesViewController: UIViewController {
     
     typealias DiffableDataSource = UICollectionViewDiffableDataSource<Section, AnyHashable>
@@ -124,10 +132,13 @@ class MoviesViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    //MARK: public properties
+    
+    var viewModel: MoviesViewModel?
+    
     //MARK: private properties
     
     private var diffableDataSource: DiffableDataSource!
-    private var viewModel = MoviesViewModel(withNetworkService: DefaultNetworkService())
     
     //MARK: lifecycle methods
 
@@ -167,15 +178,15 @@ class MoviesViewController: UIViewController {
     }
     
     private func requestData() {
-        viewModel.requestAllMovies()
+        viewModel?.requestAllMovies()
     }
     
     private func setupBindings() {
-        viewModel.allMovies.bind { [weak self] allMovies in
+        viewModel?.allMovies.bind { [weak self] allMovies in
             self?.applySnapshot(allMovies: allMovies)
         }
         
-        viewModel.error.bind { _ in
+        viewModel?.error.bind { _ in
             // Show error screen
         }
     }

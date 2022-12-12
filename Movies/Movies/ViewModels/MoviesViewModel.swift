@@ -9,6 +9,10 @@ import Foundation
 
 class MoviesViewModel {
     
+    //MARK: public properties
+    
+    weak var coordinator: MoviesCoordinator?
+    
     //MARK: private properties
     
     private let group = DispatchGroup()
@@ -25,6 +29,16 @@ class MoviesViewModel {
     }
     
     //MARK: public methods
+    
+    func openDetail(withIndexPath indexPath: IndexPath) {
+        switch Section(rawValue: indexPath.section) {
+        case .inTheatres:
+            coordinator?.openDetail(withID: inTheatresMovies.value?[indexPath.item].id)
+        case .mostPopular:
+            coordinator?.openDetail(withID: popularMovies.value?[indexPath.item].id)
+        default: return
+        }
+    }
     
     func requestInTheatresMovies() {
         let request = InTheatresMoviesRequest()
