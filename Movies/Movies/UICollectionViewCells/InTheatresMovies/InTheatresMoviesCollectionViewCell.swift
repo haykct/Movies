@@ -31,11 +31,6 @@ class InTheatresMoviesCollectionViewCell: UICollectionViewCell {
     //MARK: private methods
     
     private func loadImage(url: String, imageSize: CGSize) {
-        //As images have low resolution we can uncomment this line for getting the original sized images
-//        var url = url
-//        if let dotRange = url.range(of: "._") {
-//            url.replaceSubrange(dotRange.lowerBound..<url.endIndex, with: ".jpg")
-//        }
         if let url = URL(string: url) {
             let resizedImageProcessors = [ImageProcessors.Resize(size: imageSize, contentMode: .aspectFill)]
             let options = ImageLoadingOptions(placeholder: UIImage(named: "placeholder"))
