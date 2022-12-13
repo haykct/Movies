@@ -9,7 +9,7 @@ import Foundation
 
 struct MostPopularMoviesDataModel: Decodable, Response {
     var items: [PopularMovie]
-    var errorMessage: String
+    var errorMessage: String?
 }
 
 struct PopularMovie: Hashable, Decodable {

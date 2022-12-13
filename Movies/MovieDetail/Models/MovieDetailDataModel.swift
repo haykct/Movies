@@ -8,22 +8,24 @@
 import Foundation
 
 struct MovieDetailDataModel: Decodable, Response {
-    var id: String
+    var id: String?
     var fullTitle: String?
     var image: String?
     var runtimeStr: String?
-    var imDbRating: String?
+    var plot: String?
+    var rating: String?
     var genres: String?
     var directors: String?
     var actorList: [Actor]?
-    var errorMessage: String
+    var errorMessage: String?
     
     enum CodingKeys: String, CodingKey {
         case id
         case fullTitle
         case image
         case runtimeStr
-        case imdbRating = "imDbRating"
+        case plot
+        case rating = "imDbRating"
         case genres
         case directors
         case actorList
@@ -33,15 +35,16 @@ struct MovieDetailDataModel: Decodable, Response {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        self.id = try container.decode(String.self, forKey: .id)
+        self.id = try container.decodeIfPresent(String.self, forKey: .id)
         self.fullTitle = try container.decodeIfPresent(String.self, forKey: .fullTitle)
         self.image = try container.decodeIfPresent(String.self, forKey: .image)
         self.runtimeStr = try container.decodeIfPresent(String.self, forKey: .runtimeStr)
-        self.imDbRating = try container.decodeIfPresent(String.self, forKey: .imdbRating)
+        self.plot = try container.decodeIfPresent(String.self, forKey: .plot)
+        self.rating = try container.decodeIfPresent(String.self, forKey: .rating)
         self.genres = try container.decodeIfPresent(String.self, forKey: .genres)
         self.directors = try container.decodeIfPresent(String.self, forKey: .directors)
         self.actorList = try container.decodeIfPresent([Actor].self, forKey: .actorList)
-        self.errorMessage = try container.decode(String.self, forKey: .errorMessage)
+        self.errorMessage = try container.decodeIfPresent(String.self, forKey: .errorMessage)
     }
 }
 

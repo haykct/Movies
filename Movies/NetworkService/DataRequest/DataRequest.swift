@@ -21,7 +21,7 @@ struct URLComponents {
 }
 
 protocol Response {
-    var errorMessage: String { get set }
+    var errorMessage: String? { get set }
 }
 
 protocol DataRequest {

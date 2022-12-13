@@ -26,13 +26,13 @@ class DefaultNetworkService: NetworkService {
 //                do {
 //                    let decodedData = try request.decode(data)
 //
-//                    if decodedData.errorMessage.isEmpty {
+//                    if decodedData.errorMessage.isNilOrEmpty {
 //                        completion(.success(decodedData))
 //
 //                        return
 //                    }
 //
-//                    completion(.failure(DataError.invalidData(decodedData.errorMessage)))
+//                    completion(.failure(DataError.invalidData(decodedData.errorMessage!)))
 //                } catch let error {
 //                    completion(.failure(error))
 //                }

@@ -11,5 +11,9 @@ struct MovieDetailRequest: DataRequest {
     
     typealias ResponseData = MovieDetailDataModel
     
-    let url = URLComponents.buildUrl(withPath: "Title")
+    let url: String
+    
+    init(id: String) {
+        url = URLComponents.buildUrl(withPath: "Title", id: id)
+    }
 }

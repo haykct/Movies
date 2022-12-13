@@ -9,7 +9,7 @@ import Foundation
 
 struct InTheatresMoviesDataModel: Decodable, Response {
     var items: [InTheatresMovie]
-    var errorMessage: String
+    var errorMessage: String?
 }
 
 struct InTheatresMovie: Hashable, Decodable {
