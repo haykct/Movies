@@ -168,13 +168,18 @@ class MoviesViewController: UIViewController {
     private func setupNavigationBar() {
         let appearance = UINavigationBarAppearance()
         
-        navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Movies"
+        navigationController?.navigationBar.prefersLargeTitles = true
         appearance.titleTextAttributes = [.foregroundColor: Colors.title as Any,
                                           .font: UIFont(name: "NunitoSans-Black", size: 20) as Any]
         appearance.largeTitleTextAttributes = [.foregroundColor: Colors.title as Any,
                                                .font: UIFont(name: "NunitoSans-Black", size: 32) as Any]
-        navigationItem.standardAppearance = appearance
+        appearance.buttonAppearance.normal.titleTextAttributes = [.foregroundColor: Colors.title as Any,
+                                                                  .font: UIFont(name: "NunitoSans-Bold", size: 18) as Any]
+        appearance.setBackIndicatorImage(UIImage(systemName: "chevron.backward.circle.fill"),
+                                         transitionMaskImage: UIImage(systemName: "chevron.backward.circle.fill"))
+        navigationController?.navigationBar.tintColor = Colors.title
+        navigationController?.navigationBar.standardAppearance = appearance
     }
     
     private func requestData() {

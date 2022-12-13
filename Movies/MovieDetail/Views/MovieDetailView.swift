@@ -10,13 +10,21 @@ import SwiftUI
 struct MovieDetailView: View {
     
     @ObservedObject var viewModel: MovieDetailViewModel
-    
+//    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     init(viewModel: MovieDetailViewModel) {
         self.viewModel = viewModel
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+           
+        }
+        .frame(maxWidth: .infinity)
+        .background(
+            LinearGradient(gradient: Gradient(colors: [SwiftUIColors.cyan, .white]),
+                           startPoint: .top, endPoint: .bottom)
+        )
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

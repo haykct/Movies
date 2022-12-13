@@ -31,6 +31,7 @@ class MoviesCoordinator: Coordinator {
         moviesVC.viewModel = MoviesViewModel(withNetworkService: DefaultNetworkService())
         moviesVC.viewModel?.coordinator = self
         moviesVC.setupTabBarItem()
+        
         navigationController.setViewControllers([moviesVC], animated: false)
     }
     
@@ -38,6 +39,7 @@ class MoviesCoordinator: Coordinator {
         let viewModel = MovieDetailViewModel(networkService: DefaultNetworkService(), id: id)
         let swiftUIViewController = UIHostingController(rootView: MovieDetailView(viewModel: viewModel))
         
+        swiftUIViewController.navigationItem.largeTitleDisplayMode = .never
         navigationController.pushViewController(swiftUIViewController, animated: true)
     }
     
