@@ -16,23 +16,49 @@ struct MovieDetailView: View {
     }
     
     var body: some View {
-        ScrollView {
-            HStack {
-                VStack {
-                    
+        GeometryReader { proxy in
+            ScrollView {
+                HStack(spacing: 0) {
+                    Spacer()
+                        if let image = viewModel.movie?.image {
+                            AsyncImage(url: URL(string: image)) { image in
+                                image
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 200, height: 250)
+//                                    .background(.green)
+                                    .padding(.trailing, 50)
+                                    .clipped()
+                            } placeholder: {
+                                Image("placeholder")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 200, height: 250)
+//                                    .background(.green)
+                                    .padding(.trailing, 50)
+                                    .clipped()
+                            }
+
+                        }
+                    VStack {
+//                        Text("Hello")
+                    }
+                    .frame(maxWidth: 100, maxHeight: .infinity)
+//                    .background(.green)
+                    Spacer()
                 }
+                .frame(width: proxy.size.width, height: 250)
+//                .background(.red)
             }
-            .frame(width: 300, height: 200)
-        }
-        .frame(maxWidth: .infinity)
-        .background(
-            LinearGradient(gradient: Gradient(colors: [SwiftUIColors.cyan, .white]),
-                           startPoint: .top, endPoint: .bottom)
-        )
-        .navigationBarTitleDisplayMode(.inline)
-        .onAppear {
-            viewModel.requestMosvie()
-            UINavigationBar.appearance().isTranslucent = false
+            .frame(maxWidth: .infinity)
+            .background(
+                LinearGradient(gradient: Gradient(colors: [SwiftUIColors.cyan, .white]),
+                               startPoint: .top, endPoint: .bottom)
+            )
+            .navigationBarTitleDisplayMode(.inline)
+            .onAppear {
+                viewModel.requestMosvie()
+            }
         }
     }
 }

@@ -51,10 +51,8 @@ class MoviesViewModel {
             case .success(let data):
                 self.inTheatresMovies.value = data.items
                 self.group.leave()
-                print(data.errorMessage)
             case .failure(let error):
                 self.error.value = error
-                print(error.localizedDescription)
             }
         }
     }
@@ -70,10 +68,8 @@ class MoviesViewModel {
             case .success(let data):
                 self.popularMovies.value = data.items
                 self.group.leave()
-                print(data.errorMessage)
             case .failure(let error):
                 self.error.value = error
-                print(error.localizedDescription)
             }
         }
     }
