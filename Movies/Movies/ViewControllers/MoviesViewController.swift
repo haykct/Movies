@@ -170,15 +170,15 @@ class MoviesViewController: UIViewController {
         
         navigationItem.title = "Movies"
         navigationController?.navigationBar.prefersLargeTitles = true
-        appearance.titleTextAttributes = [.foregroundColor: Colors.title as Any,
+        appearance.titleTextAttributes = [.foregroundColor: Colors.grey as Any,
                                           .font: UIFont(name: "NunitoSans-Black", size: 20) as Any]
-        appearance.largeTitleTextAttributes = [.foregroundColor: Colors.title as Any,
+        appearance.largeTitleTextAttributes = [.foregroundColor: Colors.grey as Any,
                                                .font: UIFont(name: "NunitoSans-Black", size: 32) as Any]
-        appearance.buttonAppearance.normal.titleTextAttributes = [.foregroundColor: Colors.title as Any,
+        appearance.buttonAppearance.normal.titleTextAttributes = [.foregroundColor: Colors.grey as Any,
                                                                   .font: UIFont(name: "NunitoSans-Bold", size: 18) as Any]
         appearance.setBackIndicatorImage(UIImage(systemName: "chevron.backward.circle.fill"),
                                          transitionMaskImage: UIImage(systemName: "chevron.backward.circle.fill"))
-        navigationController?.navigationBar.tintColor = Colors.title
+        navigationController?.navigationBar.tintColor = Colors.grey
         navigationController?.navigationBar.standardAppearance = appearance
     }
     
