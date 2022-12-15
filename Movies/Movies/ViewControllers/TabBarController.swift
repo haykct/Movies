@@ -18,7 +18,7 @@ class TabBarController: UITabBarController {
     //MARK: private methods
     
     private func setupTabBar() {
-        tabBar.tintColor = Colors.tabItem
+        tabBar.tintColor = Colors.cyan
     }
    
 }

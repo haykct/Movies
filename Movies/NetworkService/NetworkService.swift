@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 enum DataError: Error {
-    case invalidData
+    case invalidData(String)
 }
 
 protocol NetworkService {
@@ -26,13 +26,13 @@ class DefaultNetworkService: NetworkService {
                 do {
                     let decodedData = try request.decode(data)
 
-                    if decodedData.errorMessage.isEmpty {
+                    if decodedData.errorMessage.isNilOrEmpty {
                         completion(.success(decodedData))
 
                         return
                     }
 
-                    completion(.failure(DataError.invalidData))
+                    completion(.failure(DataError.invalidData(decodedData.errorMessage!)))
                 } catch let error {
                     completion(.failure(error))
                 }
@@ -41,5 +41,4 @@ class DefaultNetworkService: NetworkService {
             }
         }
     }
-
 }

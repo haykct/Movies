@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct URLComponents {
+struct URLBuilder {
     private static let baseURL = "https://imdb-api.com/"
-    private static let apiKey = "k_95zcsbzv/"
+    private static let apiKey = "k_8wo9qbmz"
     private static let defaultPath = "en/API/"
     
     static func buildUrl(withPath path: String, id: String? = nil) -> String {
-        let url = baseURL + defaultPath + "\(path)/" + apiKey
+        let url = baseURL + defaultPath + "\(path)/\(apiKey)/"
         guard let id else { return url }
         
         return url + id
@@ -21,7 +21,7 @@ struct URLComponents {
 }
 
 protocol Response {
-    var errorMessage: String { get set }
+    var errorMessage: String? { get set }
 }
 
 protocol DataRequest {
