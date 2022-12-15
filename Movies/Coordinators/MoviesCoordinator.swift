@@ -37,7 +37,7 @@ class MoviesCoordinator: Coordinator {
     
     func openDetail(withID id: String?) {
         let viewModel = MovieDetailViewModel(networkService: DefaultNetworkService(), id: id)
-        let swiftUIViewController = UIHostingController(rootView: MovieDetailView(viewModel: viewModel))
+        let swiftUIViewController = UIHostingController(rootView: MovieDetailView().environmentObject(viewModel))
         
         swiftUIViewController.navigationItem.largeTitleDisplayMode = .never
         navigationController.pushViewController(swiftUIViewController, animated: true)

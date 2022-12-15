@@ -14,6 +14,6 @@ struct MovieDetailRequest: DataRequest {
     let url: String
     
     init(id: String) {
-        url = URLComponents.buildUrl(withPath: "Title", id: id)
+        url = URLBuilder.buildUrl(withPath: "Title", id: id)
     }
 }

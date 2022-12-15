@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Nuke
+import SDWebImage
 
 class PopularMoviesCollectionViewCell: UICollectionViewCell {
     
@@ -38,11 +38,9 @@ class PopularMoviesCollectionViewCell: UICollectionViewCell {
     
     private func loadImage(url: String, imageSize: CGSize) {
         if let url = URL(string: url) {
-            let resizedImageProcessors = [ImageProcessors.Resize(size: imageSize, contentMode: .aspectFill)]
-            let options = ImageLoadingOptions(placeholder: UIImage(named: "placeholder"))
-            let request = ImageRequest(url: url, processors: resizedImageProcessors)
+            let transformer = SDImageResizingTransformer(size: imageSize, scaleMode: .aspectFill)
             
-            Nuke.loadImage(with: request, options: options, into: imageView)
+            imageView.sd_setImage(with: url, placeholderImage: UIImage(named: "placeholder"), context: [.imageTransformer: transformer])
         } else {
             imageView.image = UIImage(named: "placeholder")
         }

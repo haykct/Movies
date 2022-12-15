@@ -48,7 +48,8 @@ struct MovieDetailDataModel: Decodable, Response {
     }
 }
 
-struct Actor: Decodable {
+struct Actor: Decodable, Identifiable {
+    var id: String?
     var name: String?
     var image: String?
 }

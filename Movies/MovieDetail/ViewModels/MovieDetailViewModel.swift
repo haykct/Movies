@@ -11,6 +11,7 @@ class MovieDetailViewModel: ObservableObject {
     
     private var id: String?
     private var networkService: NetworkService
+    
     @Published var movie: MovieDetailDataModel?
     
     init(networkService: NetworkService, id: String?) {

@@ -6,14 +6,26 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 extension Image {
-    func clippedAndScaledToFill() -> some View {
+    func clippedAndScaledToFill(width: CGFloat, height: CGFloat, radius: CGFloat) -> some View {
         self
             .resizable()
             .scaledToFill()
-            .frame(width: 160, height: 210)
+            .frame(width: width, height: height)
             .clipped()
-            .cornerRadius(12)
+            .cornerRadius(radius)
+    }
+}
+
+extension AnimatedImage {
+    func clippedAndScaledToFill(width: CGFloat, height: CGFloat, radius: CGFloat) -> some View {
+        self
+            .resizable()
+            .scaledToFill()
+            .frame(width: width, height: height)
+            .clipped()
+            .cornerRadius(radius)
     }
 }
