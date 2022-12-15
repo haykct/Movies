@@ -5,7 +5,6 @@
 //  Created by Hayk Hayrapetyan on 01.12.22.
 //
 
-import Foundation
 import UIKit
 
 protocol BaseCoordinator {

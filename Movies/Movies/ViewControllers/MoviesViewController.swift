@@ -145,6 +145,7 @@ class MoviesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupTabBarItem()
         setupNavigationBar()
         setupCollectionView()
         setupDiffableDataSource()
@@ -156,7 +157,7 @@ class MoviesViewController: UIViewController {
     
     func setupTabBarItem() {
         let tabBarAppearance = UITabBarAppearance()
-        tabBarItem = UITabBarItem(title: "Movies", image: UIImage(systemName: "film.fill"), tag: 0)
+
         tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.font: UIFont(name: "NunitoSans-SemiBold",
                                                                                              size: 14) as Any]
         tabBarItem.standardAppearance = tabBarAppearance
