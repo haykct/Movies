@@ -24,11 +24,10 @@ class ShowsCoordinator: Coordinator {
     //MARK: methods
     
     func start() {
-        let showsVC = ShowsViewController.instantiate(fromStoryboard: .main)
-//        let swiftUIViewController = UIHostingController(rootView: MovieDetailView().environmentObject(viewModel))
+        let swiftUIViewController = UIHostingController(rootView: Text("Hello"))
         
-        showsVC.tabBarItem = UITabBarItem(title: "Shows", image: UIImage(systemName: "tv.inset.filled"), tag: 1)
-        navigationController.setViewControllers([showsVC], animated: false)
+        swiftUIViewController.tabBarItem = UITabBarItem(title: "Shows", image: UIImage(systemName: "tv.inset.filled"), tag: 1)
+        navigationController.setViewControllers([swiftUIViewController], animated: false)
     }
     
 }
