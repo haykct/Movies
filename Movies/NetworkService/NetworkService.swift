@@ -40,15 +40,5 @@ class DefaultNetworkService: NetworkService {
                 completion(.failure(error))
             }
         }
-        
-//        if let url = Bundle.main.url(forResource: "InTheatres", withExtension: "json") {
-//            do {
-//                let data = try Data(contentsOf: url)
-//                let jsonData = try request.decode(data)
-//                completion(.success(jsonData))
-//            } catch {
-//                print("error:\(error)")
-//            }
-//        }
     }
 }

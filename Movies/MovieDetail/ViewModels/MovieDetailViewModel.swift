@@ -21,9 +21,9 @@ class MovieDetailViewModel: ObservableObject {
     
     func requestMosvie() {
         guard let id else { return }
-        
+
         let request = MovieDetailRequest(id: id)
-        
+
         networkService.request(request) { [weak self] result in
             guard let self else { return }
 
@@ -34,15 +34,6 @@ class MovieDetailViewModel: ObservableObject {
                 print(error.localizedDescription)
             }
         }
-//        if let url = Bundle.main.url(forResource: "Detail", withExtension: "json") {
-//            do {
-//                let data = try Data(contentsOf: url)
-//                let jsonData = try request.decode(data)
-//                self.movie = jsonData
-//            } catch {
-//                print("error:\(error)")
-//            }
-//        }
     }
     
     private func removedEmptyImages(data: MovieDetailDataModel) -> MovieDetailDataModel {
