@@ -17,7 +17,7 @@ struct MovieDetailCastView: View {
     var body: some View {
         // Api gives high resolution images(which are loading slow) and url for resize request.
         // Since the api call amount is limited by 100 calls a day, I didn't implement image
-        // resizing request logic, cause I consume requests amount after scrolling through images multiple times.
+        // resizing request logic, cause I consume the amount of the requests after scrolling through images multiple times.
         if let actors = viewModel.movie?.actorList {
             VStack(spacing: 10) {
                 Text("Cast")
@@ -35,6 +35,9 @@ struct MovieDetailCastView: View {
                                                 .clippedAndScaledToFill(width: 130, height: 170, radius: 8)
                                         })
                                         .clippedAndScaledToFill(width: 130, height: 170, radius: 8)
+                                } else {
+                                    Image("placeholder")
+                                        .clippedAndScaledToFill(width: 130, height: 170, radius: 8)
                                 }
                                 
                                 if let name = actor.name {
@@ -46,7 +49,7 @@ struct MovieDetailCastView: View {
                         }
                     }
                 }
-                .padding(EdgeInsets(top: 0, leading: 18, bottom: 0, trailing: 18))
+                .padding(EdgeInsets(top: 0, leading: 18, bottom: 20, trailing: 18))
             }
         }
     }

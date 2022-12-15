@@ -29,6 +29,7 @@ struct MovieDetailDescriptionView: View {
                         .scaledToFit()
                         .frame(width: 15, height: 15)
                         .padding(.bottom, 3)
+                        .foregroundColor(SwiftUIColors.grey)
                     Text(rating)
                         .lineLimit(1)
                 }

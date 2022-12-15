@@ -9,7 +9,7 @@ import Foundation
 
 struct URLBuilder {
     private static let baseURL = "https://imdb-api.com/"
-    private static let apiKey = "k_95zcsbzv"
+    private static let apiKey = "k_8wo9qbmz"
     private static let defaultPath = "en/API/"
     
     static func buildUrl(withPath path: String, id: String? = nil) -> String {

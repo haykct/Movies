@@ -24,25 +24,42 @@ class MovieDetailViewModel: ObservableObject {
         
         let request = MovieDetailRequest(id: id)
         
-//        networkService.request(request) { [weak self] result in
-//            guard let self else { return }
-//
-//            switch result {
-//            case .success(let data):
-//                self.movie = data
-//            case .failure(let error):
-////                self.error.value = error
-//                print(error.localizedDescription)
-//            }
-//        }
-        if let url = Bundle.main.url(forResource: "Detail", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: url)
-                let jsonData = try request.decode(data)
-                self.movie = jsonData
-            } catch {
-                print("error:\(error)")
+        networkService.request(request) { [weak self] result in
+            guard let self else { return }
+
+            switch result {
+            case .success(let data):
+                self.movie = self.removedEmptyImages(data: data)
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         }
+//        if let url = Bundle.main.url(forResource: "Detail", withExtension: "json") {
+//            do {
+//                let data = try Data(contentsOf: url)
+//                let jsonData = try request.decode(data)
+//                self.movie = jsonData
+//            } catch {
+//                print("error:\(error)")
+//            }
+//        }
+    }
+    
+    private func removedEmptyImages(data: MovieDetailDataModel) -> MovieDetailDataModel {
+        var newData = data
+        
+        newData.actorList = newData.actorList?.compactMap({ actor in
+            if let image = actor.image, image.contains("nopicture") {
+                var newActor = actor
+                
+                newActor.image = nil
+                
+                return newActor
+            }
+            
+            return actor
+        })
+        
+        return newData
     }
 }

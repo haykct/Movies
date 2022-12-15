@@ -20,7 +20,6 @@ struct MovieDetailView: View {
                 }
                 .frame(width: proxy.size.width, height: 210)
                 .padding(.top, 20)
-                
                 MoviewDetailPlotView()
                 MovieDetailCastView()
             }
