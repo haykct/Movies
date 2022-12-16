@@ -9,6 +9,7 @@ import Foundation
 
 struct URLBuilder {
     private static let baseURL = "https://imdb-api.com/"
+    // k_8wo9qbmz, k_95zcsbzv  Here are two more api keys if api calls amount is consumed(100 calls per day)
     private static let apiKey = "k_k9pjq5s2"
     private static let defaultPath = "en/API/"
     
