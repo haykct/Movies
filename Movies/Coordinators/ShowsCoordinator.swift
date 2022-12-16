@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftUI
 
 class ShowsCoordinator: Coordinator {
     
@@ -24,10 +23,11 @@ class ShowsCoordinator: Coordinator {
     //MARK: methods
     
     func start() {
-        let swiftUIViewController = UIHostingController(rootView: ShowsView(showsViewModel: ShowsViewModel(networkService: DefaultNetworkService())))
+        let swiftUIViewController = ShowsViewController(rootView: ShowsView(viewModel: ShowsViewModel(networkService: DefaultNetworkService())))
         
         swiftUIViewController.tabBarItem = UITabBarItem(title: "Shows", image: UIImage(systemName: "tv.inset.filled"), tag: 1)
         navigationController.setViewControllers([swiftUIViewController], animated: false)
     }
     
 }
+

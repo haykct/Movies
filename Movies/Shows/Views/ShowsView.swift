@@ -10,38 +10,83 @@ import SDWebImageSwiftUI
 
 struct ShowsView: View {
     
-    @ObservedObject var showsViewModel: ShowsViewModel
+    @ObservedObject var viewModel: ShowsViewModel
     
     var body: some View {
-        List {
-            ForEach(showsViewModel.shows) { show in
-                HStack {
-                    AnimatedImage(url: URL(string: show.image))
-                        .placeholder {
-                            PlaceholderImage(width: 130, height: 170, radius: 8)
+        ScrollView {
+            LazyVStack {
+                ForEach(viewModel.shows) { show in
+                    NavigationLink {
+                        let viewModel = MovieDetailViewModel(networkService: DefaultNetworkService(), id: show.id)
+                        
+                        MovieDetailView()
+                            .environmentObject(viewModel)
+                    } label: {
+                        Spacer(minLength: 20)
+                        HStack(spacing: 0) {
+                            AnimatedImage(url: URL(string: show.image))
+                                .placeholder {
+                                    PlaceholderImage(width: 80, height: 104, radius: 4)
+                                        .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 0))
+                                }
+                                .clippedAndScaledToFill(width: 80, height: 104, radius: 4)
+                                .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 0))
+                            
+                            VStack {
+                                if show.rank.isEmpty {
+                                    Text(show.fullTitle)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                        .font(Font.custom("NunitoSans-SemiBold", size: 16))
+                                        .padding(EdgeInsets(top: 10, leading: 12, bottom: 0, trailing: 12))
+                                } else {
+                                    Text("\(show.rank). \(show.fullTitle)")
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                        .font(Font.custom("NunitoSans-SemiBold", size: 16))
+                                        .padding(EdgeInsets(top: 10, leading: 12, bottom: 0, trailing: 12))
+                                }
+                                
+                                Spacer()
+                                
+                                if !show.rating.isEmpty {
+                                    VStack(spacing: 4) {
+                                        Image("star")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 15, height: 15)
+                                            .foregroundColor(SwiftUIColors.ratingYellow)
+                                        Text(show.rating)
+                                            .font(Font.custom("NunitoSans-SemiBold", size: 16))
+                                    }
+                                    .padding(.trailing, 10)
+                                    .frame(maxWidth: .infinity, alignment: .bottomTrailing)
+                                }
+                            }
+                            .frame(maxWidth: .infinity, maxHeight: 104)
+                            .foregroundColor(SwiftUIColors.grey)
                         }
-                        .clippedAndScaledToFill(width: 80, height: 104)
-                    Text(show.fullTitle)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                        .background(.white)
+                        .cornerRadius(8)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(SwiftUIColors.borderGrey, lineWidth: 1)
+                        )
+                        Spacer(minLength: 20)
+                    }
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-                .cornerRadius(6)
-                .listRowSeparatorTint(SwiftUIColors.grey)
-                .listRowBackground(SwiftUIColors.backgroundGrey.edgesIgnoringSafeArea(.all))
             }
+            .padding(.top, 25)
+            .onAppear {
+                viewModel.requestTop250Shows()
+            }
+            .navigationTitle("Top 250 TV Shows")
         }
         .background(SwiftUIColors.backgroundGrey)
-        .scrollContentBackground(.hidden)
-        .listStyle(.plain)
-        .onAppear {
-            UITableView.appearance().backgroundColor = .clear
-            UITableViewCell.appearance().backgroundColor = .clear
-            showsViewModel.requestTop250Shows()
-        }
     }
 }
 
 struct ShowsView_Previews: PreviewProvider {
     static var previews: some View {
-        ShowsView(showsViewModel: ShowsViewModel(networkService: DefaultNetworkService()))
+        ShowsView(viewModel: ShowsViewModel(networkService: DefaultNetworkService()))
     }
 }

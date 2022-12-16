@@ -153,9 +153,9 @@ class MoviesViewController: UIViewController {
         requestData()
     }
 
-    //MARK: public methods
+    //MARK: private methods
     
-    func setupTabBarItem() {
+    private func setupTabBarItem() {
         let tabBarAppearance = UITabBarAppearance()
 
         tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.font: UIFont(name: "NunitoSans-SemiBold",
@@ -164,7 +164,6 @@ class MoviesViewController: UIViewController {
         tabBarItem.scrollEdgeAppearance = tabBarAppearance
     }
     
-    //MARK: private methods
     
     private func setupNavigationBar() {
         let appearance = UINavigationBarAppearance()
