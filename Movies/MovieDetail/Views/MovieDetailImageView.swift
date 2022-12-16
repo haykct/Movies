@@ -29,6 +29,7 @@ struct MovieDetailImageDescritptionView_Previews: PreviewProvider {
     static var previews: some View {
         GeometryReader { proxy in
             MovieDetailImageView()
+                .environmentObject(MovieDetailViewModel(networkService: DefaultNetworkService(), id: "tt5491994"))
         }
     }
 }

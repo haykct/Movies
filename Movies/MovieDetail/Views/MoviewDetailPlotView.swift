@@ -13,10 +13,16 @@ struct MoviewDetailPlotView: View {
     
     var body: some View {
         if let plot = viewModel.movie?.plot {
-            HStack {
-                Text(plot)
-                    .padding(EdgeInsets(top: 20, leading: 18, bottom: 0, trailing: 18))
-                    .font(Font.custom("NunitoSans-SemiBold", size: 17))
+            VStack(spacing: 0) {
+                Text("Plot")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(EdgeInsets(top: 25, leading: 18, bottom: 0, trailing: 18))
+                    .font(Font.custom("NunitoSans-Bold", size: 20))
+                HStack {
+                    Text(plot)
+                        .padding(EdgeInsets(top: 6, leading: 18, bottom: 0, trailing: 18))
+                        .font(Font.custom("NunitoSans-SemiBold", size: 17))
+                }
             }
         }
     }
@@ -25,5 +31,6 @@ struct MoviewDetailPlotView: View {
 struct MoviewDetailPlotView_Previews: PreviewProvider {
     static var previews: some View {
         MoviewDetailPlotView()
+            .environmentObject(MovieDetailViewModel(networkService: DefaultNetworkService(), id: "tt5491994"))
     }
 }
