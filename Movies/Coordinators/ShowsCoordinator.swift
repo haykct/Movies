@@ -24,7 +24,7 @@ class ShowsCoordinator: Coordinator {
     //MARK: methods
     
     func start() {
-        let swiftUIViewController = UIHostingController(rootView: Text("Hello"))
+        let swiftUIViewController = UIHostingController(rootView: ShowsView(showsViewModel: ShowsViewModel(networkService: DefaultNetworkService())))
         
         swiftUIViewController.tabBarItem = UITabBarItem(title: "Shows", image: UIImage(systemName: "tv.inset.filled"), tag: 1)
         navigationController.setViewControllers([swiftUIViewController], animated: false)

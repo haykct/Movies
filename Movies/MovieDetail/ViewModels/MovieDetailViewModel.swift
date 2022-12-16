@@ -39,7 +39,7 @@ class MovieDetailViewModel: ObservableObject {
                     do {
                         let data = try Data(contentsOf: url)
                         let jsonData = try request.decode(data)
-                        self.movie = jsonData
+                        self.movie = removedEmptyImages(data: jsonData)
                     } catch {
                         print("error:\(error)")
                     }

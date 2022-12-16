@@ -31,13 +31,11 @@ struct MovieDetailCastView: View {
                                 if let image = actor.image {
                                     AnimatedImage(url: URL(string: image))
                                         .placeholder(content: {
-                                            Image("placeholder")
-                                                .clippedAndScaledToFill(width: 130, height: 170, radius: 8)
+                                            PlaceholderImage(width: 130, height: 170, radius: 8)
                                         })
                                         .clippedAndScaledToFill(width: 130, height: 170, radius: 8)
                                 } else {
-                                    Image("placeholder")
-                                        .clippedAndScaledToFill(width: 130, height: 170, radius: 8)
+                                    PlaceholderImage(width: 130, height: 170, radius: 8)
                                 }
                                 
                                 if let name = actor.name {

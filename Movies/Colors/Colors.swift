@@ -16,4 +16,5 @@ struct Colors {
 struct SwiftUIColors {
     static let grey = Color(red: 82 / 255, green: 81 / 255, blue: 81 / 255)
     static let cyan = Color(red: 110 / 255, green: 204 / 255, blue: 173 / 255)
+    static let backgroundGrey = Color(red: 240 / 255, green: 240 / 255, blue: 240 / 255)
 }

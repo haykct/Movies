@@ -9,23 +9,23 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 extension Image {
-    func clippedAndScaledToFill(width: CGFloat, height: CGFloat, radius: CGFloat) -> some View {
+    func clippedAndScaledToFill(width: CGFloat, height: CGFloat, radius: CGFloat? = nil) -> some View {
         self
             .resizable()
             .scaledToFill()
             .frame(width: width, height: height)
             .clipped()
-            .cornerRadius(radius)
+            .cornerRadius(radius ?? 0)
     }
 }
 
 extension AnimatedImage {
-    func clippedAndScaledToFill(width: CGFloat, height: CGFloat, radius: CGFloat) -> some View {
+    func clippedAndScaledToFill(width: CGFloat, height: CGFloat, radius: CGFloat? = nil) -> some View {
         self
             .resizable()
             .scaledToFill()
             .frame(width: width, height: height)
             .clipped()
-            .cornerRadius(radius)
+            .cornerRadius(radius ?? 0)
     }
 }
