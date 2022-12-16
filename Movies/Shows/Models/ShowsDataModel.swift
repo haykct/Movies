@@ -12,7 +12,7 @@ struct ShowsDataModel: Decodable, Response {
     var errorMessage: String?
 }
 
-struct Show: Decodable, Identifiable, Hashable {
+struct Show: Decodable, Identifiable {
     var id: String
     var rank: String
     var fullTitle: String
