@@ -20,9 +20,9 @@ struct ShowsImageView: View {
         AnimatedImage(url: URL(string: show.image))
             .placeholder {
                 PlaceholderImage(width: 80, height: 104, radius: 4)
-                    .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 12))
+                    .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 0))
             }
             .clippedAndScaledToFill(width: 80, height: 104, radius: 4)
-            .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 12))
+            .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 0))
     }
 }

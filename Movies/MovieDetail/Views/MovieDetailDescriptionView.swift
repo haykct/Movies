@@ -18,7 +18,7 @@ struct MovieDetailDescriptionView: View {
                     .font(Font.custom("NunitoSans-Bold", size: 25))
             }
             
-            if let directors = viewModel.movie?.directors {
+            if let directors = viewModel.movie?.directors, !directors.isEmpty {
                 Text("Directed by \(directors)")
             }
             

@@ -21,12 +21,14 @@ struct ShowsDescriptionView: View {
                 Text(show.fullTitle)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(Font.custom("NunitoSans-SemiBold", size: 16))
-                    .padding(.top, 10)
+                    .padding(EdgeInsets(top: 10, leading: 12, bottom: 0, trailing: 12))
+                    .multilineTextAlignment(.leading)
             } else {
                 Text("\(show.rank). \(show.fullTitle)")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(Font.custom("NunitoSans-SemiBold", size: 16))
-                    .padding(.top, 10)
+                    .padding(EdgeInsets(top: 10, leading: 12, bottom: 0, trailing: 12))
+                    .multilineTextAlignment(.leading)
             }
             
             Spacer()
