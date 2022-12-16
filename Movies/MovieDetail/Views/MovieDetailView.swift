@@ -30,6 +30,7 @@ struct MovieDetailView: View {
                                startPoint: .top, endPoint: .bottom)
             )
             .navigationBarTitleDisplayMode(.inline)
+            .scrollIndicators(.hidden)
             .onAppear {
                 viewModel.requestMosvie()
             }
