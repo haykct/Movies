@@ -22,7 +22,7 @@ struct MovieDetailCastView: View {
             VStack(spacing: 10) {
                 Text("Cast")
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(EdgeInsets(top: 20, leading: 18, bottom: 0, trailing: 18))
+                    .padding(EdgeInsets(top: 25, leading: 18, bottom: 0, trailing: 18))
                     .font(Font.custom("NunitoSans-Bold", size: 20))
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHGrid(rows: rows, alignment: .center) {

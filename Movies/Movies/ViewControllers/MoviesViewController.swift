@@ -139,6 +139,7 @@ class MoviesViewController: UIViewController {
     //MARK: private properties
     
     private var diffableDataSource: DiffableDataSource!
+    private  var isFirstError = true
     
     //MARK: lifecycle methods
 
@@ -191,8 +192,14 @@ class MoviesViewController: UIViewController {
             self?.applySnapshot(allMovies: allMovies)
         }
         
-        viewModel?.error.bind { _ in
-            // Show error screen
+        viewModel?.error.bind { [weak self] _ in
+            guard let self, self.isFirstError else { return }
+            self.isFirstError = false
+            
+            let alert = UIAlertController(title: "Alert", message: "Oops, something went wrong.", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Close", style: .cancel))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     

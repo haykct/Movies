@@ -22,6 +22,7 @@ struct MoviewDetailPlotView: View {
                     Text(plot)
                         .padding(EdgeInsets(top: 6, leading: 18, bottom: 0, trailing: 18))
                         .font(Font.custom("NunitoSans-SemiBold", size: 17))
+                        .frame(maxWidth: .infinity, alignment: .leading)
                 }
             }
         }
