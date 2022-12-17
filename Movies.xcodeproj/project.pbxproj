@@ -57,6 +57,9 @@
 		26982CAC294DCE7100E5E1A6 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264CECE5293D06710095EA32 /* DataRequest.swift */; };
 		2698EFA7294DD191000B8E41 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610E5682948EC2900F75469 /* Optional.swift */; };
 		26B9E8ED2944CC1A00251362 /* InTheatresMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B9E8EB2944CC1A00251362 /* InTheatresMoviesCollectionViewCell.swift */; };
+		26E97337294E115100FDFD9B /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = 26E97336294E115100FDFD9B /* Mocker */; };
+		26E97338294E197E00FDFD9B /* MostPopularMoviesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF799729465B3F00824F85 /* MostPopularMoviesDataModel.swift */; };
+		26E97339294E278000FDFD9B /* MostPopularMoviesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF799529465AF700824F85 /* MostPopularMoviesRequest.swift */; };
 		26FF796B2944F9DC00824F85 /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF796A2944F9DC00824F85 /* MoviesViewModel.swift */; };
 		26FF796E2945107D00824F85 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF796D2945107D00824F85 /* Box.swift */; };
 		26FF79822946476E00824F85 /* SectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF79812946476E00824F85 /* SectionHeaderReusableView.swift */; };
@@ -143,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E97337294E115100FDFD9B /* Mocker in Frameworks */,
 				262591FC294B70E600C0B1EB /* SDWebImageSwiftUI in Frameworks */,
 				262591F6294B6F1100C0B1EB /* SDWebImage in Frameworks */,
 				264CECDE293B754A0095EA32 /* SwiftHEXColors in Frameworks */,
@@ -474,6 +478,7 @@
 				264CECE3293D05800095EA32 /* Alamofire */,
 				262591F5294B6F1100C0B1EB /* SDWebImage */,
 				262591FB294B70E600C0B1EB /* SDWebImageSwiftUI */,
+				26E97336294E115100FDFD9B /* Mocker */,
 			);
 			productName = Movies;
 			productReference = 265993F02939127F005149BF /* Movies.app */;
@@ -530,6 +535,7 @@
 				264CECE2293D05800095EA32 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				262591F4294B6F1100C0B1EB /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				262591FA294B70E600C0B1EB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				26E97335294E115100FDFD9B /* XCRemoteSwiftPackageReference "Mocker" */,
 			);
 			productRefGroup = 265993F12939127F005149BF /* Products */;
 			projectDirPath = "";
@@ -620,6 +626,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E97339294E278000FDFD9B /* MostPopularMoviesRequest.swift in Sources */,
+				26E97338294E197E00FDFD9B /* MostPopularMoviesDataModel.swift in Sources */,
 				2698EFA7294DD191000B8E41 /* Optional.swift in Sources */,
 				26982CAC294DCE7100E5E1A6 /* DataRequest.swift in Sources */,
 				26982CAB294DCE2C00E5E1A6 /* MovieDetailRequest.swift in Sources */,
@@ -696,6 +704,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -756,6 +765,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -939,6 +949,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		26E97335294E115100FDFD9B /* XCRemoteSwiftPackageReference "Mocker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WeTransfer/Mocker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -961,6 +979,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 264CECE2293D05800095EA32 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		26E97336294E115100FDFD9B /* Mocker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26E97335294E115100FDFD9B /* XCRemoteSwiftPackageReference "Mocker" */;
+			productName = Mocker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -13,14 +13,23 @@ enum DataError: Error {
 }
 
 protocol NetworkService {
+    var session: Session { get set }
+    
     func request<Request: DataRequest>(_ request: Request,
                                        completion: @escaping (Result<Request.ResponseData, Error>) -> Void)
 }
 
 class DefaultNetworkService: NetworkService {
+    
+    var session: Session
+    
+    init(session: Session = AF) {
+        self.session = session
+    }
+    
     func request<Request>(_ request: Request,
                           completion: @escaping (Result<Request.ResponseData, Error>) -> Void) where Request: DataRequest {
-        AF.request(request.url).validate().responseData { response in
+        session.request(request.url).validate().responseData { response in
             switch response.result {
             case .success(let data):
                 do {
