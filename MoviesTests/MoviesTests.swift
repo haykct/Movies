@@ -8,7 +8,7 @@
 import XCTest
 
 final class MoviesTests: XCTestCase {
-    var viewModel: MovieDetailViewModel!
+    var viewModel: MovieDetailViewModel = MovieDetailViewModel(networkService: DefaultNetworkService(), id: "")
 
     func testEmtpyImageUrlReplace() {
         let request = MovieDetailRequest(id: "")
@@ -18,7 +18,6 @@ final class MoviesTests: XCTestCase {
         do {
             let dataModel = try request.decode(data)
             XCTAssertNotNil(dataModel.actorList?.first?.image)
-            viewModel = MovieDetailViewModel(networkService: DefaultNetworkService(), id: "")
             
             let removedImagesDataModel = viewModel.removedEmptyImages(data: dataModel)
             
@@ -37,7 +36,6 @@ final class MoviesTests: XCTestCase {
         do {
             let dataModel = try request.decode(data)
             XCTAssertNotNil(dataModel.actorList?.first?.image)
-            viewModel = MovieDetailViewModel(networkService: DefaultNetworkService(), id: "")
             
             let removedImagesDataModel = viewModel.removedEmptyImages(data: dataModel)
             
