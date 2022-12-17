@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MovieDetailView: View {
     
+    @State private var isOnAppearCalled = false
     @EnvironmentObject var viewModel: MovieDetailViewModel
     
     var body: some View {
@@ -34,7 +35,10 @@ struct MovieDetailView: View {
             .navigationBarTitleDisplayMode(.inline)
             .scrollIndicators(.hidden)
             .onAppear {
-                viewModel.requestMosvie()
+                if !isOnAppearCalled {
+                    isOnAppearCalled = true
+                    viewModel.requestMosvie()
+                }
             }
         }
     }

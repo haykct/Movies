@@ -10,6 +10,7 @@ import SDWebImageSwiftUI
 
 struct ShowsView: View {
     
+    @State private var isOnAppearCalled = false
     @ObservedObject var viewModel: ShowsViewModel
     
     var body: some View {
@@ -21,7 +22,10 @@ struct ShowsView: View {
             }
             .padding(.top, 25)
             .onAppear {
-                viewModel.requestTop250Shows()
+                if !isOnAppearCalled {
+                    isOnAppearCalled = true
+                    viewModel.requestTop250Shows()
+                }
             }
             .navigationTitle("Top 250 TV Shows")
         }
