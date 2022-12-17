@@ -21,22 +21,23 @@ class MovieDetailViewModel: ObservableObject {
     
     func requestMosvie() {
         guard let id else { return }
-
+        
         let request = MovieDetailRequest(id: id)
-
+        
         networkService.request(request) { [weak self] result in
             guard let self else { return }
-
+            
             switch result {
             case .success(let data):
                 self.movie = self.removedEmptyImages(data: data)
             case .failure(let error):
+                // Show error screen in detail
                 print(error.localizedDescription)
             }
         }
     }
     
-    private func removedEmptyImages(data: MovieDetailDataModel) -> MovieDetailDataModel {
+    func removedEmptyImages(data: MovieDetailDataModel) -> MovieDetailDataModel {
         var newData = data
         
         newData.actorList = newData.actorList?.compactMap({ actor in

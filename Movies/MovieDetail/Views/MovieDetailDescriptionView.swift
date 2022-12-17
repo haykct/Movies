@@ -18,7 +18,7 @@ struct MovieDetailDescriptionView: View {
                     .font(Font.custom("NunitoSans-Bold", size: 25))
             }
             
-            if let directors = viewModel.movie?.directors {
+            if let directors = viewModel.movie?.directors, !directors.isEmpty {
                 Text("Directed by \(directors)")
             }
             
@@ -54,5 +54,6 @@ struct MovieDetailDescriptionView: View {
 struct MovieDetailDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
         MovieDetailDescriptionView()
+            .environmentObject(MovieDetailViewModel(networkService: DefaultNetworkService(), id: "tt5491994"))
     }
 }

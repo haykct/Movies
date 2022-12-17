@@ -5,7 +5,6 @@
 //  Created by Hayk Hayrapetyan on 01.12.22.
 //
 
-import Foundation
 import UIKit
 import SwiftUI
 
@@ -30,8 +29,6 @@ class MoviesCoordinator: Coordinator {
         moviesVC.tabBarItem = UITabBarItem(title: "Movies", image: UIImage(systemName: "film.fill"), tag: 0)
         moviesVC.viewModel = MoviesViewModel(withNetworkService: DefaultNetworkService())
         moviesVC.viewModel?.coordinator = self
-        moviesVC.setupTabBarItem()
-        
         navigationController.setViewControllers([moviesVC], animated: false)
     }
     

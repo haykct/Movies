@@ -18,8 +18,7 @@ struct MovieDetailImageView: View {
                     .clippedAndScaledToFill(width: 160, height: 210, radius: 12)
                     .padding(.leading, 18)
             } placeholder: {
-                Image("placeholder")
-                    .clippedAndScaledToFill(width: 160, height: 210, radius: 12)
+                PlaceholderImage(width: 160, height: 210, radius: 12)
                     .padding(.leading, 18)
             }
         }
@@ -30,6 +29,7 @@ struct MovieDetailImageDescritptionView_Previews: PreviewProvider {
     static var previews: some View {
         GeometryReader { proxy in
             MovieDetailImageView()
+                .environmentObject(MovieDetailViewModel(networkService: DefaultNetworkService(), id: "tt5491994"))
         }
     }
 }

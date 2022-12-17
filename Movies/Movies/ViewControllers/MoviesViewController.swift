@@ -139,12 +139,14 @@ class MoviesViewController: UIViewController {
     //MARK: private properties
     
     private var diffableDataSource: DiffableDataSource!
+    private  var isFirstError = true
     
     //MARK: lifecycle methods
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupTabBarItem()
         setupNavigationBar()
         setupCollectionView()
         setupDiffableDataSource()
@@ -152,18 +154,17 @@ class MoviesViewController: UIViewController {
         requestData()
     }
 
-    //MARK: public methods
+    //MARK: private methods
     
-    func setupTabBarItem() {
+    private func setupTabBarItem() {
         let tabBarAppearance = UITabBarAppearance()
-        tabBarItem = UITabBarItem(title: "Movies", image: UIImage(systemName: "film.fill"), tag: 0)
+
         tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.font: UIFont(name: "NunitoSans-SemiBold",
                                                                                              size: 14) as Any]
         tabBarItem.standardAppearance = tabBarAppearance
         tabBarItem.scrollEdgeAppearance = tabBarAppearance
     }
     
-    //MARK: private methods
     
     private func setupNavigationBar() {
         let appearance = UINavigationBarAppearance()
@@ -191,8 +192,14 @@ class MoviesViewController: UIViewController {
             self?.applySnapshot(allMovies: allMovies)
         }
         
-        viewModel?.error.bind { _ in
-            // Show error screen
+        viewModel?.error.bind { [weak self] _ in
+            guard let self, self.isFirstError else { return }
+            self.isFirstError = false
+            
+            let alert = UIAlertController(title: "Alert", message: "Oops, something went wrong.", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Close", style: .cancel))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     

@@ -5,7 +5,6 @@
 //  Created by Hayk Hayrapetyan on 01.12.22.
 //
 
-import Foundation
 import UIKit
 
 class ShowsCoordinator: Coordinator {
@@ -24,11 +23,11 @@ class ShowsCoordinator: Coordinator {
     //MARK: methods
     
     func start() {
-        let showsVC = ShowsViewController.instantiate(fromStoryboard: .main)
+        let swiftUIViewController = ShowsHostingViewController(rootView: ShowsView(viewModel: ShowsViewModel(networkService: DefaultNetworkService())))
         
-        showsVC.tabBarItem = UITabBarItem(title: "Shows", image: UIImage(systemName: "tv.inset.filled"), tag: 1)
-        showsVC.setupTabBarItem()
-        navigationController.setViewControllers([showsVC], animated: false)
+        swiftUIViewController.tabBarItem = UITabBarItem(title: "Shows", image: UIImage(systemName: "tv.inset.filled"), tag: 1)
+        navigationController.setViewControllers([swiftUIViewController], animated: false)
     }
     
 }
+

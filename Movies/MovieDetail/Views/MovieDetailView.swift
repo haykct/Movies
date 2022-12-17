@@ -14,14 +14,16 @@ struct MovieDetailView: View {
     var body: some View {
         GeometryReader { proxy in
             ScrollView {
-                HStack(spacing: 10) {
-                    MovieDetailImageView()
-                    MovieDetailDescriptionView()
+                VStack(spacing: 0) {
+                    HStack(spacing: 10) {
+                        MovieDetailImageView()
+                        MovieDetailDescriptionView()
+                    }
+                    .frame(width: proxy.size.width, height: 210)
+                    .padding(.top, 20)
+                    MoviewDetailPlotView()
+                    MovieDetailCastView()
                 }
-                .frame(width: proxy.size.width, height: 210)
-                .padding(.top, 20)
-                MoviewDetailPlotView()
-                MovieDetailCastView()
             }
             .frame(maxWidth: .infinity)
             .foregroundColor(SwiftUIColors.grey)
@@ -30,6 +32,7 @@ struct MovieDetailView: View {
                                startPoint: .top, endPoint: .bottom)
             )
             .navigationBarTitleDisplayMode(.inline)
+            .scrollIndicators(.hidden)
             .onAppear {
                 viewModel.requestMosvie()
             }
@@ -40,5 +43,6 @@ struct MovieDetailView: View {
 struct MovieDetailView_Previews: PreviewProvider {
     static var previews: some View {
         MovieDetailView()
+            .environmentObject(MovieDetailViewModel(networkService: DefaultNetworkService(), id: "tt5491994"))
     }
 }

@@ -47,7 +47,7 @@
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="frt-eg-MwW">
                                                 <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
-                                                <color key="tintColor" red="1" green="0.70958260489510494" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="1" green="0.70980392156862748" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="15" id="Yec-cs-dKP"/>
                                                     <constraint firstAttribute="height" constant="15" id="c0S-m9-3Ue"/>
