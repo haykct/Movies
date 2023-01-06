@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MoviesViewModel {
+final class MoviesViewModel {
     
     //MARK: public properties
     

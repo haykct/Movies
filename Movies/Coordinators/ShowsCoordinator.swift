@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ShowsCoordinator: Coordinator {
+final class ShowsCoordinator: Coordinator {
     
     //MARK: properties
     

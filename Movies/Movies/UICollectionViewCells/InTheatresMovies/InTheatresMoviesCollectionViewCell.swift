@@ -8,7 +8,7 @@
 import UIKit
 import SDWebImage
 
-class InTheatresMoviesCollectionViewCell: UICollectionViewCell {
+final class InTheatresMoviesCollectionViewCell: UICollectionViewCell {
     
     //MARK: outlets
     

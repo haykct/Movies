@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MovieDetailViewModel: ObservableObject {
+final class MovieDetailViewModel: ObservableObject {
     
     private let id: String?
     private let networkService: NetworkService

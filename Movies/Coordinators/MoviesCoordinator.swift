@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class MoviesCoordinator: Coordinator {
+final class MoviesCoordinator: Coordinator {
     
     //MARK: properties
     

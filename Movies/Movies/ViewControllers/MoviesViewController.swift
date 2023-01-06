@@ -124,7 +124,7 @@ enum Section: Int, CaseIterable {
     case mostPopular
 }
 
-class MoviesViewController: UIViewController {
+final class MoviesViewController: UIViewController {
     
     private typealias DiffableDataSource = UICollectionViewDiffableDataSource<Section, AnyHashable>
     

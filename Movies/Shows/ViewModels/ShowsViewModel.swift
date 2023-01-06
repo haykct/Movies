@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ShowsViewModel: ObservableObject {
+final class ShowsViewModel: ObservableObject {
     
     @Published private(set) var shows: [Show] = []
     

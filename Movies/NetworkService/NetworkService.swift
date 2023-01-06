@@ -19,7 +19,7 @@ protocol NetworkService {
                                        completion: @escaping (Result<Request.ResponseData, Error>) -> Void)
 }
 
-class DefaultNetworkService: NetworkService {
+final class DefaultNetworkService: NetworkService {
     
     let session: Session
     
