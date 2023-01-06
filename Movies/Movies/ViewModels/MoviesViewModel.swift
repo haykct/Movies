@@ -16,7 +16,7 @@ class MoviesViewModel {
     //MARK: private properties
     
     private let group = DispatchGroup()
-    private var networkService: NetworkService
+    private let networkService: NetworkService
     private(set) var inTheatresMovies: Box<[InTheatresMovie]> = Box()
     private(set) var popularMovies: Box<[PopularMovie]> = Box()
     private(set) var allMovies: Box<(inTheatres: [InTheatresMovie], popular: [PopularMovie])> = Box()

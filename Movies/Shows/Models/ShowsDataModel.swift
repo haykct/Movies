@@ -13,11 +13,11 @@ struct ShowsDataModel: Decodable, Response {
 }
 
 struct Show: Decodable, Identifiable {
-    var id: String
-    var rank: String
-    var fullTitle: String
-    var image: String
-    var rating: String
+    let id: String
+    let rank: String
+    let fullTitle: String
+    let image: String
+    let rating: String
     
     enum CodingKeys: String, CodingKey {
         case id

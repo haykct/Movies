@@ -126,11 +126,11 @@ enum Section: Int, CaseIterable {
 
 class MoviesViewController: UIViewController {
     
-    typealias DiffableDataSource = UICollectionViewDiffableDataSource<Section, AnyHashable>
+    private typealias DiffableDataSource = UICollectionViewDiffableDataSource<Section, AnyHashable>
     
     //MARK: outlets
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet private weak var collectionView: UICollectionView!
     
     //MARK: public properties
     

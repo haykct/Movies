@@ -11,7 +11,7 @@ class SectionHeaderReusableView: UICollectionReusableView {
     
     //MARK: private properties
     
-    private var titleTextLabel = UILabel()
+    private let titleTextLabel = UILabel()
     
     //MARK: lifecycle methods
     

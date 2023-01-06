@@ -9,7 +9,7 @@ import Foundation
 
 class ShowsViewModel: ObservableObject {
     
-    @Published var shows: [Show] = []
+    @Published private(set) var shows: [Show] = []
     
     private var networkService: NetworkService
     

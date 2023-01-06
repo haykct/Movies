@@ -10,7 +10,7 @@ import SwiftUI
 struct MovieDetailView: View {
     
     @State private var isOnAppearCalled = false
-    @EnvironmentObject var viewModel: MovieDetailViewModel
+    @EnvironmentObject private var viewModel: MovieDetailViewModel
     
     var body: some View {
         GeometryReader { proxy in

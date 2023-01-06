@@ -10,9 +10,9 @@ import SDWebImageSwiftUI
 
 struct MovieDetailCastView: View {
     
-    let rows = [GridItem(.flexible())]
+    private let rows = [GridItem(.flexible())]
     
-    @EnvironmentObject var viewModel: MovieDetailViewModel
+    @EnvironmentObject private var viewModel: MovieDetailViewModel
     
     var body: some View {
         // Api gives high resolution images(which are loading slow) and url for resize request.

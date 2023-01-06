@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MovieDetailDescriptionView: View {
     
-    @EnvironmentObject var viewModel: MovieDetailViewModel
+    @EnvironmentObject private var viewModel: MovieDetailViewModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {

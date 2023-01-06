@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MoviewDetailPlotView: View {
     
-    @EnvironmentObject var viewModel: MovieDetailViewModel
+    @EnvironmentObject private var viewModel: MovieDetailViewModel
     
     var body: some View {
         if let plot = viewModel.movie?.plot {

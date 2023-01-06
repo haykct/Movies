@@ -13,7 +13,10 @@ class AppCoordinator: TabBarCoordinator {
     
     var childCoordinators: [Coordinator] = []
     lazy var tabBarController = { TabBarController.instantiate(fromStoryboard: .main) }()
-    weak var window: UIWindow?
+    
+    //MARK: private properties
+    
+    private weak var window: UIWindow?
     
     //MARK: initializers
     
