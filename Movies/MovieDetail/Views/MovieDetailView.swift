@@ -37,7 +37,7 @@ struct MovieDetailView: View {
             .onAppear {
                 if !isOnAppearCalled {
                     isOnAppearCalled = true
-                    viewModel.requestMosvie()
+                    viewModel.requestMovies()
                 }
             }
         }

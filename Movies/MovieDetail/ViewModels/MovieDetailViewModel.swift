@@ -19,7 +19,7 @@ class MovieDetailViewModel: ObservableObject {
         self.id = id
     }
     
-    func requestMosvie() {
+    func requestMovies() {
         guard let id else { return }
         
         let request = MovieDetailRequest(id: id)
