@@ -11,9 +11,5 @@ struct ShowsRequest: DataRequest {
     
     typealias ResponseData = ShowsDataModel
     
-    let url: String
-    
-    init() {
-        url = URLBuilder.buildUrl(withPath: "Top250TVs")
-    }
+    let url = URLBuilder.buildUrl(withPath: "Top250TVs")
 }

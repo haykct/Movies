@@ -8,11 +8,11 @@
 import UIKit
 import SDWebImage
 
-class InTheatresMoviesCollectionViewCell: UICollectionViewCell {
+final class InTheatresMoviesCollectionViewCell: UICollectionViewCell {
     
     //MARK: outlets
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet private weak var imageView: UIImageView!
 
     //MARK: lifecycle methods
     

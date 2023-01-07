@@ -8,14 +8,14 @@
 import UIKit
 import SDWebImage
 
-class PopularMoviesCollectionViewCell: UICollectionViewCell {
+final class PopularMoviesCollectionViewCell: UICollectionViewCell {
     
     //MARK: outlets
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var ratingImageView: UIImageView!
-    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var ratingImageView: UIImageView!
+    @IBOutlet private weak var ratingLabel: UILabel!
     
     //MARK: lifecycle methods
     

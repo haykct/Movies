@@ -8,15 +8,15 @@
 import Foundation
 
 struct MostPopularMoviesDataModel: Decodable, Response {
-    var items: [PopularMovie]
+    let items: [PopularMovie]
     var errorMessage: String?
 }
 
 struct PopularMovie: Hashable, Decodable {
-    var id: String
-    var title: String
-    var image: String
-    var rating: String
+    let id: String
+    let title: String
+    let image: String
+    let rating: String
     
     enum CodingKeys: String, CodingKey {
         case id, title, image, rating = "imDbRating"

@@ -8,12 +8,12 @@
 import UIKit
 import SwiftUI
 
-class MoviesCoordinator: Coordinator {
+final class MoviesCoordinator: Coordinator {
     
     //MARK: properties
     
     var childCoordinators: [Coordinator] = []
-    var navigationController: UINavigationController
+    let navigationController: UINavigationController
     
     //MARK: initializers
     

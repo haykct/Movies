@@ -14,9 +14,9 @@ protocol BaseCoordinator {
 }
 
 protocol Coordinator: BaseCoordinator {
-    var navigationController: UINavigationController { get set }
+    var navigationController: UINavigationController { get }
 }
 
 protocol TabBarCoordinator: BaseCoordinator {
-    var tabBarController: TabBarController { get set }
+    var tabBarController: TabBarController { get }
 }

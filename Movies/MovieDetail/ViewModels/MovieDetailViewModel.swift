@@ -7,19 +7,19 @@
 
 import Foundation
 
-class MovieDetailViewModel: ObservableObject {
+final class MovieDetailViewModel: ObservableObject {
     
-    private var id: String?
-    private var networkService: NetworkService
+    private let id: String?
+    private let networkService: NetworkService
     
-    @Published var movie: MovieDetailDataModel?
+    @Published private(set) var movie: MovieDetailDataModel?
     
     init(networkService: NetworkService, id: String?) {
         self.networkService = networkService
         self.id = id
     }
     
-    func requestMosvie() {
+    func requestMovies() {
         guard let id else { return }
         
         let request = MovieDetailRequest(id: id)

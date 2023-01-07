@@ -8,14 +8,14 @@
 import Foundation
 
 struct MovieDetailDataModel: Decodable, Response {
-    var id: String?
-    var fullTitle: String?
-    var image: String?
-    var runtimeStr: String?
-    var plot: String?
-    var rating: String?
-    var genres: String?
-    var directors: String?
+    let id: String?
+    let fullTitle: String?
+    let image: String?
+    let runtimeStr: String?
+    let plot: String?
+    let rating: String?
+    let genres: String?
+    let directors: String?
     var actorList: [Actor]?
     var errorMessage: String?
     
@@ -49,7 +49,7 @@ struct MovieDetailDataModel: Decodable, Response {
 }
 
 struct Actor: Decodable, Identifiable {
-    var id: String?
-    var name: String?
+    let id: String?
+    let name: String?
     var image: String?
 }

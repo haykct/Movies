@@ -13,15 +13,15 @@ enum DataError: Error {
 }
 
 protocol NetworkService {
-    var session: Session { get set }
+    var session: Session { get }
     
     func request<Request: DataRequest>(_ request: Request,
                                        completion: @escaping (Result<Request.ResponseData, Error>) -> Void)
 }
 
-class DefaultNetworkService: NetworkService {
+final class DefaultNetworkService: NetworkService {
     
-    var session: Session
+    let session: Session
     
     init(session: Session = AF) {
         self.session = session

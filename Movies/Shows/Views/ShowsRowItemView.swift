@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ShowsRowItem: View {
     
-    private var show: Show
+    private let show: Show
     
     init(show: Show) {
         self.show = show

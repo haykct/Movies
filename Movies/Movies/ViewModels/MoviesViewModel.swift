@@ -7,20 +7,20 @@
 
 import Foundation
 
-class MoviesViewModel {
+final class MoviesViewModel {
     
     //MARK: public properties
     
     weak var coordinator: MoviesCoordinator?
+    let allMovies: Box<(inTheatres: [InTheatresMovie], popular: [PopularMovie])> = Box()
+    let error: Box<Error> = Box()
     
     //MARK: private properties
     
     private let group = DispatchGroup()
-    private var networkService: NetworkService
-    private(set) var inTheatresMovies: Box<[InTheatresMovie]> = Box()
-    private(set) var popularMovies: Box<[PopularMovie]> = Box()
-    private(set) var allMovies: Box<(inTheatres: [InTheatresMovie], popular: [PopularMovie])> = Box()
-    private(set) var error: Box<Error> = Box()
+    private let networkService: NetworkService
+    private let inTheatresMovies: Box<[InTheatresMovie]> = Box()
+    private let popularMovies: Box<[PopularMovie]> = Box()
     
     //MARK: initializers
     

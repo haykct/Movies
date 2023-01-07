@@ -8,11 +8,11 @@
 import Foundation
 
 struct InTheatresMoviesDataModel: Decodable, Response {
-    var items: [InTheatresMovie]
+    let items: [InTheatresMovie]
     var errorMessage: String?
 }
 
 struct InTheatresMovie: Hashable, Decodable {
-    var id: String
-    var image: String
+    let id: String
+    let image: String
 }

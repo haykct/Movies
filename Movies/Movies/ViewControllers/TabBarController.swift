@@ -8,7 +8,7 @@
 import UIKit
 import SwiftHEXColors
 
-class TabBarController: UITabBarController {
+final class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         

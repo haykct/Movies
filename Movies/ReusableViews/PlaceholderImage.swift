@@ -9,9 +9,9 @@ import SwiftUI
 
 struct PlaceholderImage: View {
     
-    private var width: CGFloat
-    private var height: CGFloat
-    private var radius: CGFloat?
+    private let width: CGFloat
+    private let height: CGFloat
+    private let radius: CGFloat?
     
     init(width: CGFloat, height: CGFloat, radius: CGFloat? = nil) {
         self.width = width

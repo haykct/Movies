@@ -7,12 +7,12 @@
 
 import UIKit
 
-class ShowsCoordinator: Coordinator {
+final class ShowsCoordinator: Coordinator {
     
     //MARK: properties
     
     var childCoordinators: [Coordinator] = []
-    var navigationController: UINavigationController
+    let navigationController: UINavigationController
     
     //MARK: initializers
     

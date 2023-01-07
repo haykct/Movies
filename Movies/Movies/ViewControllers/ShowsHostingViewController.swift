@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class ShowsHostingViewController: UIHostingController<ShowsView> {
+final class ShowsHostingViewController: UIHostingController<ShowsView> {
 
     //MARK: lifecycle methods
 

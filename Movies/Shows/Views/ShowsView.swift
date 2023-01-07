@@ -11,7 +11,11 @@ import SDWebImageSwiftUI
 struct ShowsView: View {
     
     @State private var isOnAppearCalled = false
-    @ObservedObject var viewModel: ShowsViewModel
+    @ObservedObject private var viewModel: ShowsViewModel
+    
+    init(viewModel: ShowsViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         ScrollView {
