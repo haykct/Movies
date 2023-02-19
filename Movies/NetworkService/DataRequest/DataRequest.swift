@@ -7,17 +7,32 @@
 
 import Foundation
 
-struct URLBuilder {
-    private static let baseURL = "https://imdb-api.com/"
+enum URLBuilder {
+    private var baseURL: String { "https://imdb-api.com/" }
     // k_8wo9qbmz, k_k9pjq5s2  Here are two more api keys if api calls amount is consumed(100 calls per day)
-    private static let apiKey = "k_95zcsbzv"
-    private static let defaultPath = "en/API/"
+    private var defaultPath: String { "en/API/" }
+    private var apiKey: String { "k_95zcsbzv" }
     
-    static func buildUrl(withPath path: String, id: String? = nil) -> String {
-        let url = baseURL + defaultPath + "\(path)/\(apiKey)/"
-        guard let id else { return url }
-        
-        return url + id
+    case inTheatresMovies
+    case mostPopularMovies
+    case movieDetail(id: String)
+    case top250TvShows
+    
+    var url: String {
+        switch self {
+        case .inTheatresMovies:
+            return buildUrl(withPath: "InTheaters")
+        case .mostPopularMovies:
+            return buildUrl(withPath: "MostPopularMovies")
+        case let .movieDetail(id):
+            return buildUrl(withPath: "Title") + "/\(id)"
+        case .top250TvShows:
+            return buildUrl(withPath: "Top250TVs")
+        }
+    }
+    
+    private func buildUrl(withPath path: String) -> String {
+        baseURL + defaultPath + "\(path)/" + apiKey
     }
 }
 

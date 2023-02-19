@@ -11,5 +11,5 @@ struct MostPopularMoviesRequest: DataRequest {
     
     typealias ResponseData = MostPopularMoviesDataModel
     
-    let url = URLBuilder.buildUrl(withPath: "MostPopularMovies")
+    let url = URLBuilder.mostPopularMovies.url
 }

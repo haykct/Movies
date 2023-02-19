@@ -11,5 +11,5 @@ struct InTheatresMoviesRequest: DataRequest {
     
     typealias ResponseData = InTheatresMoviesDataModel
     
-    let url = URLBuilder.buildUrl(withPath: "InTheaters") 
+    let url = URLBuilder.inTheatresMovies.url
 }
