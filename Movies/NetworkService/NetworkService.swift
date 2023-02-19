@@ -8,15 +8,26 @@
 import Foundation
 import Alamofire
 
-enum DataError: Error {
-    case invalidData(String)
+enum RequestError: LocalizedError {
+    case invalidData(description: String)
+    case parseError(error: Error)
+    case serverError(error: Error)
+    
+    var errorDescription: String? {
+        switch self {
+        case .invalidData(let description):
+            return description
+        case .parseError(let error), .serverError(let error):
+            return error.localizedDescription
+        }
+    }
 }
 
 protocol NetworkService {
     var session: Session { get }
     
     func request<Request: DataRequest>(_ request: Request,
-                                       completion: @escaping (Result<Request.ResponseData, Error>) -> Void)
+                                       completion: @escaping (Result<Request.ResponseData, RequestError>) -> Void)
 }
 
 final class DefaultNetworkService: NetworkService {
@@ -28,7 +39,7 @@ final class DefaultNetworkService: NetworkService {
     }
     
     func request<Request>(_ request: Request,
-                          completion: @escaping (Result<Request.ResponseData, Error>) -> Void) where Request: DataRequest {
+                          completion: @escaping (Result<Request.ResponseData, RequestError>) -> Void) where Request: DataRequest {
         session.request(request.url).validate().responseData { response in
             switch response.result {
             case .success(let data):
@@ -41,12 +52,12 @@ final class DefaultNetworkService: NetworkService {
                         return
                     }
                     
-                    completion(.failure(DataError.invalidData(decodedData.errorMessage!)))
-                } catch let error {
-                    completion(.failure(error))
+                    completion(.failure(.invalidData(description: decodedData.errorMessage!)))
+                } catch {
+                    completion(.failure(.parseError(error: error)))
                 }
             case .failure(let error):
-                completion(.failure(error))
+                completion(.failure(.serverError(error: error)))
             }
         }
     }

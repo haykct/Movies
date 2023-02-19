@@ -24,7 +24,7 @@ enum URLBuilder {
             return buildUrl(withPath: "InTheaters")
         case .mostPopularMovies:
             return buildUrl(withPath: "MostPopularMovies")
-        case let .movieDetail(id):
+        case .movieDetail(let id):
             return buildUrl(withPath: "Title") + "/\(id)"
         case .top250TvShows:
             return buildUrl(withPath: "Top250TVs")
