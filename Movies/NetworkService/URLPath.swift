@@ -17,7 +17,8 @@ enum URLPath {
     case movieDetail(id: String)
     case top250TvShows
     
-    var apiKey: String { "k_95zcsbzv" } // k_8wo9qbmz, k_k9pjq5s2  Here are two more api keys if api calls amount is consumed(100 calls per day)
+    // This apiKey is for testing purposes. In a real life example apiKey should be hidden from the source code. 
+    private var apiKey: String { "k_95zcsbzv" } // k_8wo9qbmz, k_k9pjq5s2  Here are two more api keys if api calls amount is consumed(100 calls per day)
     
     var value: String {
         switch self {
