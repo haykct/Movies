@@ -11,5 +11,7 @@ struct InTheatresMoviesRequest: DataRequest {
     
     typealias ResponseData = InTheatresMoviesDataModel
     
-    let url = URLBuilder.inTheatresMovies.url
+    var baseURL: String { BaseUrl.imdbApi }
+    var path: URLPath { .inTheatresMovies }
+    
 }

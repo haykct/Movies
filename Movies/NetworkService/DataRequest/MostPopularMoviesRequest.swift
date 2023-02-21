@@ -11,5 +11,6 @@ struct MostPopularMoviesRequest: DataRequest {
     
     typealias ResponseData = MostPopularMoviesDataModel
     
-    let url = URLBuilder.mostPopularMovies.url
+    var baseURL: String { BaseUrl.imdbApi }
+    var path: URLPath { .mostPopularMovies }
 }

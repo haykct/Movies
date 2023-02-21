@@ -11,5 +11,6 @@ struct ShowsRequest: DataRequest {
     
     typealias ResponseData = ShowsDataModel
     
-    let url = URLBuilder.top250TvShows.url
+    var baseURL: String { BaseUrl.imdbApi }
+    var path: URLPath { .top250TvShows }
 }

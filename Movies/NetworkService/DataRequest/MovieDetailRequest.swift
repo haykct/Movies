@@ -11,9 +11,11 @@ struct MovieDetailRequest: DataRequest {
     
     typealias ResponseData = MovieDetailDataModel
     
-    let url: String
-    
+    private let id: String
+    var baseURL: String { BaseUrl.imdbApi }
+    var path: URLPath { .movieDetail(id: id) }
+
     init(id: String) {
-        url = URLBuilder.movieDetail(id: id).url
+        self.id = id
     }
 }
