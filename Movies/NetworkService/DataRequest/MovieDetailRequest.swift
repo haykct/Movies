@@ -7,12 +7,9 @@
 
 import Foundation
 
-struct MovieDetailRequest: DataRequest {
-    
-    typealias ResponseData = MovieDetailDataModel
+struct MovieDetailRequest: Request {
     
     private let id: String
-    var baseURL: String { BaseUrl.imdbApi }
     var path: URLPath { .movieDetail(id: id) }
 
     init(id: String) {

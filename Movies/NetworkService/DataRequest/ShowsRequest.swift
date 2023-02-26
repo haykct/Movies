@@ -7,10 +7,6 @@
 
 import Foundation
 
-struct ShowsRequest: DataRequest {
-    
-    typealias ResponseData = ShowsDataModel
-    
-    var baseURL: String { BaseUrl.imdbApi }
+struct ShowsRequest: Request {
     var path: URLPath { .top250TvShows }
 }

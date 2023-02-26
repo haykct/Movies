@@ -7,11 +7,6 @@
 
 import Foundation
 
-struct InTheatresMoviesRequest: DataRequest {
-    
-    typealias ResponseData = InTheatresMoviesDataModel
-    
-    var baseURL: String { BaseUrl.imdbApi }
+struct InTheatresMoviesRequest: Request {
     var path: URLPath { .inTheatresMovies }
-    
 }

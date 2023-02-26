@@ -7,10 +7,6 @@
 
 import Foundation
 
-struct MostPopularMoviesRequest: DataRequest {
-    
-    typealias ResponseData = MostPopularMoviesDataModel
-    
-    var baseURL: String { BaseUrl.imdbApi }
+struct MostPopularMoviesRequest: Request {
     var path: URLPath { .mostPopularMovies }
 }

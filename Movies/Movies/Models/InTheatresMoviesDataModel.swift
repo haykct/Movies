@@ -8,7 +8,7 @@
 import Foundation
 
 struct InTheatresMoviesDataModel: Decodable, ErrorInformationProvider {
-    let items: [InTheatresMovie]
+    var items: [InTheatresMovie]
     var errorMessage: String?
 }
 

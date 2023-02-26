@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 //MARK: UICollectionViewCompositionalLayout
 
@@ -139,7 +140,7 @@ final class MoviesViewController: UIViewController {
     //MARK: private properties
     
     private var diffableDataSource: DiffableDataSource!
-    private  var isFirstError = true
+    private var cancellable: AnyCancellable?
     
     //MARK: lifecycle methods
 
@@ -188,19 +189,14 @@ final class MoviesViewController: UIViewController {
     }
     
     private func setupBindings() {
-        viewModel?.allMovies.bind { [weak self] allMovies in
-            self?.applySnapshot(allMovies: allMovies)
-        }
-        
-        viewModel?.error.bind { [weak self] _ in
-            guard let self, self.isFirstError else { return }
-            self.isFirstError = false
-            
-            let alert = UIAlertController(title: "Alert", message: "Oops, something went wrong.", preferredStyle: .alert)
-            
-            alert.addAction(UIAlertAction(title: "Close", style: .cancel))
-            self.present(alert, animated: true, completion: nil)
-        }
+        cancellable = viewModel?.allMovies
+            .sink(receiveCompletion: { [weak self] completion in
+                self?.handleError()
+            }, receiveValue: { [weak self] allMovies in
+                if allMovies.0.isEmpty && allMovies.1.isEmpty { return }
+                
+                self?.applySnapshot(allMovies: allMovies)
+            })
     }
     
     private func setupCollectionView() {
@@ -218,14 +214,21 @@ final class MoviesViewController: UIViewController {
                                 withReuseIdentifier: "header")
     }
     
-    private func applySnapshot(allMovies: (inTheatres: [InTheatresMovie], popular: [PopularMovie])) {
+    private func applySnapshot(allMovies: (inTheatresMovies: [InTheatresMovie], mostPopularMovies: [PopularMovie])) {
         var snapshot = NSDiffableDataSourceSnapshot<Section, AnyHashable>()
         
         snapshot.appendSections([.inTheatres, .mostPopular])
-        snapshot.appendItems(allMovies.inTheatres, toSection: .inTheatres)
-        snapshot.appendItems(allMovies.popular, toSection: .mostPopular)
+        snapshot.appendItems(allMovies.inTheatresMovies, toSection: .inTheatres)
+        snapshot.appendItems(allMovies.mostPopularMovies, toSection: .mostPopular)
         
         diffableDataSource.apply(snapshot)
+    }
+    
+    private func handleError() {
+        let alert = UIAlertController(title: "Alert", message: "Oops, something went wrong.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Close", style: .cancel))
+        present(alert, animated: true, completion: nil)
     }
 }
 

@@ -6,28 +6,24 @@
 //
 
 import Foundation
+import Alamofire
 
 protocol ErrorInformationProvider {
     var errorMessage: String? { get set }
 }
 
-protocol DataRequest {
-    associatedtype ResponseData: Decodable, ErrorInformationProvider
-    
+protocol Request {
     var baseURL: String { get }
     var path: URLPath { get }
-    
-    func decode(_ data: Data) throws -> ResponseData
+    var httpMethod: HTTPMethod { get }
+    var headers: HTTPHeaders? { get }
+    var parameters: Parameters? { get }
 }
 
-extension DataRequest {
-    var url: String {
-        baseURL + path.value
-    }
-    
-    func decode(_ data: Data) throws -> ResponseData {
-        let decoder = JSONDecoder()
-        
-        return try decoder.decode(ResponseData.self, from: data)
-    }
+extension Request {
+    var url: String { baseURL + path.value }
+    var baseURL: String { BaseUrl.imdbApi }
+    var httpMethod: HTTPMethod { .get }
+    var headers: HTTPHeaders? { nil }
+    var parameters: Parameters? { nil }
 }
