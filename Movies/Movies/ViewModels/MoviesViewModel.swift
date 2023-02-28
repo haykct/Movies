@@ -45,8 +45,10 @@ final class MoviesViewModel {
     }
     
     func requestAllMovies() {
-        let firstPublisher: InTheatresMoviesPublisher = networkService.request(InTheatresMoviesRequest())
-        let secondPublisher: MostPopularMoviesPublisher = networkService.request(MostPopularMoviesRequest())
+        let inTheatresMoviesRequest = InTheatresMoviesRequest()
+        let popularMoviesRequest = MostPopularMoviesRequest()
+        let firstPublisher: InTheatresMoviesPublisher = networkService.request(inTheatresMoviesRequest)
+        let secondPublisher: MostPopularMoviesPublisher = networkService.request(popularMoviesRequest)
         
         cancellable = firstPublisher
             .zip(secondPublisher)

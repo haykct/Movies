@@ -6,12 +6,17 @@
 //
 
 import Foundation
+import Combine
 
 final class ShowsViewModel: ObservableObject {
     
-    @Published private(set) var shows: [Show] = []
+    private typealias ShowsPublisher = AnyPublisher<ShowsDataModel, RequestError>
     
     private var networkService: NetworkService
+    private var cancellable: AnyCancellable?
+    
+    @Published private(set) var shows: [Show] = []
+    @Published var error: LocalizedError?
     
     init(networkService: NetworkService) {
         self.networkService = networkService
@@ -19,17 +24,18 @@ final class ShowsViewModel: ObservableObject {
     
     func requestTop250Shows() {
         let request = ShowsRequest()
+        let publisher: ShowsPublisher = networkService.request(request)
         
-//        networkService.request(request) { [weak self] result in
-//            guard let self else { return }
-//            
-//            switch result {
-//            case .success(let data):
-//                self.shows = data.items
-//            case .failure(let error):
-//                // Show error screen in ShowsView
-//                print(error.localizedDescription)
-//            }
-//        }
+        cancellable = publisher
+            .map { $0.items }
+            .sink { [weak self] completion in
+                if case .failure(let error) = completion {
+                    self?.error = error
+                }
+            } receiveValue: { [weak self] show in
+                guard let self else { return }
+                
+                self.shows = show
+            }
     }
 }

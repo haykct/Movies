@@ -27,7 +27,7 @@ enum RequestError: LocalizedError {
 protocol NetworkService {
     var session: Session { get }
     
-    func request<ResponseData: Decodable & ErrorInformationProvider>(_ request: Request) -> AnyPublisher<ResponseData, RequestError>
+    func request<Response>(_ request: Request) -> AnyPublisher<Response, RequestError> where Response: Decodable & ErrorInformationProvider
 }
 
 final class DefaultNetworkService: NetworkService {
@@ -38,16 +38,14 @@ final class DefaultNetworkService: NetworkService {
         self.session = session
     }
     
-    func request<ResponseData: Decodable & ErrorInformationProvider>(_ request: Request) -> AnyPublisher<ResponseData, RequestError> {
+    func request<Response>(_ request: Request) -> AnyPublisher<Response, RequestError> where Response: Decodable & ErrorInformationProvider {
         session
             .request(request.url)
             .validate()
-            .publishDecodable(type: ResponseData.self)
+            .publishDecodable(type: Response.self)
             .value()
             .tryMap { dataModel in
-                if dataModel.errorMessage.isNilOrEmpty {
-                    return dataModel
-                }
+                if dataModel.errorMessage.isNilOrEmpty { return dataModel }
                 
                 throw RequestError.invalidData(description: dataModel.errorMessage!)
             }

@@ -34,12 +34,17 @@ struct MovieDetailView: View {
             )
             .navigationBarTitleDisplayMode(.inline)
             .scrollIndicators(.hidden)
+            .errorAlert(error: $viewModel.error)
             .onAppear {
-                if !isOnAppearCalled {
-                    isOnAppearCalled = true
-                    viewModel.requestMovies()
-                }
+                requestMovies()
             }
+        }
+    }
+    
+    private func requestMovies() {
+        if !isOnAppearCalled {
+            isOnAppearCalled = true
+            viewModel.requestMovies()
         }
     }
 }

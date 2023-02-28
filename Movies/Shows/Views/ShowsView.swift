@@ -25,15 +25,20 @@ struct ShowsView: View {
                 }
             }
             .padding(.top, 25)
+            .errorAlert(error: $viewModel.error, message: "Oops, something went wrong.")
             .onAppear {
-                if !isOnAppearCalled {
-                    isOnAppearCalled = true
-                    viewModel.requestTop250Shows()
-                }
+                requestShows()
             }
             .navigationTitle("Top 250 TV Shows")
         }
         .background(SwiftUIColors.backgroundGrey)
+    }
+    
+    private func requestShows() {
+        if !isOnAppearCalled {
+            isOnAppearCalled = true
+            viewModel.requestTop250Shows()
+        }
     }
 }
 
