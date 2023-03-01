@@ -8,13 +8,11 @@
 import SwiftUI
 
 extension View {
-    func errorAlert(error: Binding<LocalizedError?>, message: String? = nil) -> some View {
-        return alert("Alert", isPresented: .constant(error.wrappedValue != nil), actions: {
-            Button("Close") {
-                error.wrappedValue = nil
-            }
+    func errorAlert(isPresented: Binding<Bool>, message: String) -> some View {
+        return alert("Alert", isPresented: isPresented, actions: {
+            Button("Close", role: .cancel, action: {})
         }, message: {
-            Text(message ?? error.wrappedValue?.errorDescription ?? "")
+            Text(message)
         })
     }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 struct MovieDetailView: View {
     
     @State private var isOnAppearCalled = false
+    @State private var isAlertPresented = false
     @EnvironmentObject private var viewModel: MovieDetailViewModel
     
     var body: some View {
@@ -34,7 +35,10 @@ struct MovieDetailView: View {
             )
             .navigationBarTitleDisplayMode(.inline)
             .scrollIndicators(.hidden)
-            .errorAlert(error: $viewModel.error)
+            .errorAlert(isPresented: $isAlertPresented, message: "Oops, something went wrong.")
+            .onReceive(viewModel.error, perform: { error in
+                isAlertPresented = true
+            })
             .onAppear {
                 requestMovies()
             }

@@ -16,7 +16,7 @@ final class ShowsViewModel: ObservableObject {
     private var cancellable: AnyCancellable?
     
     @Published private(set) var shows: [Show] = []
-    @Published var error: LocalizedError?
+    private(set) var error = PassthroughSubject<RequestError, Never>()
     
     init(networkService: NetworkService) {
         self.networkService = networkService
@@ -30,7 +30,7 @@ final class ShowsViewModel: ObservableObject {
             .map { $0.items }
             .sink { [weak self] completion in
                 if case .failure(let error) = completion {
-                    self?.error = error
+                    self?.error.send(error)
                 }
             } receiveValue: { [weak self] show in
                 guard let self else { return }

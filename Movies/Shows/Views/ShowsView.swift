@@ -11,6 +11,7 @@ import SDWebImageSwiftUI
 struct ShowsView: View {
     
     @State private var isOnAppearCalled = false
+    @State private var isAlertPresented = false
     @ObservedObject private var viewModel: ShowsViewModel
     
     init(viewModel: ShowsViewModel) {
@@ -25,7 +26,10 @@ struct ShowsView: View {
                 }
             }
             .padding(.top, 25)
-            .errorAlert(error: $viewModel.error, message: "Oops, something went wrong.")
+            .errorAlert(isPresented: $isAlertPresented, message: "Oops, something went wrong.")
+            .onReceive(viewModel.error, perform: { error in
+                isAlertPresented = true
+            })
             .onAppear {
                 requestShows()
             }

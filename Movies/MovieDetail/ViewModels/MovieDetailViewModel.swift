@@ -17,7 +17,7 @@ final class MovieDetailViewModel: ObservableObject {
     private var cancellable: AnyCancellable?
     
     @Published private(set) var movie: MovieDetailDataModel?
-    @Published var error: LocalizedError?
+    private(set) var error = PassthroughSubject<RequestError, Never>()
     
     init(networkService: NetworkService, id: String?) {
         self.networkService = networkService
@@ -33,7 +33,7 @@ final class MovieDetailViewModel: ObservableObject {
         cancellable = publisher
             .sink { [weak self] completion in
                 if case .failure(let error) = completion {
-                    self?.error = error
+                    self?.error.send(error)
                 }
             } receiveValue: { [weak self] movie in
                 guard let self else { return }
