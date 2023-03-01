@@ -45,7 +45,7 @@ final class MovieDetailViewModel: ObservableObject {
     func removedEmptyImages(data: MovieDetailDataModel) -> MovieDetailDataModel {
         var newData = data
         
-        newData.actorList = newData.actorList?.compactMap({ actor in
+        newData.actorList = newData.actorList?.map({ actor in
             if let image = actor.image, image.contains("nopicture") {
                 var newActor = actor
                 
