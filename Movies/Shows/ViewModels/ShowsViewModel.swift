@@ -12,11 +12,11 @@ final class ShowsViewModel: ObservableObject {
     
     private typealias ShowsPublisher = AnyPublisher<ShowsDataModel, RequestError>
     
-    private var networkService: NetworkService
+    private let networkService: NetworkService
     private var cancellable: AnyCancellable?
     
+    let error = PassthroughSubject<RequestError, Never>()
     @Published private(set) var shows: [Show] = []
-    private(set) var error = PassthroughSubject<RequestError, Never>()
     
     init(networkService: NetworkService) {
         self.networkService = networkService

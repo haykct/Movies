@@ -16,8 +16,8 @@ final class MovieDetailViewModel: ObservableObject {
     private let networkService: NetworkService
     private var cancellable: AnyCancellable?
     
+    let error = PassthroughSubject<RequestError, Never>()
     @Published private(set) var movie: MovieDetailDataModel?
-    private(set) var error = PassthroughSubject<RequestError, Never>()
     
     init(networkService: NetworkService, id: String?) {
         self.networkService = networkService
