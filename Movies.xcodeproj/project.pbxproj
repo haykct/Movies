@@ -58,6 +58,7 @@
 		26982CAC294DCE7100E5E1A6 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264CECE5293D06710095EA32 /* DataRequest.swift */; };
 		2698EFA7294DD191000B8E41 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610E5682948EC2900F75469 /* Optional.swift */; };
 		26A9520529AEA47100340054 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A9520429AEA47100340054 /* View.swift */; };
+		26A9520629B6161200340054 /* URLPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2652955F29A4FB4A001849AB /* URLPath.swift */; };
 		26B9E8ED2944CC1A00251362 /* InTheatresMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B9E8EB2944CC1A00251362 /* InTheatresMoviesCollectionViewCell.swift */; };
 		26E97337294E115100FDFD9B /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = 26E97336294E115100FDFD9B /* Mocker */; };
 		26E97338294E197E00FDFD9B /* MostPopularMoviesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF799729465B3F00824F85 /* MostPopularMoviesDataModel.swift */; };
@@ -622,6 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A9520629B6161200340054 /* URLPath.swift in Sources */,
 				26E97339294E278000FDFD9B /* MostPopularMoviesRequest.swift in Sources */,
 				26E97338294E197E00FDFD9B /* MostPopularMoviesDataModel.swift in Sources */,
 				2698EFA7294DD191000B8E41 /* Optional.swift in Sources */,

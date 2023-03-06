@@ -32,6 +32,6 @@ struct MoviewDetailPlotView: View {
 struct MoviewDetailPlotView_Previews: PreviewProvider {
     static var previews: some View {
         MoviewDetailPlotView()
-            .environmentObject(MovieDetailViewModel(networkService: DefaultNetworkService(), id: "tt5491994"))
+            .environmentObject(MovieDetailViewModel(networkService: DefaultNetworkService(), id: ""))
     }
 }

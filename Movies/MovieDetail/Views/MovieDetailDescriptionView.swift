@@ -54,6 +54,6 @@ struct MovieDetailDescriptionView: View {
 struct MovieDetailDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
         MovieDetailDescriptionView()
-            .environmentObject(MovieDetailViewModel(networkService: DefaultNetworkService(), id: "tt5491994"))
+            .environmentObject(MovieDetailViewModel(networkService: DefaultNetworkService(), id: ""))
     }
 }

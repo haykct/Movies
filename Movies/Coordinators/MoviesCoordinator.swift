@@ -32,7 +32,7 @@ final class MoviesCoordinator: Coordinator {
         navigationController.setViewControllers([moviesVC], animated: false)
     }
     
-    func openDetail(withID id: String?) {
+    func openDetail(withID id: String) {
         let viewModel = MovieDetailViewModel(networkService: DefaultNetworkService(), id: id)
         let swiftUIViewController = UIHostingController(rootView: MovieDetailView().environmentObject(viewModel))
         

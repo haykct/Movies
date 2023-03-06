@@ -12,21 +12,19 @@ final class MovieDetailViewModel: ObservableObject {
     
     private typealias MovieDetailPublisher = AnyPublisher<MovieDetailDataModel, RequestError>
     
-    private let id: String?
+    private let id: String
     private let networkService: NetworkService
     private var cancellable: AnyCancellable?
     
     let error = PassthroughSubject<RequestError, Never>()
     @Published private(set) var movie: MovieDetailDataModel?
     
-    init(networkService: NetworkService, id: String?) {
+    init(networkService: NetworkService, id: String) {
         self.networkService = networkService
         self.id = id
     }
     
     func requestMovies() {
-        guard let id else { return }
-        
         let request = MovieDetailRequest(id: id)
         let publisher: MovieDetailPublisher = networkService.request(request)
         
