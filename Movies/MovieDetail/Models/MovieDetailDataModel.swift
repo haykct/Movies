@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MovieDetailDataModel: Decodable, Response {
+struct MovieDetailDataModel: Decodable, ErrorInformationProvider {
     let id: String?
     let fullTitle: String?
     let image: String?

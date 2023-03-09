@@ -7,9 +7,6 @@
 
 import Foundation
 
-struct ShowsRequest: DataRequest {
-    
-    typealias ResponseData = ShowsDataModel
-    
-    let url = URLBuilder.buildUrl(withPath: "Top250TVs")
+struct ShowsRequest: Request {
+    var path: URLPath { .top250TvShows }
 }

@@ -7,16 +7,27 @@
 
 import Foundation
 import Alamofire
+import Combine
 
-enum DataError: Error {
-    case invalidData(String)
+enum RequestError: LocalizedError {
+    case invalidData(description: String)
+    case networkConnection(error: Error)
+    case unknown(error: Error)
+    
+    var errorDescription: String? {
+        switch self {
+        case .invalidData(let description):
+            return description
+        case .networkConnection(let error), .unknown(let error):
+            return error.localizedDescription
+        }
+    }
 }
 
 protocol NetworkService {
     var session: Session { get }
     
-    func request<Request: DataRequest>(_ request: Request,
-                                       completion: @escaping (Result<Request.ResponseData, Error>) -> Void)
+    func request<Response>(_ request: Request) -> AnyPublisher<Response, RequestError> where Response: Decodable & ErrorInformationProvider
 }
 
 final class DefaultNetworkService: NetworkService {
@@ -27,27 +38,29 @@ final class DefaultNetworkService: NetworkService {
         self.session = session
     }
     
-    func request<Request>(_ request: Request,
-                          completion: @escaping (Result<Request.ResponseData, Error>) -> Void) where Request: DataRequest {
-        session.request(request.url).validate().responseData { response in
-            switch response.result {
-            case .success(let data):
-                do {
-                    let decodedData = try request.decode(data)
-                    
-                    if decodedData.errorMessage.isNilOrEmpty {
-                        completion(.success(decodedData))
-                        
-                        return
-                    }
-                    
-                    completion(.failure(DataError.invalidData(decodedData.errorMessage!)))
-                } catch let error {
-                    completion(.failure(error))
-                }
-            case .failure(let error):
-                completion(.failure(error))
+    func request<Response>(_ request: Request) -> AnyPublisher<Response, RequestError> where Response: Decodable & ErrorInformationProvider {
+        session
+            .request(request.url)
+            .validate()
+            .publishDecodable(type: Response.self)
+            .value()
+            .tryMap { dataModel in
+                if dataModel.errorMessage.isNilOrEmpty { return dataModel }
+                
+                throw RequestError.invalidData(description: dataModel.errorMessage!)
             }
-        }
+            .mapError { (error: Error) -> RequestError in
+                guard let afError = error.asAFError else {
+                    return (error as? RequestError) ?? .unknown(error: error)
+                }
+                
+                if let urlError = afError.underlyingError as? URLError,
+                   urlError.code == .notConnectedToInternet {
+                    return .networkConnection(error: error)
+                }
+                
+                return .unknown(error: error)
+            }
+            .eraseToAnyPublisher()
     }
 }

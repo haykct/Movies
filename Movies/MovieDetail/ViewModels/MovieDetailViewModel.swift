@@ -6,41 +6,44 @@
 //
 
 import Foundation
+import Combine
 
 final class MovieDetailViewModel: ObservableObject {
     
-    private let id: String?
-    private let networkService: NetworkService
+    private typealias MovieDetailPublisher = AnyPublisher<MovieDetailDataModel, RequestError>
     
+    private let id: String
+    private let networkService: NetworkService
+    private var cancellable: AnyCancellable?
+    
+    let error = PassthroughSubject<RequestError, Never>()
     @Published private(set) var movie: MovieDetailDataModel?
     
-    init(networkService: NetworkService, id: String?) {
+    init(networkService: NetworkService, id: String) {
         self.networkService = networkService
         self.id = id
     }
     
     func requestMovies() {
-        guard let id else { return }
-        
         let request = MovieDetailRequest(id: id)
+        let publisher: MovieDetailPublisher = networkService.request(request)
         
-        networkService.request(request) { [weak self] result in
-            guard let self else { return }
-            
-            switch result {
-            case .success(let data):
-                self.movie = self.removedEmptyImages(data: data)
-            case .failure(let error):
-                // Show error screen in detail
-                print(error.localizedDescription)
+        cancellable = publisher
+            .sink { [weak self] completion in
+                if case .failure(let error) = completion {
+                    self?.error.send(error)
+                }
+            } receiveValue: { [weak self] movie in
+                guard let self else { return }
+                
+                self.movie = self.removedEmptyImages(data: movie)
             }
-        }
     }
     
-    func removedEmptyImages(data: MovieDetailDataModel) -> MovieDetailDataModel {
+    private func removedEmptyImages(data: MovieDetailDataModel) -> MovieDetailDataModel {
         var newData = data
         
-        newData.actorList = newData.actorList?.compactMap({ actor in
+        newData.actorList = newData.actorList?.map({ actor in
             if let image = actor.image, image.contains("nopicture") {
                 var newActor = actor
                 

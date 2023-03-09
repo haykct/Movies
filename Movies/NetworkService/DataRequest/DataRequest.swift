@@ -6,37 +6,24 @@
 //
 
 import Foundation
+import Alamofire
 
-struct URLBuilder {
-    private static let baseURL = "https://imdb-api.com/"
-    // k_8wo9qbmz, k_k9pjq5s2  Here are two more api keys if api calls amount is consumed(100 calls per day)
-    private static let apiKey = "k_95zcsbzv"
-    private static let defaultPath = "en/API/"
-    
-    static func buildUrl(withPath path: String, id: String? = nil) -> String {
-        let url = baseURL + defaultPath + "\(path)/\(apiKey)/"
-        guard let id else { return url }
-        
-        return url + id
-    }
-}
-
-protocol Response {
+protocol ErrorInformationProvider {
     var errorMessage: String? { get set }
 }
 
-protocol DataRequest {
-    associatedtype ResponseData: Response
-    
-    var url: String { get }
-    
-    func decode(_ data: Data) throws -> ResponseData
+protocol Request {
+    var baseURL: String { get }
+    var path: URLPath { get }
+    var httpMethod: HTTPMethod { get }
+    var headers: HTTPHeaders? { get }
+    var parameters: Parameters? { get }
 }
 
-extension DataRequest where ResponseData: Decodable {
-    func decode(_ data: Data) throws -> ResponseData {
-        let decoder = JSONDecoder()
-        
-        return try decoder.decode(ResponseData.self, from: data)
-    }
+extension Request {
+    var url: String { baseURL + path.value }
+    var baseURL: String { BaseUrl.imdbApi }
+    var httpMethod: HTTPMethod { .get }
+    var headers: HTTPHeaders? { nil }
+    var parameters: Parameters? { nil }
 }

@@ -7,9 +7,6 @@
 
 import Foundation
 
-struct MostPopularMoviesRequest: DataRequest {
-    
-    typealias ResponseData = MostPopularMoviesDataModel
-    
-    let url = URLBuilder.buildUrl(withPath: "MostPopularMovies")
+struct MostPopularMoviesRequest: Request {
+    var path: URLPath { .mostPopularMovies }
 }

@@ -7,9 +7,6 @@
 
 import Foundation
 
-struct InTheatresMoviesRequest: DataRequest {
-    
-    typealias ResponseData = InTheatresMoviesDataModel
-    
-    let url = URLBuilder.buildUrl(withPath: "InTheaters") 
+struct InTheatresMoviesRequest: Request {
+    var path: URLPath { .inTheatresMovies }
 }

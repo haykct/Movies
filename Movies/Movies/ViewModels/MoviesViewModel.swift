@@ -6,21 +6,25 @@
 //
 
 import Foundation
+import Combine
 
 final class MoviesViewModel {
+    
+    //MARK: type aliases
+    
+    typealias DataModels = (inTheatresMovies: [InTheatresMovie], mostPopularMovies: [PopularMovie])
+    private typealias InTheatresMoviesPublisher = AnyPublisher<InTheatresMoviesDataModel, RequestError>
+    private typealias MostPopularMoviesPublisher = AnyPublisher<MostPopularMoviesDataModel, RequestError>
     
     //MARK: public properties
     
     weak var coordinator: MoviesCoordinator?
-    let allMovies: Box<(inTheatres: [InTheatresMovie], popular: [PopularMovie])> = Box()
-    let error: Box<Error> = Box()
-    
+    let allMovies = CurrentValueSubject<DataModels, RequestError>(([], []))
+
     //MARK: private properties
     
-    private let group = DispatchGroup()
     private let networkService: NetworkService
-    private let inTheatresMovies: Box<[InTheatresMovie]> = Box()
-    private let popularMovies: Box<[PopularMovie]> = Box()
+    private var cancellable: AnyCancellable?
     
     //MARK: initializers
     
@@ -33,57 +37,28 @@ final class MoviesViewModel {
     func openDetail(withIndexPath indexPath: IndexPath) {
         switch Section(rawValue: indexPath.section) {
         case .inTheatres:
-            coordinator?.openDetail(withID: inTheatresMovies.value?[indexPath.item].id)
+            coordinator?.openDetail(withID: allMovies.value.inTheatresMovies[indexPath.item].id)
         case .mostPopular:
-            coordinator?.openDetail(withID: popularMovies.value?[indexPath.item].id)
+            coordinator?.openDetail(withID: allMovies.value.mostPopularMovies[indexPath.item].id)
         default: return
         }
     }
     
-    func requestInTheatresMovies() {
-        let request = InTheatresMoviesRequest()
-        
-        group.enter()
-        networkService.request(request) { [weak self] result in
-            guard let self else { return }
-            
-            switch result {
-            case .success(let data):
-                self.inTheatresMovies.value = data.items
-                self.group.leave()
-            case .failure(let error):
-                self.error.value = error
-            }
-        }
-    }
-    
-    func requestMostPopularMovies() {
-        let request = MostPopularMoviesRequest()
-        
-        group.enter()
-        networkService.request(request) { [weak self] result in
-            guard let self else { return }
-            
-            switch result {
-            case .success(let data):
-                self.popularMovies.value = data.items
-                self.group.leave()
-            case .failure(let error):
-                self.error.value = error
-            }
-        }
-    }
-    
     func requestAllMovies() {
-        requestInTheatresMovies()
-        requestMostPopularMovies()
+        let inTheatresMoviesRequest = InTheatresMoviesRequest()
+        let popularMoviesRequest = MostPopularMoviesRequest()
+        let firstPublisher: InTheatresMoviesPublisher = networkService.request(inTheatresMoviesRequest)
+        let secondPublisher: MostPopularMoviesPublisher = networkService.request(popularMoviesRequest)
         
-        group.notify(queue: .main) { [weak self] in
-            guard let self else { return }
-            
-            self.allMovies.value = (inTheatres: self.inTheatresMovies.value!,
-                                    popular: self.popularMovies.value!)
-        }
+        cancellable = firstPublisher
+            .zip(secondPublisher)
+            .map { ($0.0.items, $0.1.items) }
+            .sink { [weak self] completion in
+                if case .failure(let error) = completion {
+                    self?.allMovies.send(completion: .failure(error))
+                }
+            } receiveValue: { [weak self] allMovies in
+                self?.allMovies.value = allMovies
+            }
     }
-    
 }

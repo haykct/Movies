@@ -7,13 +7,12 @@
 
 import Foundation
 
-struct MovieDetailRequest: DataRequest {
+struct MovieDetailRequest: Request {
     
-    typealias ResponseData = MovieDetailDataModel
-    
-    let url: String
-    
+    private let id: String
+    var path: URLPath { .movieDetail(id: id) }
+
     init(id: String) {
-        url = URLBuilder.buildUrl(withPath: "Title", id: id)
+        self.id = id
     }
 }

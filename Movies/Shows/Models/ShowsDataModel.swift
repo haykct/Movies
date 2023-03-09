@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct ShowsDataModel: Decodable, Response {
-    var items: [Show]
+struct ShowsDataModel: Decodable, ErrorInformationProvider {
+    let items: [Show]
     var errorMessage: String?
 }
 
