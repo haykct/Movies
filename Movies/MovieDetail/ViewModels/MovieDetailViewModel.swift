@@ -40,7 +40,7 @@ final class MovieDetailViewModel: ObservableObject {
             }
     }
     
-    func removedEmptyImages(data: MovieDetailDataModel) -> MovieDetailDataModel {
+    private func removedEmptyImages(data: MovieDetailDataModel) -> MovieDetailDataModel {
         var newData = data
         
         newData.actorList = newData.actorList?.map({ actor in
