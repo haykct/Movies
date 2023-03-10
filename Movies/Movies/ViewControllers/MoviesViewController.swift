@@ -63,6 +63,7 @@ extension MoviesViewController {
     }
 }
 
+// Datasource and delegate methods should be moved to a separate class
 //MARK: UICollectionViewDiffableDataSource
 
 extension MoviesViewController {
