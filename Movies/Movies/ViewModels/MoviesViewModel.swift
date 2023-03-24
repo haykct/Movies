@@ -10,6 +10,13 @@ import Combine
 
 final class MoviesViewModel {
     
+    //MARK: enums
+
+    enum Section: Int, CaseIterable {
+        case inTheatres
+        case mostPopular
+    }
+    
     //MARK: type aliases
     
     typealias DataModels = (inTheatresMovies: [InTheatresMovie], mostPopularMovies: [PopularMovie])

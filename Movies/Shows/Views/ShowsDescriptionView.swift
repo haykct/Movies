@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ShowsDescriptionView: View {
     
+    private typealias SwiftUIColors = Constants.SwiftUIColors
+    
     private let show: Show
     
     init(show: Show) {

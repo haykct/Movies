@@ -9,6 +9,10 @@ import UIKit
 
 final class SectionHeaderReusableView: UICollectionReusableView {
     
+    //MARK: typealiases
+    
+    private typealias Colors = Constants.Colors
+    
     //MARK: private properties
     
     private let titleTextLabel = UILabel()

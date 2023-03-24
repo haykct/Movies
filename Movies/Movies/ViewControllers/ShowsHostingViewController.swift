@@ -22,29 +22,40 @@ final class ShowsHostingViewController: UIHostingController<ShowsView> {
     //MARK: private methods
     
     private func setupTabBarItem() {
+        typealias NunitoSans = Constants.Fonts.NunitoSans
+        
         let tabBarAppearance = UITabBarAppearance()
+        let titleFontSize: CGFloat = 14
+        let font = UIFont(name: NunitoSans.semiBold, size: titleFontSize) as Any
 
-        tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.font: UIFont(name: "NunitoSans-SemiBold",
-                                                                                             size: 14) as Any]
+        tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.font: font]
         tabBarItem.standardAppearance = tabBarAppearance
         tabBarItem.scrollEdgeAppearance = tabBarAppearance
     }
     
     
     private func setupNavigationBar() {
-        let appearance = UINavigationBarAppearance()
+        typealias NunitoSans = Constants.Fonts.NunitoSans
         
-        navigationItem.title = "Movies"
+        let appearance = UINavigationBarAppearance()
+        let titleFontSize: CGFloat = 20
+        let largeTitleFontSize: CGFloat = 32
+        let buttonTitleFontSize: CGFloat = 18
+        let image = Constants.Images.System.filledCircle
+        let color = Constants.Colors.grey as Any
+        let titleFont = UIFont(name: NunitoSans.black, size: titleFontSize) as Any
+        let largeTitleFont = UIFont(name: NunitoSans.black, size: largeTitleFontSize) as Any
+        let buttonTitleFont = UIFont(name: NunitoSans.bold, size: buttonTitleFontSize) as Any
+        let title = "Movies"
+        
+        navigationItem.title = title
         navigationController?.navigationBar.prefersLargeTitles = true
-        appearance.titleTextAttributes = [.foregroundColor: Colors.grey as Any,
-                                          .font: UIFont(name: "NunitoSans-Black", size: 20) as Any]
-        appearance.largeTitleTextAttributes = [.foregroundColor: Colors.grey as Any,
-                                               .font: UIFont(name: "NunitoSans-Black", size: 32) as Any]
-        appearance.buttonAppearance.normal.titleTextAttributes = [.foregroundColor: Colors.grey as Any,
-                                                                  .font: UIFont(name: "NunitoSans-Bold", size: 18) as Any]
-        appearance.setBackIndicatorImage(UIImage(systemName: "chevron.backward.circle.fill"),
-                                         transitionMaskImage: UIImage(systemName: "chevron.backward.circle.fill"))
-        navigationController?.navigationBar.tintColor = Colors.grey
+        appearance.titleTextAttributes = [.foregroundColor: color, .font: titleFont]
+        appearance.largeTitleTextAttributes = [.foregroundColor: color, .font: largeTitleFont]
+        appearance.buttonAppearance.normal.titleTextAttributes = [.foregroundColor: color,
+                                                                  .font: buttonTitleFont]
+        appearance.setBackIndicatorImage(image, transitionMaskImage: image)
+        navigationController?.navigationBar.tintColor = Constants.Colors.grey
         navigationController?.navigationBar.standardAppearance = appearance
     }
 }

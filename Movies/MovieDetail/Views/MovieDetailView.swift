@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MovieDetailView: View {
     
+    private typealias SwiftUIColors = Constants.SwiftUIColors
+    
     @State private var isOnAppearCalled = false
     @State private var isAlertPresented = false
     @EnvironmentObject private var viewModel: MovieDetailViewModel

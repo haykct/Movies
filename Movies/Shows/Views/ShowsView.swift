@@ -10,6 +10,8 @@ import SDWebImageSwiftUI
 
 struct ShowsView: View {
     
+    private typealias SwiftUIColors = Constants.SwiftUIColors
+    
     @State private var isOnAppearCalled = false
     @State private var isAlertPresented = false
     @ObservedObject private var viewModel: ShowsViewModel

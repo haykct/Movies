@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MovieDetailDescriptionView: View {
     
+    private typealias SwiftUIColors = Constants.SwiftUIColors
+    
     @EnvironmentObject private var viewModel: MovieDetailViewModel
     
     var body: some View {
