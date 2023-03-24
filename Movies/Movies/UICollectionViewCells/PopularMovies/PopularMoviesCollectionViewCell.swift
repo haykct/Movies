@@ -22,7 +22,7 @@ final class PopularMoviesCollectionViewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        imageView.layer.cornerRadius = 12
+        imageView.layer.cornerRadius = Constants.cellCornerRadius
     }
     
     //MARK: public methods
@@ -37,12 +37,15 @@ final class PopularMoviesCollectionViewCell: UICollectionViewCell {
     //MARK: private methods
     
     private func loadImage(url: String, imageSize: CGSize) {
+        let placeholderImage = Constants.Images.placeholder
+        
         if let url = URL(string: url) {
             let transformer = SDImageResizingTransformer(size: imageSize, scaleMode: .aspectFill)
+            let context: [SDWebImageContextOption: Any] = [.imageTransformer: transformer]
             
-            imageView.sd_setImage(with: url, placeholderImage: UIImage(named: "placeholder"), context: [.imageTransformer: transformer])
+            imageView.sd_setImage(with: url, placeholderImage: placeholderImage, context: context)
         } else {
-            imageView.image = UIImage(named: "placeholder")
+            imageView.image = placeholderImage
         }
     }
 

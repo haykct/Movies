@@ -9,6 +9,8 @@ import UIKit
 import SwiftUI
 
 enum Constants {
+    static let cellCornerRadius: CGFloat = 12
+    
     enum Colors {
         static let grey = UIColor(hexString: "#525151")
         static let cyan = UIColor(hexString: "#6ECCAD")
@@ -29,5 +31,9 @@ enum Constants {
             static let bold = "NunitoSans-Bold"
             static let black = "NunitoSans-Black"
         }
+    }
+    
+    enum Images {
+        static let placeholder = UIImage(named: "placeholder")
     }
 }
