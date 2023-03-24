@@ -30,10 +30,4 @@ enum Constants {
             static let black = "NunitoSans-Black"
         }
     }
-    
-    enum Images {
-        enum System {
-            static let filledCircle = UIImage(systemName: "chevron.backward.circle.fill")
-        }
-    }
 }

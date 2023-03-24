@@ -320,7 +320,7 @@
 				2625920B294C745D00C0B1EB /* Shows */,
 				26259219294C833E00C0B1EB /* ReusableViews */,
 				264CECDF293CF1520095EA32 /* NetworkService */,
-				26FF7983294651B600824F85 /* Colors */,
+				26FF7983294651B600824F85 /* Constants */,
 				26FF79862946540400824F85 /* Fonts */,
 				26599415293A8693005149BF /* Extensions */,
 			);
@@ -447,12 +447,12 @@
 			path = UICollectionReusableViews;
 			sourceTree = "<group>";
 		};
-		26FF7983294651B600824F85 /* Colors */ = {
+		26FF7983294651B600824F85 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
 				26FF7984294651D200824F85 /* Constants.swift */,
 			);
-			path = Colors;
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		26FF79862946540400824F85 /* Fonts */ = {

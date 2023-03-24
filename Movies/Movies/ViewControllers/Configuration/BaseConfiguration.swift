@@ -36,7 +36,7 @@ extension BaseConfiguration where Self: UIViewController {
         let titleFontSize: CGFloat = 20
         let largeTitleFontSize: CGFloat = 32
         let buttonTitleFontSize: CGFloat = 18
-        let image = Constants.Images.System.filledCircle
+        let filledCircleImage = UIImage(systemName: "chevron.backward.circle.fill")
         let color = Constants.Colors.grey as Any
         let titleFont = UIFont(name: NunitoSans.black, size: titleFontSize) as Any
         let largeTitleFont = UIFont(name: NunitoSans.black, size: largeTitleFontSize) as Any
@@ -48,7 +48,7 @@ extension BaseConfiguration where Self: UIViewController {
         appearance.largeTitleTextAttributes = [.foregroundColor: color, .font: largeTitleFont]
         appearance.buttonAppearance.normal.titleTextAttributes = [.foregroundColor: color,
                                                                   .font: buttonTitleFont]
-        appearance.setBackIndicatorImage(image, transitionMaskImage: image)
+        appearance.setBackIndicatorImage(filledCircleImage, transitionMaskImage: filledCircleImage)
         navigationController?.navigationBar.tintColor = Constants.Colors.grey
         navigationController?.navigationBar.standardAppearance = appearance
     }
