@@ -26,11 +26,11 @@ final class MoviesCoordinator: Coordinator {
     func start() {
         let moviesVC = MoviesViewController.instantiate(fromStoryboard: .main)
         let title = "Movies"
-        let filledFilmImage = UIImage(systemName: "film.fill")
+        let filmImage = UIImage(systemName: "film.fill")
         let tag = 0
         let isAnimated = false
 
-        moviesVC.tabBarItem = UITabBarItem(title: title, image: filledFilmImage, tag: tag)
+        moviesVC.tabBarItem = UITabBarItem(title: title, image: filmImage, tag: tag)
         moviesVC.viewModel = MoviesViewModel(withNetworkService: DefaultNetworkService())
         moviesVC.viewModel?.coordinator = self
         navigationController.setViewControllers([moviesVC], animated: isAnimated)
@@ -38,8 +38,8 @@ final class MoviesCoordinator: Coordinator {
     
     func openDetail(withID id: String) {
         let viewModel = MovieDetailViewModel(networkService: DefaultNetworkService(), id: id)
-        let rootView = MovieDetailView().environmentObject(viewModel)
-        let swiftUIViewController = UIHostingController(rootView: rootView)
+        let movieDetailView = MovieDetailView().environmentObject(viewModel)
+        let swiftUIViewController = UIHostingController(rootView: movieDetailView)
         let isAnimated = true
         
         swiftUIViewController.navigationItem.largeTitleDisplayMode = .never
