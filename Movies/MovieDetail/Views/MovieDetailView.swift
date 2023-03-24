@@ -11,6 +11,11 @@ struct MovieDetailView: View {
     
     private typealias SwiftUIColors = Constants.SwiftUIColors
     
+    private let containerSpacing: CGFloat = 0
+    private let imageDescriptionSectionSpacing: CGFloat = 10
+    private let imageDescriptionSectionHeight: CGFloat = 210
+    private let imageDescriptionSectionPadding: CGFloat = 20
+    
     @State private var isOnAppearCalled = false
     @State private var isAlertPresented = false
     @EnvironmentObject private var viewModel: MovieDetailViewModel
@@ -18,13 +23,13 @@ struct MovieDetailView: View {
     var body: some View {
         GeometryReader { proxy in
             ScrollView {
-                VStack(spacing: 0) {
-                    HStack(spacing: 10) {
+                VStack(spacing: containerSpacing) {
+                    HStack(spacing: imageDescriptionSectionSpacing) {
                         MovieDetailImageView()
                         MovieDetailDescriptionView()
                     }
-                    .frame(width: proxy.size.width, height: 210)
-                    .padding(.top, 20)
+                    .frame(width: proxy.size.width, height: imageDescriptionSectionHeight)
+                    .padding(.top, imageDescriptionSectionPadding)
                     MoviewDetailPlotView()
                     MovieDetailCastView()
                 }
@@ -37,7 +42,7 @@ struct MovieDetailView: View {
             )
             .navigationBarTitleDisplayMode(.inline)
             .scrollIndicators(.hidden)
-            .errorAlert(isPresented: $isAlertPresented, message: "Oops, something went wrong.")
+            .errorAlert(isPresented: $isAlertPresented, message: Constants.Alert.message)
             .onReceive(viewModel.error, perform: { error in
                 isAlertPresented = true
             })

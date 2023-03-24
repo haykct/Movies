@@ -227,12 +227,11 @@ final class MoviesViewController: UIViewController, BaseConfiguration {
     }
     
     private func handleError() {
-        let title = "Alert"
-        let message = "Oops, something went wrong."
-        let actionTitle = "Close"
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        typealias Alert = Constants.Alert
         
-        alert.addAction(UIAlertAction(title: actionTitle, style: .cancel))
+        let alert = UIAlertController(title: Alert.title, message: Alert.message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: Alert.actionTitle, style: .cancel))
         present(alert, animated: true, completion: nil)
     }
 }

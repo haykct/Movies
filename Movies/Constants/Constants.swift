@@ -36,4 +36,10 @@ enum Constants {
     enum Images {
         static let placeholder = UIImage(named: "placeholder")
     }
+    
+    enum Alert {
+        static let title = "Error"
+        static let actionTitle = "Close"
+        static let message = "Oops, something went wrong."
+    }
 }
