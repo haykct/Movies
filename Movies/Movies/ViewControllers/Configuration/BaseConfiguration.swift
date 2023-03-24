@@ -22,10 +22,9 @@ extension BaseConfiguration where Self: UIViewController {
     
     func setupTabBarItem() {
         let tabBarAppearance = UITabBarAppearance()
-        let titleFontSize: CGFloat = 14
-        let font = UIFont(name: NunitoSans.semiBold, size: titleFontSize) as Any
+        let titleFont = UIFont(name: NunitoSans.semiBold, size: 14) as Any
 
-        tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.font: font]
+        tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.font: titleFont]
         tabBarItem.standardAppearance = tabBarAppearance
         tabBarItem.scrollEdgeAppearance = tabBarAppearance
     }
@@ -33,20 +32,17 @@ extension BaseConfiguration where Self: UIViewController {
     
     func setupNavigationBar() {
         let appearance = UINavigationBarAppearance()
-        let titleFontSize: CGFloat = 20
-        let largeTitleFontSize: CGFloat = 32
-        let buttonTitleFontSize: CGFloat = 18
         let filledCircleImage = UIImage(systemName: "chevron.backward.circle.fill")
-        let color = Constants.Colors.grey as Any
-        let titleFont = UIFont(name: NunitoSans.black, size: titleFontSize) as Any
-        let largeTitleFont = UIFont(name: NunitoSans.black, size: largeTitleFontSize) as Any
-        let buttonTitleFont = UIFont(name: NunitoSans.bold, size: buttonTitleFontSize) as Any
+        let greyColor = Constants.Colors.grey as Any
+        let titleFont = UIFont(name: NunitoSans.black, size: 20) as Any
+        let largeTitleFont = UIFont(name: NunitoSans.black, size: 32) as Any
+        let buttonTitleFont = UIFont(name: NunitoSans.bold, size: 18) as Any
         
         navigationItem.title = navigationTitle
         navigationController?.navigationBar.prefersLargeTitles = true
-        appearance.titleTextAttributes = [.foregroundColor: color, .font: titleFont]
-        appearance.largeTitleTextAttributes = [.foregroundColor: color, .font: largeTitleFont]
-        appearance.buttonAppearance.normal.titleTextAttributes = [.foregroundColor: color,
+        appearance.titleTextAttributes = [.foregroundColor: greyColor, .font: titleFont]
+        appearance.largeTitleTextAttributes = [.foregroundColor: greyColor, .font: largeTitleFont]
+        appearance.buttonAppearance.normal.titleTextAttributes = [.foregroundColor: greyColor,
                                                                   .font: buttonTitleFont]
         appearance.setBackIndicatorImage(filledCircleImage, transitionMaskImage: filledCircleImage)
         navigationController?.navigationBar.tintColor = Constants.Colors.grey

@@ -35,9 +35,8 @@ final class InTheatresMoviesCollectionViewCell: UICollectionViewCell {
         
         if let url = URL(string: url) {
             let transformer = SDImageResizingTransformer(size: imageSize, scaleMode: .aspectFill)
-            let context: [SDWebImageContextOption: Any] = [.imageTransformer: transformer]
             
-            imageView.sd_setImage(with: url, placeholderImage: placeholderImage, context: context)
+            imageView.sd_setImage(with: url, placeholderImage: placeholderImage, context: [.imageTransformer: transformer])
         } else {
             imageView.image = placeholderImage
         }

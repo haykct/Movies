@@ -13,24 +13,21 @@ import Combine
 private extension MoviesViewController {
     func createSection(itemSize: NSCollectionLayoutSize, groupSize: NSCollectionLayoutSize,
                               spacing: CGFloat) -> NSCollectionLayoutSection {
-        let insets = (top: 5.0, leading: 25.0, bottom: 18.0, trailing: 25.0)
-        let headerHeight: CGFloat = 40
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         let section = NSCollectionLayoutSection(group: group)
         
         section.interGroupSpacing = spacing
-        section.contentInsets = NSDirectionalEdgeInsets(top: insets.top, leading: insets.leading,
-                                                        bottom: insets.bottom, trailing: insets.trailing)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 25,
+                                                        bottom: 18, trailing: 25)
         section.orthogonalScrollingBehavior = .continuous
-        section.boundarySupplementaryItems = [createSectionHeader(withHeight: headerHeight)]
+        section.boundarySupplementaryItems = [createSectionHeader(withHeight: 40)]
         
         return section
     }
     
     func createSectionHeader(withHeight height: CGFloat) -> NSCollectionLayoutBoundarySupplementaryItem {
-        let fractionalWidth: CGFloat = 1
-        let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(fractionalWidth),
+        let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                                              heightDimension: .absolute(height))
         let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: layoutSectionHeaderSize,
                                                                               elementKind: UICollectionView.elementKindSectionHeader,
@@ -46,27 +43,19 @@ private extension MoviesViewController {
             
             switch MoviesViewModel.Section(rawValue: section) {
             case .inTheatres:
-                let fractionalWidth: CGFloat = 1
-                let fractionalHeight: CGFloat = 1
-                let absoluteWidth: CGFloat = 290
-                let absoluteHeight: CGFloat = 400
-                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(fractionalWidth),
-                                                      heightDimension: .fractionalHeight(fractionalHeight))
-                let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(absoluteWidth),
-                                                       heightDimension: .absolute(absoluteHeight))
+                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
+                                                      heightDimension: .fractionalHeight(1))
+                let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(290),
+                                                       heightDimension: .absolute(400))
                 let section = self.createSection(itemSize: itemSize, groupSize: groupSize,
                                                  spacing: spacing)
                 
                 return section
             case .mostPopular:
-                let fractionalWidth: CGFloat = 1
-                let itemEstimatedHeight: CGFloat = 265
-                let absoluteWidth: CGFloat = 140
-                let groupEstimatedHeight: CGFloat = 265
-                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(fractionalWidth),
-                                                      heightDimension: .estimated(itemEstimatedHeight))
-                let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(absoluteWidth),
-                                                       heightDimension: .estimated(groupEstimatedHeight))
+                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
+                                                      heightDimension: .estimated(265))
+                let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(140),
+                                                       heightDimension: .estimated(265))
                 let section = self.createSection(itemSize: itemSize, groupSize: groupSize,
                                                  spacing: spacing)
                 
@@ -85,8 +74,7 @@ private extension MoviesViewController {
         let cellProvider: DiffableDataSource.CellProvider = { [weak self] collectionView, indexPath, data in
             guard let self else { return nil }
             
-            let defaultScale: CGFloat = 1
-            let deviceScale = self.view.window?.windowScene?.screen.scale ?? defaultScale
+            let deviceScale = self.view.window?.windowScene?.screen.scale ?? 1
             
             switch MoviesViewModel.Section(rawValue: indexPath.section) {
             case .inTheatres:
@@ -111,17 +99,15 @@ private extension MoviesViewController {
         }
         
         let viewProvider: DiffableDataSource.SupplementaryViewProvider = { collectionView, kind, indexPath in
-            let inTheatresHeaderTitle = "In Theatres"
-            let mostPopularHeaderTitle = "Most Popular"
             let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
                                                                              withReuseIdentifier: self.headerID,
                                                                              for: indexPath) as! SectionHeaderReusableView
             
             switch MoviesViewModel.Section(rawValue: indexPath.section) {
             case .inTheatres:
-                headerView.setTitle(text: inTheatresHeaderTitle)
+                headerView.setTitle(text: "In Theatres")
             case .mostPopular:
-                headerView.setTitle(text: mostPopularHeaderTitle)
+                headerView.setTitle(text: "Most Popular")
             default:
                 break
             }
@@ -204,10 +190,8 @@ final class MoviesViewController: UIViewController, BaseConfiguration {
     }
     
     private func registerReusableElements() {
-        let inTheatresCellNibName = "InTheatresMoviesCollectionViewCell"
-        let popularMoviesCellNibName = "PopularMoviesCollectionViewCell"
-        let inTheatresCellNib = UINib(nibName: inTheatresCellNibName, bundle: nil)
-        let popularMoviesCellNib = UINib(nibName: popularMoviesCellNibName, bundle: nil)
+        let inTheatresCellNib = UINib(nibName: "InTheatresMoviesCollectionViewCell", bundle: nil)
+        let popularMoviesCellNib = UINib(nibName: "PopularMoviesCollectionViewCell", bundle: nil)
         
         collectionView.register(inTheatresCellNib, forCellWithReuseIdentifier: inTheatresCellID)
         collectionView.register(popularMoviesCellNib, forCellWithReuseIdentifier: popularMoviesCellID)
