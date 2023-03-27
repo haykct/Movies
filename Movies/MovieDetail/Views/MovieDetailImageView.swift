@@ -12,14 +12,16 @@ struct MovieDetailImageView: View {
     @EnvironmentObject private var viewModel: MovieDetailViewModel
     
     var body: some View {
+        let layout = (width: 160.0, height: 210.0, radius: 12.0, padding: 18.0)
+        
         if let image = viewModel.movie?.image {
             AsyncImage(url: URL(string: image)) { image in
                 image
-                    .clippedAndScaledToFill(width: 160, height: 210, radius: 12)
-                    .padding(.leading, 18)
+                    .clippedAndScaledToFill(width: layout.width, height: layout.height, radius: layout.radius)
+                    .padding(.leading, layout.padding)
             } placeholder: {
-                PlaceholderImage(width: 160, height: 210, radius: 12)
-                    .padding(.leading, 18)
+                PlaceholderImage(width: layout.width, height: layout.height, radius: layout.radius)
+                    .padding(.leading, layout.padding)
             }
         }
     }

@@ -20,8 +20,6 @@ final class MoviesViewModel {
     //MARK: type aliases
     
     typealias DataModels = (inTheatresMovies: [InTheatresMovie], mostPopularMovies: [PopularMovie])
-    private typealias InTheatresMoviesPublisher = AnyPublisher<InTheatresMoviesDataModel, RequestError>
-    private typealias MostPopularMoviesPublisher = AnyPublisher<MostPopularMoviesDataModel, RequestError>
     
     //MARK: public properties
     
@@ -52,6 +50,9 @@ final class MoviesViewModel {
     }
     
     func requestAllMovies() {
+        typealias InTheatresMoviesPublisher = AnyPublisher<InTheatresMoviesDataModel, RequestError>
+        typealias MostPopularMoviesPublisher = AnyPublisher<MostPopularMoviesDataModel, RequestError>
+        
         let inTheatresMoviesRequest = InTheatresMoviesRequest()
         let popularMoviesRequest = MostPopularMoviesRequest()
         let firstPublisher: InTheatresMoviesPublisher = networkService.request(inTheatresMoviesRequest)

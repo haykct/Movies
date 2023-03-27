@@ -52,10 +52,11 @@ private extension MoviesViewController {
                 
                 return section
             case .mostPopular:
+                let height: CGFloat = 265
                 let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
-                                                      heightDimension: .estimated(265))
+                                                      heightDimension: .estimated(height))
                 let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(140),
-                                                       heightDimension: .estimated(265))
+                                                       heightDimension: .estimated(height))
                 let section = self.createSection(itemSize: itemSize, groupSize: groupSize,
                                                  spacing: spacing)
                 

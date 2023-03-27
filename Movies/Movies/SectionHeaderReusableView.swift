@@ -9,10 +9,6 @@ import UIKit
 
 final class SectionHeaderReusableView: UICollectionReusableView {
     
-    //MARK: typealiases
-    
-    private typealias Colors = Constants.Colors
-    
     //MARK: private properties
     
     private let titleTextLabel = UILabel()
@@ -37,7 +33,7 @@ final class SectionHeaderReusableView: UICollectionReusableView {
         titleTextLabel.frame = bounds
         titleTextLabel.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         titleTextLabel.font = UIFont(name: Constants.Fonts.NunitoSans.bold, size: 22)
-        titleTextLabel.textColor = Colors.grey
+        titleTextLabel.textColor = Constants.Colors.grey
         addSubview(titleTextLabel)
     }
 }

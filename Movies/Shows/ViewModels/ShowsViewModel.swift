@@ -10,8 +10,6 @@ import Combine
 
 final class ShowsViewModel: ObservableObject {
     
-    private typealias ShowsPublisher = AnyPublisher<ShowsDataModel, RequestError>
-    
     private let networkService: NetworkService
     private var cancellable: AnyCancellable?
     
@@ -23,6 +21,8 @@ final class ShowsViewModel: ObservableObject {
     }
     
     func requestTop250Shows() {
+        typealias ShowsPublisher = AnyPublisher<ShowsDataModel, RequestError>
+        
         let request = ShowsRequest()
         let publisher: ShowsPublisher = networkService.request(request)
         

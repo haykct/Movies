@@ -10,8 +10,6 @@ import SDWebImageSwiftUI
 
 struct ShowsView: View {
     
-    private typealias SwiftUIColors = Constants.SwiftUIColors
-    
     @State private var isOnAppearCalled = false
     @State private var isAlertPresented = false
     @ObservedObject private var viewModel: ShowsViewModel
@@ -37,7 +35,7 @@ struct ShowsView: View {
             }
             .navigationTitle("Top 250 TV Shows")
         }
-        .background(SwiftUIColors.backgroundGrey)
+        .background(Constants.SwiftUIColors.backgroundGrey)
     }
     
     private func requestShows() {

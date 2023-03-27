@@ -9,15 +9,17 @@ import SwiftUI
 
 struct MovieDetailDescriptionView: View {
     
-    private typealias SwiftUIColors = Constants.SwiftUIColors
-    
     @EnvironmentObject private var viewModel: MovieDetailViewModel
     
     var body: some View {
+        let fontName = Constants.Fonts.NunitoSans.bold
+        
         VStack(alignment: .leading, spacing: 8) {
+            let lines = 1
+            
             if let title = viewModel.movie?.fullTitle {
                 Text(title)
-                    .font(Font.custom("NunitoSans-Bold", size: 25))
+                    .font(Font.custom(fontName, size: 25))
             }
             
             if let directors = viewModel.movie?.directors, !directors.isEmpty {
@@ -31,23 +33,23 @@ struct MovieDetailDescriptionView: View {
                         .scaledToFit()
                         .frame(width: 15, height: 15)
                         .padding(.bottom, 3)
-                        .foregroundColor(SwiftUIColors.grey)
+                        .foregroundColor(Constants.SwiftUIColors.grey)
                     Text(rating)
-                        .lineLimit(1)
+                        .lineLimit(lines)
                 }
             }
             
             if let genres = viewModel.movie?.genres {
                 Text(genres)
-                    .lineLimit(1)
+                    .lineLimit(lines)
             }
             
             if let runtime = viewModel.movie?.runtimeStr {
                 Text(runtime)
-                    .lineLimit(1)
+                    .lineLimit(lines)
             }
         }
-        .font(Font.custom("NunitoSans-SemiBold", size: 15))
+        .font(Font.custom(fontName, size: 15))
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
         .padding(.trailing, 18)
     }
