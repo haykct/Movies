@@ -42,4 +42,8 @@ enum Constants {
         static let actionTitle = "Close"
         static let message = "Oops, something went wrong."
     }
+    
+    enum BaseUrls {
+        static let imdbApi = "https://imdb-api.com/"
+    }
 }

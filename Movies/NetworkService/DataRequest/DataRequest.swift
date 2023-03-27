@@ -22,7 +22,7 @@ protocol Request {
 
 extension Request {
     var url: String { baseURL + path.value }
-    var baseURL: String { BaseUrl.imdbApi }
+    var baseURL: String { Constants.BaseUrls.imdbApi }
     var httpMethod: HTTPMethod { .get }
     var headers: HTTPHeaders? { nil }
     var parameters: Parameters? { nil }

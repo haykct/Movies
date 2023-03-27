@@ -26,7 +26,7 @@ struct ShowsView: View {
                 }
             }
             .padding(.top, 25)
-            .errorAlert(isPresented: $isAlertPresented, message: "Oops, something went wrong.")
+            .errorAlert(isPresented: $isAlertPresented, message: Constants.Alert.message)
             .onReceive(viewModel.error, perform: { error in
                 isAlertPresented = true
             })

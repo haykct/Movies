@@ -22,7 +22,9 @@ struct ShowsRowItem: View {
             MovieDetailView()
                 .environmentObject(viewModel)
         } label: {
-            Spacer(minLength: 20)
+            let length: CGFloat = 20
+            
+            Spacer(minLength: length)
             HStack(spacing: 0) {
                 ShowsImageView(show: show)
                 ShowsDescriptionView(show: show)
@@ -30,7 +32,7 @@ struct ShowsRowItem: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
             .background(.white)
             .cornerRadius(8)
-            Spacer(minLength: 20)
+            Spacer(minLength: length)
         }
     }
 }
