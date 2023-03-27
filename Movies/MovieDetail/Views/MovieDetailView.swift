@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MovieDetailView: View {
     
+    private typealias SwiftUIColors = Constants.SwiftUIColors
+    
     @State private var isOnAppearCalled = false
     @State private var isAlertPresented = false
     @EnvironmentObject private var viewModel: MovieDetailViewModel
@@ -35,7 +37,7 @@ struct MovieDetailView: View {
             )
             .navigationBarTitleDisplayMode(.inline)
             .scrollIndicators(.hidden)
-            .errorAlert(isPresented: $isAlertPresented, message: "Oops, something went wrong.")
+            .errorAlert(isPresented: $isAlertPresented, message: Constants.Alert.message)
             .onReceive(viewModel.error, perform: { error in
                 isAlertPresented = true
             })

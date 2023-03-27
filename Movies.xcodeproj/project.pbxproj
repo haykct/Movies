@@ -64,9 +64,10 @@
 		26E97337294E115100FDFD9B /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = 26E97336294E115100FDFD9B /* Mocker */; };
 		26E97338294E197E00FDFD9B /* MostPopularMoviesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF799729465B3F00824F85 /* MostPopularMoviesDataModel.swift */; };
 		26E97339294E278000FDFD9B /* MostPopularMoviesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF799529465AF700824F85 /* MostPopularMoviesRequest.swift */; };
+		26F5906629CE03680098C05B /* BaseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5906529CE03680098C05B /* BaseConfiguration.swift */; };
 		26FF796B2944F9DC00824F85 /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF796A2944F9DC00824F85 /* MoviesViewModel.swift */; };
 		26FF79822946476E00824F85 /* SectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF79812946476E00824F85 /* SectionHeaderReusableView.swift */; };
-		26FF7985294651D200824F85 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF7984294651D200824F85 /* Colors.swift */; };
+		26FF7985294651D200824F85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF7984294651D200824F85 /* Constants.swift */; };
 		26FF798F2946581E00824F85 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26FF798A2946544100824F85 /* NunitoSans-Regular.ttf */; };
 		26FF79902946581E00824F85 /* NunitoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26FF79882946544100824F85 /* NunitoSans-Light.ttf */; };
 		26FF79912946581E00824F85 /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26FF79872946542400824F85 /* NunitoSans-Bold.ttf */; };
@@ -133,10 +134,11 @@
 		26A9520429AEA47100340054 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		26A9520729B9ECF300340054 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		26B9E8EB2944CC1A00251362 /* InTheatresMoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InTheatresMoviesCollectionViewCell.swift; sourceTree = "<group>"; };
+		26F5906529CE03680098C05B /* BaseConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConfiguration.swift; sourceTree = "<group>"; };
 		26FF796A2944F9DC00824F85 /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
 		26FF7975294580E900824F85 /* Movies.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Movies.entitlements; sourceTree = "<group>"; };
 		26FF79812946476E00824F85 /* SectionHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SectionHeaderReusableView.swift; path = Movies/Movies/SectionHeaderReusableView.swift; sourceTree = SOURCE_ROOT; };
-		26FF7984294651D200824F85 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		26FF7984294651D200824F85 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		26FF79872946542400824F85 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
 		26FF79882946544100824F85 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Light.ttf"; sourceTree = "<group>"; };
 		26FF79892946544100824F85 /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -318,7 +320,7 @@
 				2625920B294C745D00C0B1EB /* Shows */,
 				26259219294C833E00C0B1EB /* ReusableViews */,
 				264CECDF293CF1520095EA32 /* NetworkService */,
-				26FF7983294651B600824F85 /* Colors */,
+				26FF7983294651B600824F85 /* Constants */,
 				26FF79862946540400824F85 /* Fonts */,
 				26599415293A8693005149BF /* Extensions */,
 			);
@@ -328,6 +330,7 @@
 		2659940729391418005149BF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				26F5906729CE133C0098C05B /* Configuration */,
 				2659941329394BA7005149BF /* TabBarController.swift */,
 				265993F72939127F005149BF /* MoviesViewController.swift */,
 				26982C86294D1CAC00E5E1A6 /* ShowsHostingViewController.swift */,
@@ -420,6 +423,14 @@
 			path = UICollectionViewCells;
 			sourceTree = "<group>";
 		};
+		26F5906729CE133C0098C05B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				26F5906529CE03680098C05B /* BaseConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		26FF79692944F94700824F85 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,12 +447,12 @@
 			path = UICollectionReusableViews;
 			sourceTree = "<group>";
 		};
-		26FF7983294651B600824F85 /* Colors */ = {
+		26FF7983294651B600824F85 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				26FF7984294651D200824F85 /* Colors.swift */,
+				26FF7984294651D200824F85 /* Constants.swift */,
 			);
-			path = Colors;
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		26FF79862946540400824F85 /* Fonts */ = {
@@ -583,6 +594,7 @@
 				2659940C2939345B005149BF /* AppCoordinator.swift in Sources */,
 				26B9E8ED2944CC1A00251362 /* InTheatresMoviesCollectionViewCell.swift in Sources */,
 				26FF799829465B3F00824F85 /* MostPopularMoviesDataModel.swift in Sources */,
+				26F5906629CE03680098C05B /* BaseConfiguration.swift in Sources */,
 				264CECE6293D06710095EA32 /* DataRequest.swift in Sources */,
 				2659941429394BA7005149BF /* TabBarController.swift in Sources */,
 				262591FE294B8BF900C0B1EB /* MovieDetailImageView.swift in Sources */,
@@ -595,7 +607,7 @@
 				2659941029394478005149BF /* MoviesCoordinator.swift in Sources */,
 				2625921B294C836400C0B1EB /* PlaceholderImage.swift in Sources */,
 				2625920D294C749300C0B1EB /* ShowsView.swift in Sources */,
-				26FF7985294651D200824F85 /* Colors.swift in Sources */,
+				26FF7985294651D200824F85 /* Constants.swift in Sources */,
 				26259218294C776E00C0B1EB /* ShowsRequest.swift in Sources */,
 				26A9520529AEA47100340054 /* View.swift in Sources */,
 				265993F42939127F005149BF /* AppDelegate.swift in Sources */,

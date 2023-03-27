@@ -17,12 +17,17 @@ struct ShowsImageView: View {
     }
     
     var body: some View {
+        let imageLayout = (width: 80.0, height: 104.0, radius: 4.0)
+        let insetsLayout = (top: 10.0, leading: 10.0, bottom: 10.0, trailing: 0.0)
+        
         AnimatedImage(url: URL(string: show.image))
             .placeholder {
-                PlaceholderImage(width: 80, height: 104, radius: 4)
-                    .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 0))
+                PlaceholderImage(width: imageLayout.width, height: imageLayout.height, radius: imageLayout.radius)
+                    .padding(EdgeInsets(top: insetsLayout.top, leading: insetsLayout.leading,
+                                        bottom: insetsLayout.bottom, trailing: insetsLayout.trailing))
             }
-            .clippedAndScaledToFill(width: 80, height: 104, radius: 4)
-            .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 0))
+            .clippedAndScaledToFill(width: imageLayout.width, height: imageLayout.height, radius: imageLayout.radius)
+            .padding(EdgeInsets(top: insetsLayout.top, leading: insetsLayout.leading,
+                                bottom: insetsLayout.bottom, trailing: insetsLayout.trailing))
     }
 }

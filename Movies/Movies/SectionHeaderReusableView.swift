@@ -32,8 +32,8 @@ final class SectionHeaderReusableView: UICollectionReusableView {
     private func setupTitleLabel() {
         titleTextLabel.frame = bounds
         titleTextLabel.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        titleTextLabel.font = UIFont(name: "NunitoSans-Bold", size: 22)
-        titleTextLabel.textColor = Colors.grey
+        titleTextLabel.font = UIFont(name: Constants.Fonts.NunitoSans.bold, size: 22)
+        titleTextLabel.textColor = Constants.Colors.grey
         addSubview(titleTextLabel)
     }
 }

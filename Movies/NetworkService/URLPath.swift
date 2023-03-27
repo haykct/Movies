@@ -7,10 +7,6 @@
 
 import Foundation
 
-enum BaseUrl {
-    static let imdbApi = "https://imdb-api.com/"
-}
-
 enum URLPath {
     case inTheatresMovies
     case mostPopularMovies

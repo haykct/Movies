@@ -26,7 +26,7 @@ struct ShowsView: View {
                 }
             }
             .padding(.top, 25)
-            .errorAlert(isPresented: $isAlertPresented, message: "Oops, something went wrong.")
+            .errorAlert(isPresented: $isAlertPresented, message: Constants.Alert.message)
             .onReceive(viewModel.error, perform: { error in
                 isAlertPresented = true
             })
@@ -35,7 +35,7 @@ struct ShowsView: View {
             }
             .navigationTitle("Top 250 TV Shows")
         }
-        .background(SwiftUIColors.backgroundGrey)
+        .background(Constants.SwiftUIColors.backgroundGrey)
     }
     
     private func requestShows() {

@@ -10,22 +10,23 @@ import Combine
 
 //MARK: UICollectionViewCompositionalLayout
 
-extension MoviesViewController {
-    private func createSection(itemSize: NSCollectionLayoutSize, groupSize: NSCollectionLayoutSize,
+private extension MoviesViewController {
+    func createSection(itemSize: NSCollectionLayoutSize, groupSize: NSCollectionLayoutSize,
                               spacing: CGFloat) -> NSCollectionLayoutSection {
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         let section = NSCollectionLayoutSection(group: group)
         
         section.interGroupSpacing = spacing
-        section.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 25, bottom: 18, trailing: 25)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 25,
+                                                        bottom: 18, trailing: 25)
         section.orthogonalScrollingBehavior = .continuous
         section.boundarySupplementaryItems = [createSectionHeader(withHeight: 40)]
         
         return section
     }
     
-    private func createSectionHeader(withHeight height: CGFloat) -> NSCollectionLayoutBoundarySupplementaryItem {
+    func createSectionHeader(withHeight height: CGFloat) -> NSCollectionLayoutBoundarySupplementaryItem {
         let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                                              heightDimension: .absolute(height))
         let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: layoutSectionHeaderSize,
@@ -36,25 +37,28 @@ extension MoviesViewController {
         return layoutSectionHeader
     }
     
-    private func setupLayout() {
+    func setupLayout() {
         collectionView.collectionViewLayout = UICollectionViewCompositionalLayout { section, _ in
-            switch Section(rawValue: section) {
+            let spacing: CGFloat = 25
+            
+            switch MoviesViewModel.Section(rawValue: section) {
             case .inTheatres:
                 let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                                       heightDimension: .fractionalHeight(1))
                 let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(290),
                                                        heightDimension: .absolute(400))
                 let section = self.createSection(itemSize: itemSize, groupSize: groupSize,
-                                                 spacing: 25)
+                                                 spacing: spacing)
                 
                 return section
             case .mostPopular:
+                let height: CGFloat = 265
                 let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
-                                                      heightDimension: .estimated(265))
+                                                      heightDimension: .estimated(height))
                 let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(140),
-                                                       heightDimension: .estimated(265))
+                                                       heightDimension: .estimated(height))
                 let section = self.createSection(itemSize: itemSize, groupSize: groupSize,
-                                                 spacing: 25)
+                                                 spacing: spacing)
                 
                 return section
             default: return nil
@@ -63,43 +67,44 @@ extension MoviesViewController {
     }
 }
 
-// Datasource and delegate methods should be moved to a separate class
+// Datasource and delegate methods can be moved to a separate file
 //MARK: UICollectionViewDiffableDataSource
 
-extension MoviesViewController {
-    private func setupDiffableDataSource() {
-        diffableDataSource = DiffableDataSource(
-            collectionView: collectionView,
-            cellProvider: { [weak self] (collectionView, indexPath, data) -> UICollectionViewCell? in
-                let deviceScale = self?.view.window?.windowScene?.screen.scale ?? 1
+private extension MoviesViewController {
+    func setupDiffableDataSource() {
+        let cellProvider: DiffableDataSource.CellProvider = { [weak self] collectionView, indexPath, data in
+            guard let self else { return nil }
+            
+            let deviceScale = self.view.window?.windowScene?.screen.scale ?? 1
+            
+            switch MoviesViewModel.Section(rawValue: indexPath.section) {
+            case .inTheatres:
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.inTheatresCellID,
+                                                              for: indexPath) as! InTheatresMoviesCollectionViewCell
+                let imageSize = CGSize(width: cell.frame.width * deviceScale, height: cell.frame.height * deviceScale)
                 
-                switch Section(rawValue: indexPath.section) {
-                case .inTheatres:
-                    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InTheatresMoviesCell",
-                                                                  for: indexPath) as! InTheatresMoviesCollectionViewCell
-                    let imageSize = CGSize(width: cell.frame.width * deviceScale, height: cell.frame.height * deviceScale)
-                    
-                    cell.setupCell(withData: data as! InTheatresMovie, imageSize: imageSize)
-                    
-                    return cell
-                case .mostPopular:
-                    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PopularMoviesCell",
-                                                                  for: indexPath) as! PopularMoviesCollectionViewCell
-                    let imageSize = CGSize(width: cell.frame.width * deviceScale, height: cell.frame.height * deviceScale)
-                    
-                    cell.setupCell(withData: data as! PopularMovie, imageSize: imageSize)
-
-                    return cell
-                default:
-                    return nil
-                }
-            })
+                cell.setupCell(withData: data as! InTheatresMovie, imageSize: imageSize)
+                
+                return cell
+            case .mostPopular:
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.popularMoviesCellID,
+                                                              for: indexPath) as! PopularMoviesCollectionViewCell
+                let imageSize = CGSize(width: cell.frame.width * deviceScale, height: cell.frame.height * deviceScale)
+                
+                cell.setupCell(withData: data as! PopularMovie, imageSize: imageSize)
+                
+                return cell
+            default:
+                return nil
+            }
+        }
         
-        diffableDataSource.supplementaryViewProvider = { (collectionView, kind, indexPath) -> UICollectionReusableView? in
+        let viewProvider: DiffableDataSource.SupplementaryViewProvider = { collectionView, kind, indexPath in
             let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
-                                                                             withReuseIdentifier: "header",
+                                                                             withReuseIdentifier: self.headerID,
                                                                              for: indexPath) as! SectionHeaderReusableView
-            switch Section(rawValue: indexPath.section) {
+            
+            switch MoviesViewModel.Section(rawValue: indexPath.section) {
             case .inTheatres:
                 headerView.setTitle(text: "In Theatres")
             case .mostPopular:
@@ -107,9 +112,12 @@ extension MoviesViewController {
             default:
                 break
             }
-
+            
             return headerView
         }
+        
+        diffableDataSource = DiffableDataSource(collectionView: collectionView, cellProvider: cellProvider)
+        diffableDataSource.supplementaryViewProvider = viewProvider
     }
 }
 
@@ -121,14 +129,17 @@ extension MoviesViewController: UICollectionViewDelegate {
     }
 }
 
-enum Section: Int, CaseIterable {
-    case inTheatres
-    case mostPopular
-}
-
-final class MoviesViewController: UIViewController {
+final class MoviesViewController: UIViewController, BaseConfiguration {
     
-    private typealias DiffableDataSource = UICollectionViewDiffableDataSource<Section, AnyHashable>
+    //MARK: constants
+    
+    private let inTheatresCellID = "InTheatresMoviesCell"
+    private let popularMoviesCellID = "PopularMoviesCell"
+    private let headerID = "header"
+    
+    //MARK: typealiases
+    
+    private typealias DiffableDataSource = UICollectionViewDiffableDataSource<MoviesViewModel.Section, AnyHashable>
     
     //MARK: outlets
     
@@ -137,6 +148,7 @@ final class MoviesViewController: UIViewController {
     //MARK: public properties
     
     var viewModel: MoviesViewModel?
+    var navigationTitle: String? { "Movies" }
     
     //MARK: private properties
     
@@ -157,33 +169,6 @@ final class MoviesViewController: UIViewController {
     }
 
     //MARK: private methods
-    
-    private func setupTabBarItem() {
-        let tabBarAppearance = UITabBarAppearance()
-
-        tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.font: UIFont(name: "NunitoSans-SemiBold",
-                                                                                             size: 14) as Any]
-        tabBarItem.standardAppearance = tabBarAppearance
-        tabBarItem.scrollEdgeAppearance = tabBarAppearance
-    }
-    
-    
-    private func setupNavigationBar() {
-        let appearance = UINavigationBarAppearance()
-        
-        navigationItem.title = "Movies"
-        navigationController?.navigationBar.prefersLargeTitles = true
-        appearance.titleTextAttributes = [.foregroundColor: Colors.grey as Any,
-                                          .font: UIFont(name: "NunitoSans-Black", size: 20) as Any]
-        appearance.largeTitleTextAttributes = [.foregroundColor: Colors.grey as Any,
-                                               .font: UIFont(name: "NunitoSans-Black", size: 32) as Any]
-        appearance.buttonAppearance.normal.titleTextAttributes = [.foregroundColor: Colors.grey as Any,
-                                                                  .font: UIFont(name: "NunitoSans-Bold", size: 18) as Any]
-        appearance.setBackIndicatorImage(UIImage(systemName: "chevron.backward.circle.fill"),
-                                         transitionMaskImage: UIImage(systemName: "chevron.backward.circle.fill"))
-        navigationController?.navigationBar.tintColor = Colors.grey
-        navigationController?.navigationBar.standardAppearance = appearance
-    }
     
     private func requestData() {
         viewModel?.requestAllMovies()
@@ -206,17 +191,18 @@ final class MoviesViewController: UIViewController {
     }
     
     private func registerReusableElements() {
-        collectionView.register(UINib(nibName: "InTheatresMoviesCollectionViewCell", bundle: nil),
-                                forCellWithReuseIdentifier: "InTheatresMoviesCell")
-        collectionView.register(UINib(nibName: "PopularMoviesCollectionViewCell", bundle: nil),
-                                forCellWithReuseIdentifier: "PopularMoviesCell")
+        let inTheatresCellNib = UINib(nibName: "InTheatresMoviesCollectionViewCell", bundle: nil)
+        let popularMoviesCellNib = UINib(nibName: "PopularMoviesCollectionViewCell", bundle: nil)
+        
+        collectionView.register(inTheatresCellNib, forCellWithReuseIdentifier: inTheatresCellID)
+        collectionView.register(popularMoviesCellNib, forCellWithReuseIdentifier: popularMoviesCellID)
         collectionView.register(SectionHeaderReusableView.self,
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-                                withReuseIdentifier: "header")
+                                withReuseIdentifier: headerID)
     }
     
     private func applySnapshot(allMovies: (inTheatresMovies: [InTheatresMovie], mostPopularMovies: [PopularMovie])) {
-        var snapshot = NSDiffableDataSourceSnapshot<Section, AnyHashable>()
+        var snapshot = NSDiffableDataSourceSnapshot<MoviesViewModel.Section, AnyHashable>()
         
         snapshot.appendSections([.inTheatres, .mostPopular])
         snapshot.appendItems(allMovies.inTheatresMovies, toSection: .inTheatres)
@@ -226,9 +212,11 @@ final class MoviesViewController: UIViewController {
     }
     
     private func handleError() {
-        let alert = UIAlertController(title: "Alert", message: "Oops, something went wrong.", preferredStyle: .alert)
+        typealias Alert = Constants.Alert
         
-        alert.addAction(UIAlertAction(title: "Close", style: .cancel))
+        let alert = UIAlertController(title: Alert.title, message: Alert.message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: Alert.actionTitle, style: .cancel))
         present(alert, animated: true, completion: nil)
     }
 }

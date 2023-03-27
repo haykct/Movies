@@ -10,8 +10,6 @@ import Combine
 
 final class MovieDetailViewModel: ObservableObject {
     
-    private typealias MovieDetailPublisher = AnyPublisher<MovieDetailDataModel, RequestError>
-    
     private let id: String
     private let networkService: NetworkService
     private var cancellable: AnyCancellable?
@@ -25,6 +23,8 @@ final class MovieDetailViewModel: ObservableObject {
     }
     
     func requestMovies() {
+        typealias MovieDetailPublisher = AnyPublisher<MovieDetailDataModel, RequestError>
+        
         let request = MovieDetailRequest(id: id)
         let publisher: MovieDetailPublisher = networkService.request(request)
         
