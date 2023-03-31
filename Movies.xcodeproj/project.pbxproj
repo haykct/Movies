@@ -29,6 +29,10 @@
 		2625921F294CEFDC00C0B1EB /* ShowsRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2625921E294CEFDC00C0B1EB /* ShowsRowItemView.swift */; };
 		26259221294CEFF200C0B1EB /* ShowsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26259220294CEFF200C0B1EB /* ShowsImageView.swift */; };
 		26259223294CF00700C0B1EB /* ShowsDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26259222294CF00700C0B1EB /* ShowsDescriptionView.swift */; };
+		2632191229D718E7004BDA61 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632191129D718E7004BDA61 /* ViewControllerFactory.swift */; };
+		2632191429D71918004BDA61 /* MoviesViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632191329D71918004BDA61 /* MoviesViewControllerFactory.swift */; };
+		2632191629D71940004BDA61 /* DetailViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632191529D71940004BDA61 /* DetailViewControllerFactory.swift */; };
+		2632191829D71956004BDA61 /* ShowsViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632191729D71956004BDA61 /* ShowsViewControllerFactory.swift */; };
 		26445E37294A2D51009372F8 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26445E36294A2D51009372F8 /* Image.swift */; };
 		264CECDE293B754A0095EA32 /* SwiftHEXColors in Frameworks */ = {isa = PBXBuildFile; productRef = 264CECDD293B754A0095EA32 /* SwiftHEXColors */; };
 		264CECE1293CF1780095EA32 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264CECE0293CF1780095EA32 /* NetworkService.swift */; };
@@ -108,6 +112,10 @@
 		2625921E294CEFDC00C0B1EB /* ShowsRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsRowItemView.swift; sourceTree = "<group>"; };
 		26259220294CEFF200C0B1EB /* ShowsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsImageView.swift; sourceTree = "<group>"; };
 		26259222294CF00700C0B1EB /* ShowsDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsDescriptionView.swift; sourceTree = "<group>"; };
+		2632191129D718E7004BDA61 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		2632191329D71918004BDA61 /* MoviesViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewControllerFactory.swift; sourceTree = "<group>"; };
+		2632191529D71940004BDA61 /* DetailViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerFactory.swift; sourceTree = "<group>"; };
+		2632191729D71956004BDA61 /* ShowsViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewControllerFactory.swift; sourceTree = "<group>"; };
 		26445E36294A2D51009372F8 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		264CECE0293CF1780095EA32 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		264CECE5293D06710095EA32 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
@@ -272,6 +280,17 @@
 			path = ReusableViews;
 			sourceTree = "<group>";
 		};
+		2632191029D7188C004BDA61 /* ViewControllerFactories */ = {
+			isa = PBXGroup;
+			children = (
+				2632191129D718E7004BDA61 /* ViewControllerFactory.swift */,
+				2632191329D71918004BDA61 /* MoviesViewControllerFactory.swift */,
+				2632191529D71940004BDA61 /* DetailViewControllerFactory.swift */,
+				2632191729D71956004BDA61 /* ShowsViewControllerFactory.swift */,
+			);
+			path = ViewControllerFactories;
+			sourceTree = "<group>";
+		};
 		264CECDF293CF1520095EA32 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +334,7 @@
 				26FF7975294580E900824F85 /* Movies.entitlements */,
 				265994082939147B005149BF /* SupportingFiles */,
 				2659940A293933B6005149BF /* Coordinators */,
+				2632191029D7188C004BDA61 /* ViewControllerFactories */,
 				26B9E8E92944CB8500251362 /* Movies */,
 				2601629F294759BE00D94686 /* MovieDetail */,
 				2625920B294C745D00C0B1EB /* Shows */,
@@ -593,7 +613,9 @@
 				264CECE1293CF1780095EA32 /* NetworkService.swift in Sources */,
 				2659940C2939345B005149BF /* AppCoordinator.swift in Sources */,
 				26B9E8ED2944CC1A00251362 /* InTheatresMoviesCollectionViewCell.swift in Sources */,
+				2632191229D718E7004BDA61 /* ViewControllerFactory.swift in Sources */,
 				26FF799829465B3F00824F85 /* MostPopularMoviesDataModel.swift in Sources */,
+				2632191429D71918004BDA61 /* MoviesViewControllerFactory.swift in Sources */,
 				26F5906629CE03680098C05B /* BaseConfiguration.swift in Sources */,
 				264CECE6293D06710095EA32 /* DataRequest.swift in Sources */,
 				2659941429394BA7005149BF /* TabBarController.swift in Sources */,
@@ -617,6 +639,7 @@
 				26259223294CF00700C0B1EB /* ShowsDescriptionView.swift in Sources */,
 				26259221294CEFF200C0B1EB /* ShowsImageView.swift in Sources */,
 				26259216294C768A00C0B1EB /* ShowsViewModel.swift in Sources */,
+				2632191829D71956004BDA61 /* ShowsViewControllerFactory.swift in Sources */,
 				26259200294B8C0900C0B1EB /* MovieDetailDescriptionView.swift in Sources */,
 				26599412293944A2005149BF /* ShowsCoordinator.swift in Sources */,
 				2625921F294CEFDC00C0B1EB /* ShowsRowItemView.swift in Sources */,
@@ -627,6 +650,7 @@
 				26225B9E2947436F00E600E7 /* PopularMoviesCollectionViewCell.swift in Sources */,
 				2610E562294798FA00F75469 /* MovieDetailViewModel.swift in Sources */,
 				260162A129475A7300D94686 /* MovieDetailView.swift in Sources */,
+				2632191629D71940004BDA61 /* DetailViewControllerFactory.swift in Sources */,
 				264CECE8293D0AE70095EA32 /* InTheatresMoviesRequest.swift in Sources */,
 				2652956029A4FB4A001849AB /* URLPath.swift in Sources */,
 				26FF799629465AF700824F85 /* MostPopularMoviesRequest.swift in Sources */,
