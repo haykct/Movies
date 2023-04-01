@@ -28,7 +28,7 @@ final class MoviesViewModel {
     //MARK: private properties
     
     private let networkService: NetworkService
-    private var coordinator: MoviesCoordinator?
+    private weak var coordinator: MoviesCoordinator?
     private var cancellable: AnyCancellable?
     
     //MARK: initializers
