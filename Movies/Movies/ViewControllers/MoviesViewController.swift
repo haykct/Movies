@@ -125,7 +125,7 @@ private extension MoviesViewController {
 
 extension MoviesViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        viewModel?.openDetail(withIndexPath: indexPath)
+        viewModel.openDetail(withIndexPath: indexPath)
     }
 }
 
@@ -147,13 +147,25 @@ final class MoviesViewController: UIViewController, BaseConfiguration {
     
     //MARK: public properties
     
-    var viewModel: MoviesViewModel?
     var navigationTitle: String? { "Movies" }
     
     //MARK: private properties
     
+    private let viewModel: MoviesViewModel
     private var diffableDataSource: DiffableDataSource!
     private var cancellable: AnyCancellable?
+    
+    //MARK: initializers
+    
+    required init?(coder: NSCoder) {
+        fatalError("Use `init(coder:viewModel:)` to initialize an `MoviesViewController` instance.")
+    }
+    
+    init?(coder: NSCoder, viewModel: MoviesViewModel) {
+        self.viewModel = viewModel
+        
+        super.init(coder: coder)
+    }
     
     //MARK: lifecycle methods
 
@@ -171,11 +183,11 @@ final class MoviesViewController: UIViewController, BaseConfiguration {
     //MARK: private methods
     
     private func requestData() {
-        viewModel?.requestAllMovies()
+        viewModel.requestAllMovies()
     }
     
     private func setupBindings() {
-        cancellable = viewModel?.allMovies
+        cancellable = viewModel.allMovies
             .sink(receiveCompletion: { [weak self] completion in
                 self?.handleError()
             }, receiveValue: { [weak self] allMovies in

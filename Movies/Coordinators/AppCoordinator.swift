@@ -36,7 +36,6 @@ final class AppCoordinator: TabBarCoordinator {
         let showsCoordinator = ShowsCoordinator(navigationController: showsNavigationController)
         
         childCoordinators.append(moviesCoordinator)
-        
                 //We can comment this line(or remove ShowsCoordinator fully)
                 //since I made shows screen with swiftUI and didn't use coordinators for navigation
 //        childCoordinators.append(showsCoordinator)

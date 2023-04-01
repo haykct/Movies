@@ -16,12 +16,13 @@ class MoviesViewControllerFactory: ViewControllerFactory {
     }
     
     func makeViewController() -> UIViewController {
-        let moviesViewController = MoviesViewController.instantiate(fromStoryboard: .main)
+        let viewModel = MoviesViewModel(withNetworkService: DefaultNetworkService(), coordinator: coordinator)
+        let creator = { MoviesViewController(coder: $0, viewModel: viewModel) }
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let moviesViewController = storyboard.instantiateViewController(identifier: "MoviesViewController", creator: creator)
         let filmImage = UIImage(systemName: "film.fill")
-
+            
         moviesViewController.tabBarItem = UITabBarItem(title: "Movies", image: filmImage, tag: 0)
-        moviesViewController.viewModel = MoviesViewModel(withNetworkService: DefaultNetworkService())
-        moviesViewController.viewModel?.coordinator = coordinator
         
         return moviesViewController
     }

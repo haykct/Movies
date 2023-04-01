@@ -23,18 +23,19 @@ final class MoviesViewModel {
     
     //MARK: public properties
     
-    weak var coordinator: MoviesCoordinator?
     let allMovies = CurrentValueSubject<DataModels, RequestError>(([], []))
 
     //MARK: private properties
     
     private let networkService: NetworkService
+    private var coordinator: MoviesCoordinator?
     private var cancellable: AnyCancellable?
     
     //MARK: initializers
     
-    init(withNetworkService service: NetworkService) {
-        networkService = service
+    init(withNetworkService service: NetworkService, coordinator: MoviesCoordinator?) {
+        self.networkService = service
+        self.coordinator = coordinator
     }
     
     //MARK: public methods
