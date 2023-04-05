@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftUI
 
 final class MoviesCoordinator: Coordinator {
     
@@ -24,22 +23,17 @@ final class MoviesCoordinator: Coordinator {
     //MARK: methods
     
     func start() {
-        let moviesVC = MoviesViewController.instantiate(fromStoryboard: .main)
-        let filmImage = UIImage(systemName: "film.fill")
-
-        moviesVC.tabBarItem = UITabBarItem(title: "Movies", image: filmImage, tag: 0)
-        moviesVC.viewModel = MoviesViewModel(withNetworkService: DefaultNetworkService())
-        moviesVC.viewModel?.coordinator = self
-        navigationController.setViewControllers([moviesVC], animated: false)
+        let factory = MoviesViewControllerFactory(coordinator: self)
+        let moviesViewController = factory.makeViewController()
+        
+        navigationController.setViewControllers([moviesViewController], animated: false)
     }
     
     func openDetail(withID id: String) {
-        let viewModel = MovieDetailViewModel(networkService: DefaultNetworkService(), id: id)
-        let movieDetailView = MovieDetailView().environmentObject(viewModel)
-        let swiftUIViewController = UIHostingController(rootView: movieDetailView)
+        let factory = DetailViewControllerFactory(id: id)
+        let detailHostingController = factory.makeViewController()
         
-        swiftUIViewController.navigationItem.largeTitleDisplayMode = .never
-        navigationController.pushViewController(swiftUIViewController, animated: true)
+        navigationController.pushViewController(detailHostingController, animated: true)
     }
     
 }

@@ -8,13 +8,14 @@
 import Foundation
 import UIKit
 
-enum Storyboard: String {
-    case main = "Main"
-}
-
 extension UIViewController {
+    
+    enum Storyboard: String {
+        case main = "Main"
+    }
+    
     static func instantiate(fromStoryboard storyboard: Storyboard) -> Self {
-        let storyboard = UIStoryboard(name: storyboard.rawValue, bundle: nil)
+        let storyboard = UIStoryboard(name: storyboard.rawValue, bundle: .main)
         let identifier = String(describing: self)
         
         return storyboard.instantiateViewController(withIdentifier: identifier) as! Self

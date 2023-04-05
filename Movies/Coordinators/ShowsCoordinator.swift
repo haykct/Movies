@@ -23,13 +23,10 @@ final class ShowsCoordinator: Coordinator {
     //MARK: methods
     
     func start() {
-        let tvImage = UIImage(systemName: "tv.inset.filled")
-        let viewModel = ShowsViewModel(networkService: DefaultNetworkService())
-        let showsView = ShowsView(viewModel: viewModel)
-        let hostingViewController = ShowsHostingViewController(rootView: showsView)
+        let factory = ShowsViewControllerFactory()
+        let showsHostingController = factory.makeViewController()
         
-        hostingViewController.tabBarItem = UITabBarItem(title: "Shows", image: tvImage, tag: 1)
-        navigationController.setViewControllers([hostingViewController], animated: false)
+        navigationController.setViewControllers([showsHostingController], animated: false)
     }
     
 }
