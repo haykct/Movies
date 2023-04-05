@@ -9,6 +9,7 @@ import XCTest
 import Mocker
 import Alamofire
 import Combine
+@testable import Movies
 
 final class NetworkServiceTests: XCTestCase {
     
