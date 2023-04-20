@@ -25,14 +25,12 @@ enum RequestError: LocalizedError {
 }
 
 protocol NetworkService {
-    var session: Session { get }
-    
     func request<Response>(_ request: Request) -> AnyPublisher<Response, RequestError> where Response: Decodable & ErrorInformationProvider
 }
 
 final class DefaultNetworkService: NetworkService {
     
-    let session: Session
+    private let session: Session
     
     init(session: Session = AF) {
         self.session = session
