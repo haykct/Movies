@@ -2,4 +2,4 @@
 
 The Movies app provides information about the latest movies and shows from the IMDb API.
 
-> :warning: **If you are using mobile browser**: Be very careful here!
+> :warning: **The Movies app will not show any data as IMDB no longer provides a free API.
